@@ -1,0 +1,23 @@
+{
+ "name": "laval",
+ "children": [
+  {
+   "name": "ernesto",
+   "children": [
+    {
+     "name": "paloma",
+     "size": 19
+     },
+    {
+     "name": "martin",
+     "size": 15
+     },
+    {
+     "name": "ignacio",
+     "size": 10
+     }
+    ]
+  }
+
+ ]
+}

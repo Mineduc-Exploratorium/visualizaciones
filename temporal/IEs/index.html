@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Establecimientos de Educación Superior en Chile</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" href="jqm/jquery.mobile-1.3.0.css" />
+	
+
+	<script src="jquery-1.7.1.min.js"></script>	
+	<script src="d3/d3.v3.min.js"></script>	
+	<!--	
+	<script src="jquery.mobile-1.1.0/jquery.mobile-1.1.0.js"></script>	
+	-->
+	<script src="underscore-min.js"></script>
+	<script src="backbone-min.js"></script>
+	<script type="text/javascript" src="./codigo.js"></script>	
+
+	<style>
+		circle {
+		  fill: rgb(31, 119, 180);
+		  fill-opacity: .85;
+		  stroke: rgb(31, 119, 180);
+		  stroke-width: 1px;
+		}
+
+		.leaf circle {
+		  fill: #ff7f0e;
+		  fill-opacity: 1;
+		}
+
+		circle.Municipal  {
+		  fill: #ffffff;
+		  fill-opacity: 0.25;
+		}
+
+		circle.Particular.Subvencionado  {
+		  fill: #ff0000;
+		  fill-opacity: 0.25;
+		}
+
+		circle.Particular.Pagado  {
+		  fill: #00ff00;
+		  fill-opacity: 0.25;
+		}
+
+
+		text {
+		  font: 10px sans-serif;
+		}
+	</style>
+	<style>
+        g.node {
+            font-family: Verdana, Helvetica;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        circle.node-dot {
+            fill: lightsalmon;
+            stroke: red;
+            stroke-width: 1px;
+        }
+
+        rect.node-dot.acreditada {
+            fill: blue;
+            stroke: blue;
+            stroke-width: 1px;
+        }
+
+        rect.node-dot.noAcreditada {
+            fill: red;
+            stroke: red;
+            stroke-width: 1px;
+        }
+
+        path.link {
+            fill: none;
+            stroke: gray;
+        }
+
+        body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+    </style>
+</head>
+
+<body>
+<div id="carreras">
+</div>
+<div id="arbol">
+</div>
+<div id="burbujas">
+</div>
+<div id="arbol2">
+</div>
+<div id="arbol3">
+</div>
+
+
+
+
+
+</body>
+</html>
+

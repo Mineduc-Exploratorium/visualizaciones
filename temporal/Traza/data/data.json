@@ -1,0 +1,16 @@
+{
+"links": [
+{"source":"Municipal 1º","target":"Part.Subvencionada 4º","value":"20"},
+{"source":"Municipal 1º","target":"Municipal 4º","value":"80"},
+{"source":"Part.Subvencionada 4º","target":"Municipal 8º","value":"10"},
+{"source":"Part.Subvencionada 4º","target":"Part.Subvencionada 8º","value":"10"},
+{"source":"Municipal 4º","target":"Municipal 8º","value":"40"},
+{"source":"Municipal 4º","target":"Part.Subvencionada 8º","value":"40"}
+] ,
+"nodes": [
+{"name":"Municipal 1º"},
+{"name":"Municipal 4º"},
+{"name":"Municipal 8º"},
+{"name":"Part.Subvencionada 4º"},
+{"name":"Part.Subvencionada 8º"}
+] }
