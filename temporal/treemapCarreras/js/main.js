@@ -100,10 +100,6 @@ var VistaPrincipal = Backbone.View.extend({
 		}
 
 
-
-    	alert("OK");
-
-
 	},
 
 	render2: function() {

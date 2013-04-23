@@ -114,6 +114,7 @@ form {
 }
 
 
+
 .node {
   border: solid 1px white;
   font: 10px sans-serif;
@@ -121,6 +122,14 @@ form {
   overflow: hidden;
   position: absolute;
   text-indent: 2px;
+}
+
+.acreditada{
+  border: solid 1px black;
+}
+
+.noacreditada{
+  border: solid 1px white;
 }
 
 
