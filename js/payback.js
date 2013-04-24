@@ -1,4 +1,5 @@
 $().ready(function() {
+	console.log("ready");
 	vista = new VistaPrincipal({el:"#mainchart"});
 });
 
@@ -7,6 +8,7 @@ $().ready(function() {
 // Vista principal con datos de ...
 //
 var VistaPrincipal = Backbone.View.extend({
+	
 	el:"body",
 
 	events : {
@@ -17,6 +19,7 @@ var VistaPrincipal = Backbone.View.extend({
 	},
 	
 	initialize: function() {
+		console.log("initialize");
 		_.bindAll(this,"render", "zoomed")
 		self= this; // Alias a this para ser utilizado en callback functions
 
@@ -25,10 +28,10 @@ var VistaPrincipal = Backbone.View.extend({
     	this.height = 400 - this.margin.top - this.margin.bottom;
 
 		// Vista con tooltip para mostrar ficha de establecimiento
-		this.tooltip = new VistaToolTipEstablecimiento();
-
-		this.tooltip.message = this.tooltipMessage;
-
+		//this.tooltip = new VistaToolTipEstablecimiento();
+		this.tooltip = new VistaToolTip();
+		this.tooltip.message = this.tootipMessage;
+		
 		this.attrx = "arancel";
 		this.attry = "ingresoagno4";
 		this.attrsize = "empleabilidadagno1";
@@ -43,6 +46,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 			self.data = data;
 			self.render();
+			//
 		});
 	},
 
@@ -50,7 +54,8 @@ var VistaPrincipal = Backbone.View.extend({
 		//console.log(e.pageX)
 	},
 
-	tooltipMessage : function(data) {
+	tootipMessage : function(data) {
+	
 		formatMiles = d3.format(",d");
 		formatDecimal = d3.format('.2f')
 
@@ -65,13 +70,17 @@ var VistaPrincipal = Backbone.View.extend({
 	}, 
 
 	selectOption : function(e) {
+		console.log("selectOption");
 		option = $(e.target).val();
 
 		this.attrx= option;
 		this.updateNodes();
+		console.log(this.etiquetas[this.attrX]);
+		
 	},
 
 	selectArea : function(e) {
+		console.log("selectArea");
 		option = $(e.target).val();
 
 		this.area= option;
@@ -85,6 +94,7 @@ var VistaPrincipal = Backbone.View.extend({
 	},
 
 	updateNodes: function() {
+		console.log("updateNodes");
 		var self = this;
 
 		var color = d3.scale.category10();
@@ -140,11 +150,16 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("r", function(d) {return self.radious(d[self.attrsize])})
 				.attr("fill", function(d) {return self.colorAcreditacion(d[self.attrcolor])})
 
+		// Crea Ejes para X e Y
+		this.ejes.labelX = this.etiquetas[this.attrX];
+		this.ejes.labelY = this.etiquetas[this.attrY];
 
+		this.ejes.redraw();
 
 	},
 
 	zoomed: function() {  
+		console.log("zoomed");
 		var self = this;			
 		console.log("here", d3.event.translate, d3.event.scale);
 
@@ -157,6 +172,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 
 	render: function() {
+		console.log("render");
 		self = this; // Para hacer referencia a "this" en callback functions
 
 		this.data = _.map(this.data, function(d) {
@@ -278,165 +294,55 @@ var VistaPrincipal = Backbone.View.extend({
 		    .scale(this.yScale)
 		    .orient("left");
 
-		this.svg.append("g")
-		  .attr("class", "x axis")
-		  .attr("transform", "translate(0," + this.height + ")")
-		  .attr("opacity",1)
-		  .call(this.xAxis)
-		.append("text")
-		  .attr("class", "label")
-		  .attr("x", this.width)
-		  .attr("y", -6)
-		  .style("text-anchor", "end")
-		  .text(this.etiquetas[this.attrx]);
+		// this.svg.append("g")
+		//   .attr("class", "x axis")
+		//   .attr("transform", "translate(0," + this.height + ")")
+		//   .attr("opacity",1)
+		//   .call(this.xAxis)
+		// .append("text")
+		//   .attr("class", "label")
+		//   .attr("x", this.width)
+		//   .attr("y", -6)
+		//   .style("text-anchor", "end")
+		//   .text(this.etiquetas[this.attrx]);
 
-		this.svg.append("g")
-		  .attr("class", "y axis")
-		  .call(this.yAxis)
-		  .attr("opacity",1)
-		.append("text")
-		  .attr("class", "label")
-		  .attr("transform", "rotate(-90)")
-		  .attr("y", 6)
-		  .attr("dy", ".71em")
-		  .style("text-anchor", "end")
-		  .text(this.etiquetas[this.attry])
+		// this.svg.append("g")
+		//   .attr("class", "y axis")
+		//   .call(this.yAxis)
+		//   .attr("opacity",1)
+		// .append("text")
+		//   .attr("class", "label")
+		//   .attr("transform", "rotate(-90)")
+		//   .attr("y", 6)
+		//   .attr("dy", ".71em")
+		//   .style("text-anchor", "end")
+		//   .text(this.etiquetas[this.attry])
+ 	console.log(this.etiquetas[this.attrX]);
+ 	this.ejes = new VistaEjesXY({
+			svg: this.svg,
+			x:this.xScale, y:this.yScale, 
+			height: this.height, width: this.width, 
+			labelX: this.etiquetas[this.attrX],labelY: this.etiquetas[this.attrY]
+		})
+ // Construye la leyenda
+		this.legend = new VistaLeyendaSVG({
+			svg: this.svg,
+			scale : this.colorAcreditacion,
+			width: this.width,
+			left: this.width,
+			top:30
 
-		this.legend = new VistaLeyendaSVG({scale : this.colorAcreditacion, width: this.width});
+		});
 
 		$(this.el).find("svg").find("g").first().append($(this.legend.el));
 
 		this.updateNodes();
 
-		$("body").append(this.tooltip.render().$el);
+		//$("body").append(this.tooltip.render().$el);
 
 	}
 
 });
 
-// VistaToolTipEstablecimiento
-// ----------------------------
-// Muestra tooltip con mini ficha del establecimiensto (se ubica al hacer rollover sobre el establecimiento)
-var VistaToolTipEstablecimiento = Backbone.View.extend({
 
-	initialize: function() {
-		this.datoestablecimiento = {
-			nombre_establecimiento : "sin establecimiento",
-			rbd:0,
-			nombre_comuna : "sin comuna",
-			financiamiento : 0,
-			psu_lenguaje : 0,
-			psu_matematica : 0,
-			ive_media : 0,
-			numero_alumnos : 0
-		}
-	},
-
-	// show
-	// ----
-	// Genera el menaje a mostrar (de acuerdo a datos ingresados) y muestra el tooltip en la
-	// posición indicada
-	//
-	// data: {nombre_establecimientos:"Escuela Arturo Prat", rbd: 123, ...}
-	// pos : {x: 100, y: 250}
-	show: function(data, pos) {
-		$tooltip = this.$el;
-		$tooltipcontent = $tooltip.find(".tooltipcontent")
-
-
-		$tooltipcontent.html(this.message(data));
-
-		$tooltip.css({"top":pos.y+10+$(window).scrollTop(), "left":pos.x + $(window).scrollLeft()});
-
-		$tooltip.show();
-	},
-
-	hide: function() {
-		$tooltip = this.$el;
-		$tooltip.hide();
-	},
-
-	message: function(data) {
-		var format = d3.format(",d")
-		msg = data.nombre;
-		/*
-		msg = data.nombre+" ("+data.rbd + ") -"+data.nombre_comuna;
-		msg += "<br>Financiamiento público 2011: $" + format(data.financiamiento)
-		msg += "<br>PSU Leng: " + data.psu_lenguaje +" PSU Mat: "  + data.psu_matematica;
-		msg += "<br>Índice de vulnerabilidad (media): " + Math.round(data.ive_media)+"%";
-		msg += "<br>Matrícula total: " + data.numero_alumnos +" ( $"+format(Math.round(data.financiamiento/data.numero_alumnos))+"/est. en promedio)";
-*/
-		return msg
-	},
-
-
-	render: function() {
-		$tooltip = this.$el
-		$tooltip.hide();
-		$tooltip.attr("style", "background:#ffff99;width:350px;position:absolute;z-index:9999");
-
-		$tooltipcontent = $("<div>")
-			.attr("class", "tooltipcontent")
-			.attr("style", "padding:4px;border:1px solid");
-
-		$tooltip.append($tooltipcontent);
-		$tooltip.appendTo($("body"));
-
-		this.hide();
-
-		return this;
-	}
-});
-
-// VistaLeyendaSVG
-// ===============
-// Crea un cuadro de leyenda con códigos de colores asociados a grupos.  Se genera un cuadro con cada color y un texto que le 
-// acompaña (en forma vertical).
-//
-// data: definición de la leyenda en formato [{color:"blue", category:"Category1"}, {color:"red", category:"Category2"}]
-// width: ancho de la leyenda (se alinea a la derecha)
-// el:  elemento svg en el cual se incorporará la leyenda (si se omite se crea un elemento <g></g>)
-//
-var VistaLeyendaSVG = Backbone.View.extend({
-	tagName: "g",
-
-	initialize : function(options) {
-		// Si no viene parámetro el, es necesario crear un nuevo elemento en el namespace de SVG (no basta this.$el)
-		this.el = (options && options.el) ? this.el : document.createElementNS('http://www.w3.org/2000/svg', this.tagName);
-		this.scale = (options && options.scale) ? options.scale : d2.scale.ordinal();
-		this.width = (options && options.width) ? options.width : 800;
-		this.render();
-	},
-
-	render: function() {
-		self = this;
-
-		var range = this.scale.range();
-		var domain = this.scale.domain();
-
-		var legend = d3.select(this.el).selectAll(".legend")
-		  	.data(this.scale.domain())
-			.enter()
-				.append("g")
-		  		.attr("class", "legend")
-		  		.attr("transform", function(d, i) { return "translate(0," + i * 20  + ")"; });
-
-		legend.append("rect")
-		  .attr("x", this.width - 18)
-		  .attr("width", 18)
-		  .attr("height", 18)
-		  .attr("stroke", "lightblue")
-		  .style("fill", function(d) {return self.scale(d)});
-
-		legend.append("text")
-		  .attr("x", this.width - 24)
-		  .attr("y", 9)
-		  .attr("dy", ".35em")
-		  .style("text-anchor", "end")
-		  .text(function(d) { return d; });
-
-		return this
-	}
-
-});
  

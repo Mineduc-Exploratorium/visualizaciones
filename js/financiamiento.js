@@ -33,7 +33,12 @@ var VistaFinanciamiento = Backbone.View.extend({
 		this.notaResumen  = new VistaNotaResumen();
 
 		// Vista con tooltip para mostrar ficha de establecimiento
-		this.tooltip = new VistaToolTipEstablecimiento();
+		//this.tooltip = new VistaToolTipEstablecimiento();
+
+
+	// Vista con tooltip para mostrar ficha de establecimiento
+	this.tooltip = new VistaToolTip();
+		this.tooltip.message = this.tootipMessage;
 
 		// Genera escalas utilizadas en gráfico X/Y
 		this.xScale = d3.scale.linear()
@@ -43,14 +48,15 @@ var VistaFinanciamiento = Backbone.View.extend({
     		.range([this.height, 0]);
 
     	// Vista con ejes X e Y utilizados en gráfico X/Y
-    	this.ejes = new VistaEjesXY({
-    		x : this.xScale,
-    		y : this.yScale,
-    		width : this.width,
-    		height : this.height,
-    		labelX : "Financiamiento",
-    		labelY : "PSU Lenguaje"
-    	}); 
+    
+
+      /* this.ejes = new VistaEjesXY({
+			svg: this.svg,
+			x:this.xScale, 
+			y:this.yScale, 
+			height: this.height, width: this.width, 
+			labelX: "Financiamiento",labelY: "PSU Lenguaje"
+		})*/
 
     	// Genera Pack Lyout para distribuir bubbles de establecimientos
 		var diameter = this.height;
@@ -82,7 +88,22 @@ var VistaFinanciamiento = Backbone.View.extend({
 			self.render();
 		});
 	},
+	tootipMessage : function(data) {
+	
+		
 
+		var format = d3.format(",d")
+
+ 		msg =  data.nombre_establecimiento + " ("+data.rbd + ") -" + data.nombre_comuna+ "<br>";
+ 		msg +="Financiamiento público 2011: $" + format(data.financiamiento)+ "<br>";
+		msg +="PSU Leng: " + data.psu_lenguaje +" PSU Mat: "  + data.psu_matematica+ "<br>";
+ 		msg +="Índice de vulnerabilidad (media): " + Math.round(data.ive_media)+"%"+ "<br>";
+		msg +="Matrícula total: " + data.numero_alumnos +" ( $"+format(Math.round(data.financiamiento/data.numero_alumnos))+"/est. en promedio "+ "<br>";
+
+ 		
+	
+		return msg;
+	},
 
 	// selectVulnerablidad
 	// --------------------
@@ -236,6 +257,15 @@ var VistaFinanciamiento = Backbone.View.extend({
 		// $svgroot utilizado por JQuery para agregar elementos
 		this.$svgroot = $("svg").find("g");
 
+
+
+this.ejes = new VistaEjesXY({
+			svg: this.svg,
+			x:this.xScale, 
+			y:this.yScale, 
+			height: this.height, width: this.width, 
+			labelX: "Financiamiento",labelY: "PSU Lenguaje"
+		})
 		// Despliega ejes X e Y (ocultos)
 		this.$svgroot.append(this.ejes.render().el);
 		
@@ -244,6 +274,14 @@ var VistaFinanciamiento = Backbone.View.extend({
 			data: [{color:"blue", category:"Municipal"}, {color:"red", category:"Part. Subvencionado"}],
 			width: 18}).render().el;
 
+
+	/*	this.legend = new VistaLeyendaSVG({
+			svg : this.svg, 	// Elemento SVG en el cual se ubica la leyenda
+			scale : this.color, // Escala ordinal con colores (range) para un dominio (domain)
+			left: this.width, 	// Ubicacción horizontal del extremo DERECHO de la leyenda
+			top:30});			// Ubicación vertical del extremo superior d ela leyenda
+
+*/
 		this.$svgroot
 			.append($(leyendaSVG).attr("transform", "translate(600,0)"));
 		// ------------------------
@@ -252,7 +290,7 @@ var VistaFinanciamiento = Backbone.View.extend({
 		$element.append(this.notaResumen.render().$el);
 
 		// Genera tooltip (oculto) para mostrar datos de establecimientos
-		$("body").append(this.tooltip.render().$el);
+		//$("body").append(this.tooltip.render().$el);
 
 		// Actualiza cálculo de posiciones y tamaños de nodos y muestra visualización
 		this.updateNodes();
@@ -261,71 +299,6 @@ var VistaFinanciamiento = Backbone.View.extend({
 
 });
 
-// VistaToolTipEstablecimiento
-// ----------------------------
-// Muestra tooltip con mini ficha del establecimiensto (se ubica al hacer rollover sobre el establecimiento)
-var VistaToolTipEstablecimiento = Backbone.View.extend({
-
-	initialize: function() {
-		this.datoestablecimiento = {
-			nombre_establecimiento : "sin establecimiento",
-			rbd:0,
-			nombre_comuna : "sin comuna",
-			financiamiento : 0,
-			psu_lenguaje : 0,
-			psu_matematica : 0,
-			ive_media : 0,
-			numero_alumnos : 0
-		}
-	},
-
-	// show
-	// ----
-	// Genera el menaje a mostrar (de acuerdo a datos ingresados) y muestra el tooltip en la
-	// posición indicada
-	//
-	// data: {nombre_establecimientos:"Escuela Arturo Prat", rbd: 123, ...}
-	// pos : {x: 100, y: 250}
-	show: function(data, pos) {
-		$tooltip = this.$el;
-		$tooltipcontent = $tooltip.find(".tooltipcontent")
-
-		var format = d3.format(",d")
-
-		$tooltipcontent.html(data.nombre_establecimiento+" ("+data.rbd + ") -"+data.nombre_comuna);
-		$tooltipcontent.append("<br>Financiamiento público 2011: $" + format(data.financiamiento))
-		$tooltipcontent.append("<br>PSU Leng: " + data.psu_lenguaje +" PSU Mat: "  + data.psu_matematica);
-		$tooltipcontent.append("<br>Índice de vulnerabilidad (media): " + Math.round(data.ive_media)+"%");
-		$tooltipcontent.append("<br>Matrícula total: " + data.numero_alumnos +" ( $"+format(Math.round(data.financiamiento/data.numero_alumnos))+"/est. en promedio)" );
-
-		$tooltip.css({"top":pos.y+10+$(window).scrollTop(), "left":pos.x-200});
-
-		$tooltip.show();
-	},
-
-	hide: function() {
-		$tooltip = this.$el;
-		$tooltip.hide();
-	},
-
-
-	render: function() {
-		$tooltip = this.$el
-		$tooltip.hide();
-		$tooltip.attr("style", "background:#ffff99;width:350px;position:absolute;z-index:9999");
-
-		$tooltipcontent = $("<div>")
-			.attr("class", "tooltipcontent")
-			.attr("style", "padding:4px;border:1px solid");
-
-		$tooltip.append($tooltipcontent);
-		$tooltip.appendTo($("body"));
-
-		this.hide();
-
-		return this;
-	}
-});
 
 
 // VistaNotaResumen
@@ -455,55 +428,55 @@ var VistaLeyendaSVG = Backbone.View.extend({
 //
 // el:  elemento svg en el cual se incorporará la leyenda (si se omite se crea un elemento <g></g>)
 //
-var VistaEjesXY = Backbone.View.extend({
-	tagName: "g",
+// var VistaEjesXY = Backbone.View.extend({
+// 	tagName: "g",
 
-	initialize : function(options) {
-		// Si no viene parámetro el, es necesario crear un nuevo elemento en el namespace de SVG (no basta this.$el)
-		this.el = (options && options.el) ? this.el : document.createElementNS('http://www.w3.org/2000/svg', this.tagName);
-		this.x = (options && options.x) ? options.x : d3.scale();
-		this.y = (options && options.y) ? options.y : d3.scale();
-		this.height = (options && options.height) ? options.height : 500;
-		this.width = (options && options.width) ? options.width : 500;
-		this.labelX = (options && options.labelX) ? options.labelX : "X";
-		this.labelY = (options && options.labelY) ? options.labelY : "Y";
-	},
+// 	initialize : function(options) {
+// 		// Si no viene parámetro el, es necesario crear un nuevo elemento en el namespace de SVG (no basta this.$el)
+// 		this.el = (options && options.el) ? this.el : document.createElementNS('http://www.w3.org/2000/svg', this.tagName);
+// 		this.x = (options && options.x) ? options.x : d3.scale();
+// 		this.y = (options && options.y) ? options.y : d3.scale();
+// 		this.height = (options && options.height) ? options.height : 500;
+// 		this.width = (options && options.width) ? options.width : 500;
+// 		this.labelX = (options && options.labelX) ? options.labelX : "X";
+// 		this.labelY = (options && options.labelY) ? options.labelY : "Y";
+// 	},
 
-	render: function() {
-		var xAxis = d3.svg.axis()
-		    .scale(this.x)
-		    .orient("bottom");
+// 	render: function() {
+// 		var xAxis = d3.svg.axis()
+// 		    .scale(this.x)
+// 		    .orient("bottom");
 
-		var yAxis = d3.svg.axis()
-		    .scale(this.y)
-		    .orient("left");
+// 		var yAxis = d3.svg.axis()
+// 		    .scale(this.y)
+// 		    .orient("left");
 
-		d3.select(this.el).append("g")
-		  .attr("class", "x axis")
-		  .attr("transform", "translate(0," + this.height + ")")
-		  .attr("opacity",0)
-		  .call(xAxis)
-		.append("text")
-		  .attr("class", "label")
-		  .attr("x", this.width)
-		  .attr("y", -6)
-		  .style("text-anchor", "end")
-		  .text(this.labelX);
+// 		d3.select(this.el).append("g")
+// 		  .attr("class", "x axis")
+// 		  .attr("transform", "translate(0," + this.height + ")")
+// 		  .attr("opacity",0)
+// 		  .call(xAxis)
+// 		.append("text")
+// 		  .attr("class", "label")
+// 		  .attr("x", this.width)
+// 		  .attr("y", -6)
+// 		  .style("text-anchor", "end")
+// 		  .text(this.labelX);
 
-		d3.select(this.el).append("g")
-		  .attr("class", "y axis")
-		  .call(yAxis)
-		  .attr("opacity",0)
-		.append("text")
-		  .attr("class", "label")
-		  .attr("transform", "rotate(-90)")
-		  .attr("y", 6)
-		  .attr("dy", ".71em")
-		  .style("text-anchor", "end")
-		  .text(this.labelY)
-		return this
-	}
+// 		d3.select(this.el).append("g")
+// 		  .attr("class", "y axis")
+// 		  .call(yAxis)
+// 		  .attr("opacity",0)
+// 		.append("text")
+// 		  .attr("class", "label")
+// 		  .attr("transform", "rotate(-90)")
+// 		  .attr("y", 6)
+// 		  .attr("dy", ".71em")
+// 		  .style("text-anchor", "end")
+// 		  .text(this.labelY)
+// 		return this
+// 	}
 
-});
+// });
 
 
