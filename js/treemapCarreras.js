@@ -52,7 +52,11 @@ var VistaPrincipal = Backbone.View.extend({
 	},
 
 	render : function() {
-
+		var $button = $("<button>Filtrar</button>")
+			.on("click", function() {
+				self.filtrar();
+			});
+		$("body").prepend($button)
 		var color = d3.scale.category10();
 
 
@@ -106,7 +110,73 @@ var VistaPrincipal = Backbone.View.extend({
 
 
 	},
+	drawChart: function() {
+		var self = this;
 
+		console.log("TEST ");
+
+
+		var color = d3.scale.category10();
+
+
+		var div = d3.select(this.el).append("div")
+		    .style("position", "relative")
+		    .style("width", (this.width + this.margin.left + this.margin.right) + "px")
+		    .style("height", (this.height + this.margin.top + this.margin.bottom) + "px")
+		    .style("left", this.margin.left + "px")
+		    .style("top", this.margin.top + "px");
+
+		var nestedData = d3.nest()
+			.key(function(d) {return "Chile"})
+			.key(function(d) {return d["CLASIFICACION INSTITUCION NIVEL 1"]})
+			.key(function(d) {return d["NOMBRE INSTITUCION"]})
+			.entries(this.data);
+
+		var treemap = d3.layout.treemap()
+    		.size([this.width, this.height])
+    		.sticky(true)
+    		.children(function(d) {return d.values })
+    		.value(function(d) { return d["TOTAL MATRICULADOS"]; });
+
+    	var nodes = treemap.nodes(nestedData[0]);
+
+		var node = div.selectAll(".node")
+		  .data(nodes)
+		.enter().append("div")
+		  .attr("class", function(d) {
+		  	// Si son carreras
+		  	if (d.depth == 3) {
+		  		return d.ACREDITACION_CARRERA == "Acreditada" ? "node leaf acreditada" : "node leaf noacreditada"
+		  	} else {
+		  		return "node"
+		  	}
+		  })
+		  .call(position)
+		  .style("background", function(d) { return (d.values && d.depth==1) ? color(d.key) : null; })
+		  .text(function(d) { return d.children ? null : d.key; })
+		  .on("mouseenter", function(d) {
+					pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
+					self.tooltip.show(d, pos)}
+					)
+				.on("mouseleave", function(d) {self.tooltip.hide()})
+
+		function position() {
+		  this.style("left", function(d) { return d.x + "px"; })
+		      .style("top", function(d) { return d.y + "px"; })
+		      .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+		      .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+		}
+
+	},
+	
+filtrar : function(){
+		this.data2 = _.filter(this.data, function(d) {return parseInt(d.INSTITUCION)=="Universidades"})
+	
+
+			this.drawChart();
+
+
+	},
 
 
 
