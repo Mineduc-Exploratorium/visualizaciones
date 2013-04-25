@@ -20,12 +20,24 @@ var VistaPrincipal = Backbone.View.extend({
 	
 	initialize: function() {
 		console.log("initialize");
+
+		//Añadidas referencias a funciones de los nuevos eventos **Carlos
+
 		_.bindAll(this,"render", "zoomed")
 		self= this; // Alias a this para ser utilizado en callback functions
 
 		this.margin = {top: 20, right: 20, bottom: 30, left: 200},
     	this.width = 1000 - this.margin.left - this.margin.right,
     	this.height = 400 - this.margin.top - this.margin.bottom;
+
+
+    	//Añadidos paneles que gatillan los nuevos eventos **Carlos
+
+    	// Panels con opciones de visualización	(genera eventos selectVisualizacion o selectVulnerablidad
+    	// según las opciones seleccionadas)	
+		this.vistaOpciones= new VistaPanelOpciones({el:"#panelOpciones"});
+		this.vistaOpciones.on("selectVisualizacion", this.selectVisualizacion);
+		this.vistaOpciones.on("selectVulnerablidad", this.selectVulnerablidad);
 
 		// Vista con tooltip para mostrar ficha de establecimiento
 		//this.tooltip = new VistaToolTipEstablecimiento();
@@ -49,6 +61,28 @@ var VistaPrincipal = Backbone.View.extend({
 			//
 		});
 	},
+
+	//Añadidas funciones de los nuevos eventos **Carlos
+	// selectVulnerablidad: function(vulnerabilidad) {
+	// 	//vulnerabilidad:  "alta", "baja" o "todos"
+	// 	// Actualiza el pack con los nodos (redefine posiciones y tamaño)
+	// 	this.updateNodes(vulnerabilidad);
+
+	// 	// Vuelve a mostrar nodos en el gráfico
+	// 	this.renderViz();
+	// },
+
+
+	// // selectVisualizacion
+	// // --------------------
+	// // Función llamada luego de detectar evento "selectVisualizacion" en panel con opciones
+	// selectVisualizacion: function(viztype) {
+	// 	// viztype: "espiral" o "chart"
+
+	// 	this.currentView = viztype;
+	// 	this.renderViz();							
+	// },
+
 
 	mousetrack : function(e) {
 		//console.log(e.pageX)
@@ -148,7 +182,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("cx", function(d) {return self.xScale(self.cleanStringInt(d[self.attrx]))})
 				.attr("cy", function(d) {return self.yScale(d[self.attry])})
 				.attr("r", function(d) {return self.radious(d[self.attrsize])})
-				.attr("fill", function(d) {return self.colorAcreditacion(d[self.attrcolor])})
+				//.attr("fill", function(d) {return self.colorAcreditacion(d[self.attrcolor])})
 
 		// Crea Ejes para X e Y
 		this.ejes.labelX = this.etiquetas[this.attrX];
@@ -175,6 +209,11 @@ var VistaPrincipal = Backbone.View.extend({
 		console.log("render");
 		self = this; // Para hacer referencia a "this" en callback functions
 
+		$element = this.$el;
+
+		// Mostrar panel con opciones
+		$element.append(this.vistaOpciones.render().$el);
+
 		this.data = _.map(this.data, function(d) {
 			d.desercionagno1 = parseFloat(d.desercionagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
 			d.duracion = (parseFloat(d.duracion.replace(/,/g,'.'))/2).toString();
@@ -196,22 +235,26 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("value", function(d) {return d.key})
 				.text(function(d) {return  d.key})
 
-		var categoriesAcreditacion = [
-			"7 años", 
-			"6 años", 
-			"5 años",
-			"4 años", 
-			"3 años", 
-			"2 años", 
-			"En Proceso",
-			"No"];
 
-		this.colorAcreditacion = d3.scale.ordinal()
-		    .domain(categoriesAcreditacion)
-		    .range(d3.range(categoriesAcreditacion.length).map(d3.scale.linear()
-		      .domain([0, categoriesAcreditacion.length - 1])
-		      .range([d3.rgb(0, 0, 0), d3.rgb(255, 255, 255)])
-		      .interpolate(d3.interpolateLab)));
+
+		//Elementos de la leyenda y la diferenciación de colores **Carlos  
+
+		// var categoriesAcreditacion = [
+		// 	"7 años", 
+		// 	"6 años", 
+		// 	"5 años",
+		// 	"4 años", 
+		// 	"3 años", 
+		// 	"2 años", 
+		// 	"En Proceso",
+		// 	"No"];
+
+		// this.colorAcreditacion = d3.scale.ordinal()
+		//     .domain(categoriesAcreditacion)
+		//     .range(d3.range(categoriesAcreditacion.length).map(d3.scale.linear()
+		//       .domain([0, categoriesAcreditacion.length - 1])
+		//       .range([d3.rgb(0, 0, 0), d3.rgb(255, 255, 255)])
+		//       .interpolate(d3.interpolateLab)));
 
 		this.etiquetas = {
 			"desercionagno1": "Deserción Año 1 (%)",
@@ -224,14 +267,14 @@ var VistaPrincipal = Backbone.View.extend({
 
 		var opciones = ["arancel", "duracion",  "empleabilidadagno1","desercionagno1"];
 
-		d3.select(this.el).append("select")
-			.attr("class", "attrx")
-			.selectAll("option")
-			.data(opciones)
-			.enter()
-				.append("option")
-				.attr("value", function(d) {return d})
-				.text(function(d) {return self.etiquetas[d]})
+		// d3.select(this.el).append("select")
+		// 	.attr("class", "attrx")
+		// 	.selectAll("option")
+		// 	.data(opciones)
+		// 	.enter()
+		// 		.append("option")
+		// 		.attr("value", function(d) {return d})
+		// 		.text(function(d) {return self.etiquetas[d]})
 
 
 			// Genera elemento SVG contenedor principal de gráficos
@@ -294,6 +337,8 @@ var VistaPrincipal = Backbone.View.extend({
 		    .scale(this.yScale)
 		    .orient("left");
 
+
+
 		// this.svg.append("g")
 		//   .attr("class", "x axis")
 		//   .attr("transform", "translate(0," + this.height + ")")
@@ -317,8 +362,10 @@ var VistaPrincipal = Backbone.View.extend({
 		//   .attr("dy", ".71em")
 		//   .style("text-anchor", "end")
 		//   .text(this.etiquetas[this.attry])
- 	console.log(this.etiquetas[this.attrX]);
- 	this.ejes = new VistaEjesXY({
+
+
+ 		console.log(this.etiquetas[this.attrX]);
+ 		this.ejes = new VistaEjesXY({
 			svg: this.svg,
 			x:this.xScale, y:this.yScale, 
 			height: this.height, width: this.width, 
@@ -346,3 +393,44 @@ var VistaPrincipal = Backbone.View.extend({
 
 
  
+// VistaPanelOpciones
+// ==================
+// Crea un panel con opciones para seleccionar opciones de visualización
+var VistaPanelOpciones = Backbone.View.extend({
+	events: {
+		"click button.visualizacion": "selectVisualizacion",
+		"click button.vulnerabilidad" : "selectVulnerablidad"
+	},
+
+	selectVisualizacion: function(e) {
+		var viztype = $(e.target).attr("viztype");
+		this.trigger("selectVisualizacion", viztype);
+	},
+
+	selectVulnerablidad: function(e) {
+		var vulnerabilidad = $(e.target).attr("vulnerabilidad");
+		this.trigger("selectVulnerablidad", vulnerabilidad)
+	},
+
+	initialize: function() {
+
+	},
+
+	render: function() {
+		$btngrp0 = $('<div class="btn-group" data-toggle="buttons-radio">');
+		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion active" viztype="espiral">CFT</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" viztype="chart">IP</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" viztype="chart">Universidad</button>');
+
+
+
+		// $btngrp1 = $('<div class="btn-group" data-toggle="buttons-radio">');
+		// $btngrp1.append($('<button type="button" class="btn btn-info vulnerabilidad active" vulnerabilidad="todos">Todos</button>'))
+		// $btngrp1.append($('<button type="button" class="btn btn-info vulnerabilidad" vulnerabilidad="alta">Solo vulnerables (ive > 50%)</button>'))
+		// $btngrp1.append($('<button type="button" class="btn btn-info vulnerabilidad" vulnerabilidad="baja">Solo menos vulnerables (ive <50%)</button>'))
+
+		this.$el.append($btngrp0);
+
+		return this;
+	}
+});
