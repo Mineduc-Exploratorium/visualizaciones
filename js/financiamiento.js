@@ -36,8 +36,8 @@ var VistaFinanciamiento = Backbone.View.extend({
 		//this.tooltip = new VistaToolTipEstablecimiento();
 
 
-	// Vista con tooltip para mostrar ficha de establecimiento
-	this.tooltip = new VistaToolTip();
+		// Vista con tooltip para mostrar ficha de establecimiento
+		this.tooltip = new VistaToolTip();
 		this.tooltip.message = this.tootipMessage;
 
 		// Genera escalas utilizadas en gráfico X/Y
@@ -50,7 +50,7 @@ var VistaFinanciamiento = Backbone.View.extend({
     	// Vista con ejes X e Y utilizados en gráfico X/Y
     
 
-      /* this.ejes = new VistaEjesXY({
+      	/* this.ejes = new VistaEjesXY({
 			svg: this.svg,
 			x:this.xScale, 
 			y:this.yScale, 
@@ -136,10 +136,13 @@ var VistaFinanciamiento = Backbone.View.extend({
 		// Vista de "espiral"  (muestra nodos en espiral)
 		if (this.currentView == "espiral") {
 			// Oculta los ejes x & y, cambiando su opacidad a 0
+			this.ejes.hide();
+			/*
 			d3.selectAll(".axis")
 				.transition()
 				.duration(3000)
 				.attr("opacity",0);
+			*/
 
 			// Cambia la ubicación de cada nodo de acuerdo a los datos d.x & d.y definidos por el pack layout
 			this.nodes
@@ -153,11 +156,14 @@ var VistaFinanciamiento = Backbone.View.extend({
 		{
 			self = this; // Alias a this para ser usado en callback functions
 
+			this.ejes.show();
+			/*
 			// Show x & y axis
 			d3.selectAll(".axis")
 				.transition()
 				.duration(3000)
 				.attr("opacity",1);
+			*/
 
 			// Relocate nodes positions & set size
 			this.nodes
@@ -258,32 +264,39 @@ var VistaFinanciamiento = Backbone.View.extend({
 		this.$svgroot = $("svg").find("g");
 
 
-
-this.ejes = new VistaEjesXY({
+		this.ejes = new VistaEjesXY({
 			svg: this.svg,
 			x:this.xScale, 
 			y:this.yScale, 
 			height: this.height, width: this.width, 
 			labelX: "Financiamiento",labelY: "PSU Lenguaje"
 		})
+
+		this.ejes.hide();
+
 		// Despliega ejes X e Y (ocultos)
-		this.$svgroot.append(this.ejes.render().el);
+		//this.$svgroot.append(this.ejes.render().el);
+
+		this.colorScale = d3.scale.ordinal()
+			.range(["blue", "red"])
+			.domain(["Municipal", "Part. Subvencionado"])
 		
+
 		// Agregar leyenda
-		var leyendaSVG = new VistaLeyendaSVG({ 
-			data: [{color:"blue", category:"Municipal"}, {color:"red", category:"Part. Subvencionado"}],
-			width: 18}).render().el;
+		//var leyendaSVG = new VistaLeyendaSVG({ 
+		//	data: [{color:"blue", category:"Municipal"}, {color:"red", category:"Part. Subvencionado"}],
+		//	width: 18}).render().el;
 
 
-	/*	this.legend = new VistaLeyendaSVG({
+		this.legend = new VistaLeyendaSVG({
 			svg : this.svg, 	// Elemento SVG en el cual se ubica la leyenda
-			scale : this.color, // Escala ordinal con colores (range) para un dominio (domain)
+			scale : this.colorScale, // Escala ordinal con colores (range) para un dominio (domain)
 			left: this.width, 	// Ubicacción horizontal del extremo DERECHO de la leyenda
 			top:30});			// Ubicación vertical del extremo superior d ela leyenda
 
-*/
-		this.$svgroot
-			.append($(leyendaSVG).attr("transform", "translate(600,0)"));
+
+		//this.$svgroot
+		//	.append($(leyendaSVG).attr("transform", "translate(600,0)"));
 		// ------------------------
 
 		//Despliega  Nota con resumen
@@ -376,50 +389,6 @@ var VistaPanelOpciones = Backbone.View.extend({
 	}
 });
 
-// VistaLeyendaSVG
-// ===============
-// Crea un cuadro de leyenda con códigos de colores asociados a grupos.  Se genera un cuadro con cada color y un texto que le 
-// acompaña (en forma vertical).
-//
-// data: definición de la leyenda en formato [{color:"blue", category:"Category1"}, {color:"red", category:"Category2"}]
-// width: ancho de la leyenda (se alinea a la derecha)
-// el:  elemento svg en el cual se incorporará la leyenda (si se omite se crea un elemento <g></g>)
-//
-var VistaLeyendaSVG = Backbone.View.extend({
-	tagName: "g",
-
-	initialize : function(options) {
-		// Si no viene parámetro el, es necesario crear un nuevo elemento en el namespace de SVG (no basta this.$el)
-		this.el = (options && options.el) ? this.el : document.createElementNS('http://www.w3.org/2000/svg', this.tagName);
-		this.legendData = (options && options.data) ? options.data : [{color:"blue", category:"Category"}];
-		this.width = (options && options.width) ? options.width : 800;
-		this.render();
-	},
-
-	render: function() {
-		var legend = d3.select(this.el).selectAll(".legend")
-		  .data(this.legendData)
-		.enter().append("g")
-		  .attr("class", "legend")
-		  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-		legend.append("rect")
-		  .attr("x", this.width - 18)
-		  .attr("width", 18)
-		  .attr("height", 18)
-		  .style("fill", function(d) {return d.color});
-
-		legend.append("text")
-		  .attr("x", this.width - 24)
-		  .attr("y", 9)
-		  .attr("dy", ".35em")
-		  .style("text-anchor", "end")
-		  .text(function(d) { return d.category; });
-
-		return this
-	}
-
-});
 
 
 // VistaEjesXY
