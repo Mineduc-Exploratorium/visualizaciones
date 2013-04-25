@@ -1,0 +1,127 @@
+
+circle {
+
+  stroke: rgb(31, 119, 180);
+  stroke-width: 1px;
+}
+
+circle.municipal {
+    fill: blue;
+    fill-opacity: 0.8;
+    //stroke: lightblue;
+    //stroke-width: 1px;
+}
+
+circle.otro {
+    fill: red;
+    fill-opacity: 0.8;
+    //stroke: lightblue;
+    //stroke-width: 1px;
+}
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+text {
+   font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+
+    circle {
+      fill: rgb(31, 119, 180);
+      fill-opacity: .25;
+      stroke: rgb(31, 119, 180);
+      stroke-width: 1px;
+    }
+
+    .leaf circle {
+      fill: #ff7f0e;
+      fill-opacity: 1;
+    }
+
+    circle.Municipal  {
+      fill: #ffffff;
+      fill-opacity: 0.25;
+    }
+
+    circle.Particular.Subvencionado  {
+      fill: #ff0000;
+      fill-opacity: 0.25;
+    }
+
+    circle.Particular.Pagado  {
+      fill: #00ff00;
+      fill-opacity: 0.25;
+    }
+
+
+    text {
+      font: 10px sans-serif;
+    }
+
+        g.node {
+            font-family: Verdana, Helvetica;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        circle.node-dot {
+            fill: lightsalmon;
+            stroke: red;
+            stroke-width: 1px;
+        }
+
+        rect.node-dot.acreditada {
+            fill: blue;
+            stroke: blue;
+            stroke-width: 1px;
+        }
+
+        rect.node-dot.noAcreditada {
+            fill: red;
+            stroke: red;
+            stroke-width: 1px;
+        }
+
+        path.link {
+            fill: none;
+            stroke: gray;
+        }
+
+        body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
+
+
+
