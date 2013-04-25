@@ -227,8 +227,8 @@ var VistaFinanciamiento = Backbone.View.extend({
 			.append("circle")
 			.attr("class", nodeClass)
 			.on("mouseenter", function(d) {
-				var event = d3.event;
-				pos = {x: event.x, y: event.y};
+				var event = d3.event;		
+				pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
 				self.tooltip.show(d, pos);
 			})
 			.on("mouseleave", function(d) {
