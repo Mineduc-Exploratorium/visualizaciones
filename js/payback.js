@@ -47,13 +47,13 @@ var VistaPrincipal = Backbone.View.extend({
 		this.attrx = "arancel";
 		this.attry = "ingresoagno4";
 		this.attrsize = "empleabilidadagno1";
- 		this.attrcolor = "acreditacion";
+ 		this.attrcolor = "CLASIFICACION_INSTITUCION_NIVEL_0";
  		this.area = "Administración y Comercio"
  
     	// Carga de datos
     	//
 		this.$el.append("<progress id='progressbar'></progress>");
-		d3.tsv("data/empleabilidad_c_tipoIE_unicode.txt", function(data) {
+		d3.tsv("data/empleabilidad_c_tipoIE.txt", function(data) {
 			$("#progressbar").hide(); // Ocultar barra de progreso
 
 			self.data = data;
@@ -182,7 +182,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("cx", function(d) {return self.xScale(self.cleanStringInt(d[self.attrx]))})
 				.attr("cy", function(d) {return self.yScale(d[self.attry])})
 				.attr("r", function(d) {return self.radious(d[self.attrsize])})
-				//.attr("fill", function(d) {return self.colorAcreditacion(d[self.attrcolor])})
+				.attr("fill", function(d) {return self.color(d[self.attrcolor])})
 
 		// Crea Ejes para X e Y
 		this.ejes.labelX = this.etiquetas[this.attrX];
@@ -255,6 +255,8 @@ var VistaPrincipal = Backbone.View.extend({
 		//       .domain([0, categoriesAcreditacion.length - 1])
 		//       .range([d3.rgb(0, 0, 0), d3.rgb(255, 255, 255)])
 		//       .interpolate(d3.interpolateLab)));
+
+		this.color = d3.scale.category10();
 
 		this.etiquetas = {
 			"desercionagno1": "Deserción Año 1 (%)",
