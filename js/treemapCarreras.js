@@ -64,7 +64,7 @@ var VistaPrincipal = Backbone.View.extend({
 		var titles = treeCarreras.titles();
 
 		var color = d3.scale.ordinal()
-			.range(["red", "blue"]);
+			.range(["blue", "red"]);
 
 		var legendPlaceHolder = d3.select(this.el).append("div")
 		    .style("position", "relative")
