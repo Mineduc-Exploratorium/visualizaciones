@@ -53,7 +53,7 @@ var VistaPrincipal = Backbone.View.extend({
     	// Carga de datos
     	//
 		this.$el.append("<progress id='progressbar'></progress>");
-		d3.tsv("data/empleabilidad.txt", function(data) {
+		d3.tsv("data/empleabilidad_c_tipoIE.txt", function(data) {
 			$("#progressbar").hide(); // Ocultar barra de progreso
 
 			self.data = data;
@@ -403,14 +403,10 @@ var VistaPanelOpciones = Backbone.View.extend({
 	},
 
 	selectVisualizacion: function(e) {
-		var viztype = $(e.target).attr("viztype");
+		var viztype = $(e.target).attr("tipo_ie");
 		this.trigger("selectVisualizacion", viztype);
 	},
 
-	selectVulnerablidad: function(e) {
-		var vulnerabilidad = $(e.target).attr("vulnerabilidad");
-		this.trigger("selectVulnerablidad", vulnerabilidad)
-	},
 
 	initialize: function() {
 
@@ -418,16 +414,11 @@ var VistaPanelOpciones = Backbone.View.extend({
 
 	render: function() {
 		$btngrp0 = $('<div class="btn-group" data-toggle="buttons-radio">');
-		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion active" viztype="espiral">CFT</button>');
-		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" viztype="chart">IP</button>');
-		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" viztype="chart">Universidad</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion active" tipo_ie="espiral">CFT</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" tipo_ie="chart">IP</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" tipo_ie="chart">Universidad</button>');
 
 
-
-		// $btngrp1 = $('<div class="btn-group" data-toggle="buttons-radio">');
-		// $btngrp1.append($('<button type="button" class="btn btn-info vulnerabilidad active" vulnerabilidad="todos">Todos</button>'))
-		// $btngrp1.append($('<button type="button" class="btn btn-info vulnerabilidad" vulnerabilidad="alta">Solo vulnerables (ive > 50%)</button>'))
-		// $btngrp1.append($('<button type="button" class="btn btn-info vulnerabilidad" vulnerabilidad="baja">Solo menos vulnerables (ive <50%)</button>'))
 
 		this.$el.append($btngrp0);
 
