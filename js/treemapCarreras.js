@@ -84,6 +84,8 @@ var VistaPrincipal = Backbone.View.extend({
 
 		formatNumber = d3.format(",d");
 
+
+
 		// Barra con Títulos de cada grupo
 		mainDiv.append("div")
 			.style("position", "relative")
@@ -96,10 +98,12 @@ var VistaPrincipal = Backbone.View.extend({
 		    .enter()
 		    	.append("div")
 		    	.style("float", "left")
+		    	.style("position", "relative")
 		    	.style("width", function(d) {return d.width+"px"})
-		    	.style("height", 40 + "px")
-		    	.attr("class", "etiqueta")
-		    	.html(function(d) {return d.title +"<br>"+formatNumber(d.size) + " estudiantes"});
+		    	.append("div")
+		    	//.style("height", 40 + "px")
+		    		.attr("class", "etiqueta")
+		    		.html(function(d) {return d.title +"<br>"+formatNumber(d.size) + " estudiantes"});
 
 
 		// Despliegue de los nodos de carreras
