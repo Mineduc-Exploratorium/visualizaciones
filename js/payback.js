@@ -40,7 +40,7 @@ var VistaPrincipal = Backbone.View.extend({
 		this.attry = "ingreso_agno4";
 		this.attrsize = "empleabilidad_agno1";
  		this.area = "Administración y Comercio"
- 		this.attrTipoIE = "tipo_institucion_nivel_0";
+ 		this.attrTipoIE = "tipo_institucion_nivel_1";
   		this.attrcolor = this.attrTipoIE;
   		this.tipoIE = "todos";  // Selector inicial del tipo IE
 
