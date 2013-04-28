@@ -8,49 +8,35 @@ $().ready(function() {
 // Vista principal con datos de ...
 //
 var VistaPrincipal = Backbone.View.extend({
-	
-	el:"body",
 
-	events : {
-		"change select#id_inputArea" : "selectArea"
-	},
-	
 	initialize: function() {
-		console.log("initialize");
+		// Se ascocia this (esta vista) al contexto de las funciones indicadas
+		_.bindAll(this,"render", "tipoIESeleccionada", "areaSeleccionada")
 
-		//Añadidas referencias a funciones de los nuevos eventos **Carlos
-
-		_.bindAll(this,"render", "zoomed", "selectTipoIE")
 		self= this; // Alias a this para ser utilizado en callback functions
 
+		// Configuración de espacio de despliegue de contenido en pantalla
 		this.margin = {top: 20, right: 20, bottom: 30, left: 200},
     	this.width = 1000 - this.margin.left - this.margin.right,
     	this.height = 400 - this.margin.top - this.margin.bottom;
 
-
-    	//Añadidos paneles que gatillan los nuevos eventos **Carlos
-
- 
-		// Vista con tooltip para mostrar ficha de establecimiento
+ 		// Vista con tooltip para mostrar ficha de establecimiento
 		//this.tooltip = new VistaToolTipEstablecimiento();
 		this.tooltip = new VistaToolTip();
 		this.tooltip.message = this.tootipMessage;
 		
-		this.attrx = "costo_estimado";
-		this.attry = "ingreso_agno4";
-		this.attrsize = "empleabilidad_agno1";
- 		this.area = "Administración y Comercio"
+		// Parámetros utilizados en el Gráfico
+		this.attrx = "costo_estimado";  // Atributo de eje X
+		this.attry = "ingreso_agno4";	// Atributo en eje Y
+		this.attrsize = "";				// Atributo en base al cual se calcula el radio de cada nodo (no)
  		this.attrTipoIE = "tipo_institucion_nivel_1";
-  		this.attrcolor = this.attrTipoIE;
-  		this.tipoIE = "todos";  // Selector inicial del tipo IE
+  		this.attrcolor = this.attrTipoIE;	// Atributo en base al cual define color de los nodos
+
 
   		// Etiquetas utilizadas en ejes X e Y
 		this.etiquetas = {
-			"desercionagno1": "Deserción Año 1 (%)",
 			"duracion": "Duración (años)",
 			"arancel" : "Arancel (millones $)",
-			"empleabilidadagno1" : "Empleabilidad Año 1 (%)",
-			"ingreso_agno4" : "Ingresos Año 4",
 			"costo_estimado" : "Costo estimado (arancel x duracion)"
 		};
 
@@ -62,13 +48,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 			self.data = data;
 			self.render();
-			//
 		});
-	},
-
-
-	mousetrack : function(e) {
-		//console.log(e.pageX)
 	},
 
 	// tooltipMessage
@@ -84,8 +64,8 @@ var VistaPrincipal = Backbone.View.extend({
 
 		msg = "<strong>"+data.institucion+"</strong>";
 		msg += "<br><span class='text-info'>"+data.carrera+"</span>";
-		msg += "<br>Duración: " + data.duracion_real +" años";
-		msg += "<br>Arancel: $" + formatMiles(data.arancel)+" millones";
+		msg += "<br>Duración media real: " + data.duracion_real +" años";
+		msg += "<br>Arancel anual: $" + formatDecimal(data.arancel/1000000)+" millones";
 		msg += "<br>Costo estimado (arancel x duracion): $" + formatDecimal(data.costo_estimado/1000000)+" millones";
 		
 		return msg;
@@ -95,40 +75,42 @@ var VistaPrincipal = Backbone.View.extend({
 	// Selecciona un nuevo tipo de institucion
 	// Parámetros:
 	// tiposSeleccionados:  arreglo con texto de tipos de IEs seleccionados (Ej. ["Centros e Formación Técnica", "Universidades"])
-	selectTipoIE : function(tiposSeleccionados) {
+	tipoIESeleccionada : function(tiposSeleccionados) {
 		this.tiposSeleccionados = tiposSeleccionados;
 		this.reDraw();
 	},
 
-	selectArea : function(e) {
-		console.log("selectArea");
-		option = $(e.target).val();
-
-		this.area= option;
-		this.reDraw();
-	},
-
-	cleanStringInt: function(n) {
-
-		//return n.replace("$", "").replace(" ", "").replace(".", "").replace(",", "").replace(/\.|%/g,'');
-		return n;
-	},
-
-	reDraw: function() {
-		console.log("reDraw");
-		var self = this;
-
-		var color = d3.scale.category10();
+	// Función invocada cuando se seleccione una nueva área
+	areaSeleccionada : function(area) {
+		this.area= area;
 
 		// Filtrar los datos por el area seleccionada (Ej. Educación) y adicionalmente
 		// por aqellos que tengan attrx >0 & attry != a "s/i"
 		this.filteredData = _.filter(this.data, function(d) {
-			return (parseFloat(d[self.attrx])>0) && (d.area == self.area)
-					&& (d[self.attry] != "s/i");
+			return 	(d.area == self.area) &&			// Carreras del área seleccionada
+					(parseFloat(d[self.attrx])>0) && 	// Atributo x es un número válido
+					(d[self.attry] != "s/i");			// Atributo y es categoría valida (no s/i)
 		});
+
+		this.reDraw();
+	},
+
+	// reDraw
+	// ------
+	// Función que dibuja los elementos del gráfico 
+	// Es llamada cada vez que se hace un cambuo (p.ej. selección de una nueva área)
+	reDraw: function() {
+		var self = this;
 
 		// Calcula el dominio de las escala x en base al valos de los datos que van en ejes 
 		this.xScale.domain(d3.extent(this.filteredData, function(d) { return d[self.attrx]})).nice();
+
+		// Configura etiquetas para ejes x e y
+		this.ejes.labelX = this.etiquetas[this.attrx];
+		this.ejes.labelY = this.etiquetas[this.attry];
+
+		// Vuelve a dibujar ejes X e Y
+		this.ejes.redraw();
 
 		// Join entre datos y nodos tipo "circle"
 		this.nodes = this.svg.selectAll("circle")
@@ -136,8 +118,9 @@ var VistaPrincipal = Backbone.View.extend({
 
 		// Eliminar los nodos para los cuales no hay asociación de datos
 		this.nodes.exit()
-				.transition()
-				.duration(2000)
+			.transition()
+			.duration(2000)
+				// Traslada nodos al origen y luego los elimina
 				.attr("cx", 0)
 				.attr("cy", this.height)
 				.attr("r", 0)
@@ -145,50 +128,37 @@ var VistaPrincipal = Backbone.View.extend({
 
 		// Agregar nuevos nodos asociados a datos
 		this.nodes.enter()
-				.append("circle")
-				.attr("opacity", 0.8)
-				.attr("cx", 0)
-				.attr("cy", this.height) // Los ubica en esquina inferior izquierda originalmente
-				// Captura eventos para uso de tootlip
-				.on("mouseenter", function(d) {
-					pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
-					self.tooltip.show(d, pos)}
-					)
-				.on("mouseleave", function(d) {self.tooltip.hide()})
+			// Crea nuevos nodos con opacidad base (0.95)
+			.append("circle")
+			.attr("opacity", 0.8)
+			// Los ubica en el origen
+			.attr("cx", 0)
+			.attr("cy", this.height) // Los ubica en esquina inferior izquierda originalmente
+			// Captura eventos para uso de tootlip
+			.on("mouseenter", function(d) {
+				pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
+				self.tooltip.show(d, pos)}
+				)
+			.on("mouseleave", function(d) {self.tooltip.hide()})
 
 		// Actualizar despliegue de nodos existentes
 		this.nodes
-				.transition()
-				.duration(2000)
-				.attr("cx", function(d) {return self.xScale(self.cleanStringInt(d[self.attrx]))})
-				.attr("cy", function(d) {return self.yScale(d[self.attry])})
-				.attr("r", function(d) {return 10})
-				.attr("fill", function(d) {return self.color(d[self.attrcolor])})
-				.attr("opacity", function(d) {
-					// Verificar si el tipo de IE está cintenida en los tipos seleccionados
-					// y asignar valor de opacidad en concordancia
-					return _.contains(self.tiposSeleccionados, d[self.attrTipoIE]) ? 0.95 : 0.05
-				})
+			.transition()
+			.duration(1000)
+			// Ubica nodos en posioción definitiva del gráfico
+			.attr("cx", function(d) {return self.xScale(d[self.attrx])})
+			.attr("cy", function(d) {return self.yScale(d[self.attry])})
+			// Todos los nodos con radio fijo (10)
+			.attr("r", function(d) {return 10})
+			// Color depende del valor de attributo attrcolor (Ej. tipo_institución)
+			.attr("fill", function(d) {return self.colorScale(d[self.attrcolor])})
+			// Opacidad depende de si el tipo de institución está entre los tipos seleccionados
+			.attr("opacity", function(d) {
+				// Verificar si el tipo de IE está cintenida en los tipos seleccionados
+				// y asignar valor de opacidad en concordancia
+				return _.contains(self.tiposSeleccionados, d[self.attrTipoIE]) ? 0.95 : 0.05
+			})
 
-
-		// Crea Ejes para X e Y
-		this.ejes.labelX = this.etiquetas[this.attrx];
-		this.ejes.labelY = this.etiquetas[this.attry];
-
-		this.ejes.redraw();
-
-	},
-
-	zoomed: function() {  
-		console.log("zoomed");
-		var self = this;			
-		console.log("here", d3.event.translate, d3.event.scale);
-
-		this.svg.select(".x.axis").call(this.xAxis);
-		this.svg.select(".y.axis").call(this.yAxis);
-
-			this.nodes
-				.attr("cx", function(d) {return self.xScale(self.cleanStringInt(d[self.attrx]))})		
 	},
 
 
@@ -196,7 +166,7 @@ var VistaPrincipal = Backbone.View.extend({
 		console.log("render");
 		self = this; // Para hacer referencia a "this" en callback functions
 
-		$element = this.$el;
+		$element = this.$el; // Auxiliar para selector Jquery del elemento DOM de esta vista
 
 		// Limpia datos de entrada (P.Ej. Cambiar duración de semestres a años)
 		this.data = _.map(this.data, function(d) {
@@ -205,6 +175,7 @@ var VistaPrincipal = Backbone.View.extend({
 			d.costo_estimado = d.arancel*d.duracion_real; // Genera nuevo atributo de costo carrera
 			return d;
 		})
+
 
 		//Calcula parámetros que dependen de los datos
 
@@ -218,42 +189,32 @@ var VistaPrincipal = Backbone.View.extend({
 
 		// Obtiene un arreglo con los nombres de las áreas
 		this.areas = _.unique(_.pluck(this.data,"area")).sort();
+		this.area = this.areas.length >0 ? this.areas[0] : ""; // Area seleccionada 
 
-		this.color = d3.scale.category10();
-		this.color.domain(this.tiposIEs);
+		// filteredData:  utilizada para la graficación
+		this.filteredData = _.filter(this.data, function(d) {
+			return 	(d.area == self.area) &&			// Carreras del área seleccionada
+					(parseFloat(d[self.attrx])>0) && 	// Atributo x es un número válido
+					(d[self.attry] != "s/i");			// Atributo y es categoría valida (no s/i)
+		});
+
+		// Genera escala de color utilizada en el gráfico
+		this.colorScale = d3.scale.category10();
+		this.colorScale.domain(this.tiposIEs);
 
 		// Panels con opciones de visualización	(genera eventos selectVisualizacion o selectVulnerablidad
     	// según las opciones seleccionadas)	
-		this.vistaOpciones= new VistaPanelOpciones({el:"#panelOpciones"});
-		this.vistaOpciones.on("selectTipoIE", this.selectTipoIE);
-		this.vistaOpciones.setColorScale(this.color);
-				// Mostrar panel con opciones
-		//$element.append(this.vistaOpciones.render().$el);
-		this.vistaOpciones.render();
+		this.vistaOpciones= new VistaPanelTipoIE({el:"#panelOpciones", colorScale: this.colorScale});
+		this.vistaOpciones.on("tipoIESeleccionada", this.tipoIESeleccionada);
 
 
-		// Genera menu con opciones de Area del Conocimiento (Educación, Ciencias Sociales, ...)
-		var selectorArea = d3.select(this.el)
-			.append("form")
-				.attr("class", "form-inline")
-			.append("div")
-				.attr("class", "control-group")
-
-		selectorArea.append("label")
-			.attr("class", "control-label")
-			.attr("for", "id_inputArea")
-			.text("Area");
-
-		selectorArea.append("select")
-			//.attr("class", "area")
-			.attr("id", "id_inputArea")
-			.selectAll("option")
-			.data(this.areas)
-			.enter()
-				.append("option")
-				.attr("value", function(d) {return d})
-				.text(function(d) {return  d})
-
+		// Crea un nuevo panel para seleccionar áreas
+		// -----------------------------------------
+		// Crea nuevo div que contendrá el panel
+		var elSelectorAreas = d3.select(this.el).append("div").attr("id", "panelSelectorAreas")
+		// Genera el contenido del panel y escucha a evento con area seleccionada
+		this.vistaSelectorAreas = new VistaPanelSelectorAreas({el: "#panelSelectorAreas", areas: this.areas})
+		this.vistaSelectorAreas.on("areaSeleccionada", this.areaSeleccionada);
 
 
 		// Genera elemento SVG contenedor principal de gráficos
@@ -264,22 +225,9 @@ var VistaPrincipal = Backbone.View.extend({
 		    .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
 	
 
-			// Genera escalas utilizadas en gráfico X/Y
+		// Genera escalas utilizadas en gráfico X/Y
 		this.xScale = d3.scale.linear()
     		.range([0, this.width]);
-
-		var zoom = d3.behavior.zoom()
-		    .x(this.xScale)
-		    //.y(y)
-		    //.scaleExtent([1, 10])
-		    .on("zoom", this.zoomed);
-
-		//this.svg
-		//	.call(zoom)
-
-
-		//this.yScale = d3.scale.linear()
-    	//	.range([this.height, 0]);
 
     	var domainIngreso= [
     	 	"Menor a $400 mil",
@@ -301,15 +249,11 @@ var VistaPrincipal = Backbone.View.extend({
 
 		// Calcula el dominio de las escalas en base al valos de los datos que van en ejes 
 		// x (psu Lenguaje) e y (financiamiento)
-		this.xScale.domain(d3.extent(this.data, function(d) { return parseFloat(self.cleanStringInt(d[self.attrx]))})).nice();
+		this.xScale.domain(d3.extent(this.data, function(d) { return parseFloat(d[self.attrx])})).nice();
 		//this.yScale.domain(d3.extent(this.data, function(d) { return parseFloat(self.cleanStringInt(d[self.attry]))})).nice();
 
-		// Escala para calcular el radio de cada circulo
-		this.radious = d3.scale.sqrt()
-			.range([2, 8])
-			.domain(d3.extent(this.data, function(d) { return parseFloat(d[self.attrsize])}));
 
-	
+		// Construye ejes X e Y
 		this.xAxis = d3.svg.axis()
 		    .scale(this.xScale)
 		    .orient("bottom");
@@ -318,8 +262,6 @@ var VistaPrincipal = Backbone.View.extend({
 		    .scale(this.yScale)
 		    .orient("left")
 
-
- 		console.log(this.etiquetas[this.attrX]);
  		this.ejes = new VistaEjesXY({
 			svg: this.svg,
 			x:this.xScale, y:this.yScale, 
@@ -327,18 +269,7 @@ var VistaPrincipal = Backbone.View.extend({
 			labelX: this.etiquetas[this.attrX],labelY: this.etiquetas[this.attrY]
 		})
 
- 		// Construye la leyenda
-		this.legend = new VistaLeyendaSVG({
-			svg: this.svg,
-			scale : this.colorAcreditacion,
-			width: this.width,
-			left: this.width,
-			top:30
-
-		});
-
-		$(this.el).find("svg").find("g").first().append($(this.legend.el));
-
+ 		// Dibuja los elementos del gráfico
 		this.reDraw();
 
 	}
@@ -347,20 +278,23 @@ var VistaPrincipal = Backbone.View.extend({
 
 
  
-// VistaPanelOpciones
+// VistaPanelTipoIE
 // ==================
-// Crea un panel con opciones para seleccionar opciones de visualización
-var VistaPanelOpciones = Backbone.View.extend({
+// Crea un panel con opciones para seleccionar el tipo de Institución (Universidades, Institutos profesionales, ..)
+// Parámetros de construccion  v = new VistaPanelTipoIE({el: el, colorScale: colorScale})
+// el: identificador del elemento del DOM en el cual se desplegará el panel
+// colorScale : escala ordinal de d3 con categorías en domain() y colores en range()
+var VistaPanelTipoIE = Backbone.View.extend({
 	events: {
-		"change input": "selectTipoIE",
+		"change input": "tipoIESeleccionada",
 	},
 
 	initialize: function() {
-		this.colorScale = d3.scale.ordinal();
-
+		this.colorScale = (this.options && this.options.colorScale) ? this.options.colorScale : d3.scale.ordinal();
+		this.render();
 	},
 
-	selectTipoIE: function(e) {
+	tipoIESeleccionada: function(e) {
 		// Obtiene arreglo con botones activos
 		$(this.el).find("input:checked")
 
@@ -371,7 +305,7 @@ var VistaPanelOpciones = Backbone.View.extend({
 			return $(d).val();
 
 		})
-		this.trigger("selectTipoIE", selectedValues);
+		this.trigger("tipoIESeleccionada", selectedValues);
 	},
 
 	// Define escala de colores que es utilizada para obtener los nombres de las opciones (domain) y 
@@ -381,26 +315,8 @@ var VistaPanelOpciones = Backbone.View.extend({
 	},
 
 	render: function() {
-
-		/*
-		// Genera un grupo de botones con estilo Bootstrap que operen en modalidad checkbok (se puede seleccionar más de uno)
-		var btnGroup = d3.select(this.el).append("div")
-			.attr("class","btn-group")
-
-
-		// Genera un boton por cada categoría en la escala de colores (this.colorScale.domain())
-		btnGroup.selectAll("button")
-			.data(this.colorScale.domain())
-			.enter()
-			.append("button")
-				.attr("type","button")
-				.attr("class","btn")
-				.style("background-color", this.colorScale)
-				.text(function(d) {return d})
-
-		*/
-
-		var optionsGroup = d3.select(this.el).append("div")
+		var optionsGroup = d3.select(this.el).append("form")
+			.attr("class", "form-horizontal")
 			.selectAll("label")
 			.data(this.colorScale.domain())
 			.enter()
@@ -412,15 +328,9 @@ var VistaPanelOpciones = Backbone.View.extend({
 			.attr("checked", true)
 			.attr("value", function(d) {return d})
 
-
 		optionsGroup.append("span")
 			.text(function(d) {return d})
 			.style("background-color", this.colorScale)
-
-
-
-
-
 
 		// Activa el último botón (vía JQuery)
 		$(this.el).find("button").last().button('toggle');
@@ -428,3 +338,48 @@ var VistaPanelOpciones = Backbone.View.extend({
 		return this;
 	}
 });
+
+// VistaPanelSelectorAreas
+var VistaPanelSelectorAreas = Backbone.View.extend({
+	events: {
+		"change select#id_inputArea" : "areaSeleccionada"
+	},
+			
+
+	initialize: function() {
+		this.areas = this.options && this.options.areas ? this.options.areas : [];
+		this.render()
+	},
+
+	areaSeleccionada : function(e) {
+		area = $(e.target).val();
+
+		this.trigger("areaSeleccionada", area)
+	},
+
+	render: function() {
+		// Genera menu con opciones de Area del Conocimiento (Educación, Ciencias Sociales, ...)
+		var selectorArea = d3.select(this.el)
+			.append("form")
+				.attr("class", "form-inline")
+			.append("div")
+				.attr("class", "control-group")
+
+		selectorArea.append("label")
+			.attr("class", "control-label")
+			.attr("for", "id_inputArea")
+			.style("margin-right", "10px")
+			.text("Area:   ");
+
+		selectorArea.append("select")
+			.attr("id", "id_inputArea")
+			.selectAll("option")
+			.data(this.areas)
+			.enter()
+				.append("option")
+				.attr("value", function(d) {return d})
+				.text(function(d) {return  d})
+	}
+});
+
+
