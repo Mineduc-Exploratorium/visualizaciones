@@ -12,10 +12,7 @@ var VistaPrincipal = Backbone.View.extend({
 	el:"body",
 
 	events : {
-		"change select.attrx" : "selectOption",
-		"change select.area" : "selectArea",
-		"mouseover" : "mousetrack"
-
+		"change select.area" : "selectArea"
 	},
 	
 	initialize: function() {
@@ -23,7 +20,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 		//Añadidas referencias a funciones de los nuevos eventos **Carlos
 
-		_.bindAll(this,"render", "zoomed")
+		_.bindAll(this,"render", "zoomed", "selectTipoIE")
 		self= this; // Alias a this para ser utilizado en callback functions
 
 		this.margin = {top: 20, right: 20, bottom: 30, left: 200},
@@ -36,24 +33,35 @@ var VistaPrincipal = Backbone.View.extend({
     	// Panels con opciones de visualización	(genera eventos selectVisualizacion o selectVulnerablidad
     	// según las opciones seleccionadas)	
 		this.vistaOpciones= new VistaPanelOpciones({el:"#panelOpciones"});
-		this.vistaOpciones.on("selectVisualizacion", this.selectVisualizacion);
-		this.vistaOpciones.on("selectVulnerablidad", this.selectVulnerablidad);
+		this.vistaOpciones.on("selectTipoIE", this.selectTipoIE);
 
 		// Vista con tooltip para mostrar ficha de establecimiento
 		//this.tooltip = new VistaToolTipEstablecimiento();
 		this.tooltip = new VistaToolTip();
 		this.tooltip.message = this.tootipMessage;
 		
-		this.attrx = "arancel";
-		this.attry = "ingresoagno4";
-		this.attrsize = "empleabilidadagno1";
- 		this.attrcolor = "CLASIFICACION_INSTITUCION_NIVEL_0";
+		this.attrx = "costo_estimado";
+		this.attry = "ingreso_agno4";
+		this.attrsize = "empleabilidad_agno1";
  		this.area = "Administración y Comercio"
- 
+ 		this.attrTipoIE = "tipo_institucion_nivel_0";
+  		this.attrcolor = this.attrTipoIE;
+  		this.tipoIE = "todos";  // Selector inicial del tipo IE
+
+  		// Etiquetas utilizadas en ejes X e Y
+		this.etiquetas = {
+			"desercionagno1": "Deserción Año 1 (%)",
+			"duracion": "Duración (años)",
+			"arancel" : "Arancel (millones $)",
+			"empleabilidadagno1" : "Empleabilidad Año 1 (%)",
+			"ingreso_agno4" : "Ingresos Año 4",
+			"costo_estimado" : "Costo estimado (arancel x duracion)"
+		};
+
     	// Carga de datos
     	//
 		this.$el.append("<progress id='progressbar'></progress>");
-		d3.tsv("data/empleabilidad_c_tipoIE.txt", function(data) {
+		d3.tsv("data/empleabilidad2.txt", function(data) {
 			$("#progressbar").hide(); // Ocultar barra de progreso
 
 			self.data = data;
@@ -88,18 +96,26 @@ var VistaPrincipal = Backbone.View.extend({
 		//console.log(e.pageX)
 	},
 
+	// tooltipMessage
+	// --------------
+	// Reescribe función generador de mensajes utilizado en herramienta de tooltip
+	// tooltip.tooltipMessage(data)
+	// Parámetros:
+	// data: objeto con atributos (Ej: {nombre: "Juan", Edad: 18})
 	tootipMessage : function(data) {
 	
 		formatMiles = d3.format(",d");
 		formatDecimal = d3.format('.2f')
 
-		msg = data.carrera + " - " + data.institucion + "<br>";
-		msg += "Duración: " + data.duracion +" años<br>";
-		msg += "Deserción Año 1: " + data.desercionagno1 +"%<br>";
-		msg += "Arancel: $" + formatDecimal(data.arancel)+" millones<br>";
-		msg += "Ingreso al 4 Año: " + data.ingresoagno4+"<br>";
-		msg += "Acreditación: " + data.acreditacion+"<br>";
-		msg += "Empleabilidad: " + data.empleabilidadagno1+"<br>";
+		msg = data.institucion;
+		msg += "<br>"+data.carrera;
+		msg += "<br>"+data.tipo_institucion_nivel_0;
+		msg += "<br>Area: " + data.area +" años";
+		msg += "<br>Duración: " + data.duracion_real +" años";
+		msg += "<br>Arancel: $" + formatMiles(data.arancel)+" millones";
+		msg += "<br>Costo estimado (arancel x duracion): $" + formatMiles(data.costo_estimado)+" millones";
+		msg += "<br>Ingresos año 4: $|" + data.ingreso_agno4+"| millones";
+
 		return msg;
 	}, 
 
@@ -111,6 +127,11 @@ var VistaPrincipal = Backbone.View.extend({
 		this.updateNodes();
 		console.log(this.etiquetas[this.attrX]);
 		
+	},
+
+	selectTipoIE : function(tipoIE) {
+		this.tipoIE = tipoIE;
+		this.updateNodes();
 	},
 
 	selectArea : function(e) {
@@ -133,19 +154,24 @@ var VistaPrincipal = Backbone.View.extend({
 
 		var color = d3.scale.category10();
 
+		// Filtrar los datos por el area seleccionada (Ej. Educación) y adicionalmente
+		// por aqellos que tengan attrx >0 & attry != a "s/i"
 		this.filtereData = _.filter(this.data, function(d) {
 			return (parseFloat(d[self.attrx])>0) && (d.area == self.area)
 					&& (d[self.attry] != "s/i");
 		});
 
+		// Filtrar datos por el tipo de IE
+		if (this.tipoIE != "todos") {
+			this.filtereData = _.filter(this.filtereData, function(d) {
+				return (d[self.attrTipoIE] == self.tipoIE);
+			});
+		}
+
 		// Calcula el dominio de las escalas en base al valos de los datos que van en ejes 
 		// x (psu Lenguaje) e y (financiamiento)
 		this.xScale.domain(d3.extent(this.data, function(d) { return parseFloat(d[self.attrx])})).nice();
 		//this.yScale.domain(d3.extent(this.data, function(d) { return parseFloat(d[self.attry])})).nice();
-
-
-
-		//alert(this.yScaleIngreso(" De $600 mil a $800 mil "));
 
 
 		d3.select(".x.axis")
@@ -157,7 +183,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.text(this.etiquetas[this.attrx]);;
 
 		this.nodes = this.svg.selectAll("circle")
-			.data(this.filtereData, function(d) {return d.ID})
+			.data(this.filtereData, function(d) {return (d.institucion+d.carrera)})
 
 		this.nodes.exit()
 				.transition()
@@ -181,7 +207,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.duration(2000)
 				.attr("cx", function(d) {return self.xScale(self.cleanStringInt(d[self.attrx]))})
 				.attr("cy", function(d) {return self.yScale(d[self.attry])})
-				.attr("r", function(d) {return self.radious(d[self.attrsize])})
+				.attr("r", function(d) {return 10})
 				.attr("fill", function(d) {return self.color(d[self.attrcolor])})
 
 		// Crea Ejes para X e Y
@@ -214,26 +240,34 @@ var VistaPrincipal = Backbone.View.extend({
 		// Mostrar panel con opciones
 		$element.append(this.vistaOpciones.render().$el);
 
+		// Ajustar formato de los datos de entrada (P.Ej. CAmbiar duración de semestres)
 		this.data = _.map(this.data, function(d) {
-			d.desercionagno1 = parseFloat(d.desercionagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
-			d.duracion = (parseFloat(d.duracion.replace(/,/g,'.'))/2).toString();
-			d.arancel = (parseFloat((d.arancel+"").replace(/\.|\$| /g,''))/1000000);
-			d.empleabilidadagno1 = parseFloat(d.empleabilidadagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
+			//d.desercionagno1 = parseFloat(d.desercionagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
+			//d.duracion = (parseFloat(d.duracion.replace(/,/g,'.'))/2).toString();
+			//d.arancel = (parseFloat((d.arancel+"").replace(/\.|\$| /g,''))/1000000);
+			//d.empleabilidadagno1 = parseFloat(d.empleabilidadagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
+			d.duracion_real = d.duracion_real/2;  // Cambiar a años
+			d.costo_estimado = d.arancel*d.duracion_real;
 			return d;
 		})
+
 
 		this.carrerasXArea = d3.nest()
 			.key(function(d) {return d.area})
 			.entries(this.data);
 
+		// Obtiene un arreglo con los nombres de las áreas
+		this.areas = _.unique(_.pluck(this.data,"area")).sort();
+
+		// Genera menu con opciones
 		d3.select(this.el).append("select")
 			.attr("class", "area")
 			.selectAll("option")
-			.data(this.carrerasXArea)
+			.data(this.areas)
 			.enter()
 				.append("option")
-				.attr("value", function(d) {return d.key})
-				.text(function(d) {return  d.key})
+				.attr("value", function(d) {return d})
+				.text(function(d) {return  d})
 
 
 
@@ -258,13 +292,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 		this.color = d3.scale.category10();
 
-		this.etiquetas = {
-			"desercionagno1": "Deserción Año 1 (%)",
-			"duracion": "Duración (años)",
-			"arancel" : "Arancel (millones $)",
-			"empleabilidadagno1" : "Empleabilidad Año 1 (%)",
-			"ingresoagno4" : "Ingresos Año 4"
-		};
+
 			
 
 		var opciones = ["arancel", "duracion",  "empleabilidadagno1","desercionagno1"];
@@ -305,17 +333,19 @@ var VistaPrincipal = Backbone.View.extend({
     	//	.range([this.height, 0]);
 
     	var domainIngreso= [
-    	 	" Menor a $400 mil ",
-    		" De $400 mil a $600 mil ",
-			" De $600 mil a $800 mil ",
-			" De $800 mil a $1 millón ",
-			" De $1 millón a $1 millón 200 mil ",
-			" De $1 millón 200 mil a $1 millón 400 mil ",
-			" De $1 millón 400 mil a $1 millón 600 mil ",
-			" De $1 millón 600 mil a $1 millón 800 mil ",
-			" De $1 millón 800 mil a $2 millones ",
-			" Sobre $2 millones "
+    	 	"Menor a $400 mil",
+    		"De $400 mil a $600 mil",
+			"De $600 mil a $800 mil",
+			"De $800 mil a $1 millón",
+			"De $1 millón a $1 millón 200 mil",
+			"De $1 millón 200 mil a $1 millón 400 mil",
+			"De $1 millón 400 mil a $1 millón 600 mil",
+			"De $1 millón 600 mil a $1 millón 800 mil",
+			"De $1 millón 800 mil a $2 millones",
+			"Sobre $2 millones"
 		]
+
+
 		this.yScale = d3.scale.ordinal()
 			.domain(domainIngreso)
 			.rangePoints([this.height, 0], 1);
@@ -387,8 +417,6 @@ var VistaPrincipal = Backbone.View.extend({
 
 		this.updateNodes();
 
-		//$("body").append(this.tooltip.render().$el);
-
 	}
 
 });
@@ -400,19 +428,14 @@ var VistaPrincipal = Backbone.View.extend({
 // Crea un panel con opciones para seleccionar opciones de visualización
 var VistaPanelOpciones = Backbone.View.extend({
 	events: {
-		"click button.visualizacion": "selectVisualizacion",
-		"click button.vulnerabilidad" : "selectVulnerablidad"
+		"click button.tipoIE": "selectTipoIE",
 	},
 
-	selectVisualizacion: function(e) {
-		var viztype = $(e.target).attr("viztype");
-		this.trigger("selectVisualizacion", viztype);
+	selectTipoIE: function(e) {
+		var tipoIE = $(e.target).attr("tipoIE");
+		this.trigger("selectTipoIE", tipoIE);
 	},
 
-	selectVulnerablidad: function(e) {
-		var vulnerabilidad = $(e.target).attr("vulnerabilidad");
-		this.trigger("selectVulnerablidad", vulnerabilidad)
-	},
 
 	initialize: function() {
 
@@ -420,11 +443,9 @@ var VistaPanelOpciones = Backbone.View.extend({
 
 	render: function() {
 		$btngrp0 = $('<div class="btn-group" data-toggle="buttons-radio">');
-		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion active" viztype="espiral">CFT</button>');
-		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" viztype="chart">IP</button>');
-		$btngrp0.append('<button type="button" class="btn btn-primary visualizacion" viztype="chart">Universidad</button>');
-
-
+		$btngrp0.append('<button type="button" class="btn btn-primary tipoIE active" tipoIE="Centros de Formación Técnica">CFT</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary tipoIE" tipoIE="Institutos Profesionales">IP</button>');
+		$btngrp0.append('<button type="button" class="btn btn-primary tipoIE" tipoIE="Universidades">Universidades</button>');
 
 		this.$el.append($btngrp0);
 
