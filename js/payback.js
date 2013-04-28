@@ -70,27 +70,6 @@ var VistaPrincipal = Backbone.View.extend({
 		});
 	},
 
-	//Añadidas funciones de los nuevos eventos **Carlos
-	// selectVulnerablidad: function(vulnerabilidad) {
-	// 	//vulnerabilidad:  "alta", "baja" o "todos"
-	// 	// Actualiza el pack con los nodos (redefine posiciones y tamaño)
-	// 	this.updateNodes(vulnerabilidad);
-
-	// 	// Vuelve a mostrar nodos en el gráfico
-	// 	this.renderViz();
-	// },
-
-
-	// // selectVisualizacion
-	// // --------------------
-	// // Función llamada luego de detectar evento "selectVisualizacion" en panel con opciones
-	// selectVisualizacion: function(viztype) {
-	// 	// viztype: "espiral" o "chart"
-
-	// 	this.currentView = viztype;
-	// 	this.renderViz();							
-	// },
-
 
 	mousetrack : function(e) {
 		//console.log(e.pageX)
@@ -129,8 +108,9 @@ var VistaPrincipal = Backbone.View.extend({
 		
 	},
 
+	// Selecciona un nuevo tipo de institucion
 	selectTipoIE : function(tipoIE) {
-		this.tipoIE = tipoIE;
+		this.tiposSeleccionados = [tipoIE];
 		this.updateNodes();
 	},
 
@@ -161,26 +141,10 @@ var VistaPrincipal = Backbone.View.extend({
 					&& (d[self.attry] != "s/i");
 		});
 
-		// Filtrar datos por el tipo de IE
-		if (this.tipoIE != "todos") {
-			this.filtereData = _.filter(this.filtereData, function(d) {
-				return (d[self.attrTipoIE] == self.tipoIE);
-			});
-		}
 
 		// Calcula el dominio de las escalas en base al valos de los datos que van en ejes 
 		// x (psu Lenguaje) e y (financiamiento)
-		this.xScale.domain(d3.extent(this.data, function(d) { return parseFloat(d[self.attrx])})).nice();
-		//this.yScale.domain(d3.extent(this.data, function(d) { return parseFloat(d[self.attry])})).nice();
-
-
-		d3.select(".x.axis")
-			.transition()
-			.duration(2000)
-			.call(this.xAxis)
-			.select("text.label")	
-				.transition()
-				.text(this.etiquetas[this.attrx]);;
+		this.xScale.domain(d3.extent(this.data, function(d) { return d[self.attrx]})).nice();
 
 		this.nodes = this.svg.selectAll("circle")
 			.data(this.filtereData, function(d) {return (d.institucion+d.carrera)})
@@ -189,13 +153,15 @@ var VistaPrincipal = Backbone.View.extend({
 				.transition()
 				.duration(2000)
 				.attr("cx", 0)
-				.attr("cy", 0)
+				.attr("cy", this.height)
 				.attr("r", 0)
 				.remove()
 		
 		this.nodes.enter()
 				.append("circle")
 				.attr("opacity", 0.8)
+				.attr("cx", 0)
+				.attr("cy", this.height)
 				.on("mouseenter", function(d) {
 					pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
 					self.tooltip.show(d, pos)}
@@ -209,10 +175,16 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("cy", function(d) {return self.yScale(d[self.attry])})
 				.attr("r", function(d) {return 10})
 				.attr("fill", function(d) {return self.color(d[self.attrcolor])})
+				.attr("opacity", function(d) {
+					// Verificar si el tipo de IE está cintenida en los tipos seleccionados
+					// y asignar valor de opacidad en concordancia
+					return _.contains(self.tiposSeleccionados, d[self.attrTipoIE]) ? 0.8 : 0.1
+				})
+
 
 		// Crea Ejes para X e Y
-		this.ejes.labelX = this.etiquetas[this.attrX];
-		this.ejes.labelY = this.etiquetas[this.attrY];
+		this.ejes.labelX = this.etiquetas[this.attrx];
+		this.ejes.labelY = this.etiquetas[this.attry];
 
 		this.ejes.redraw();
 
@@ -240,26 +212,30 @@ var VistaPrincipal = Backbone.View.extend({
 		// Mostrar panel con opciones
 		$element.append(this.vistaOpciones.render().$el);
 
-		// Ajustar formato de los datos de entrada (P.Ej. CAmbiar duración de semestres)
+		// Limpia datos de entrada (P.Ej. Cambiar duración de semestres a años)
 		this.data = _.map(this.data, function(d) {
 			//d.desercionagno1 = parseFloat(d.desercionagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
-			//d.duracion = (parseFloat(d.duracion.replace(/,/g,'.'))/2).toString();
-			//d.arancel = (parseFloat((d.arancel+"").replace(/\.|\$| /g,''))/1000000);
-			//d.empleabilidadagno1 = parseFloat(d.empleabilidadagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
 			d.duracion_real = d.duracion_real/2;  // Cambiar a años
-			d.costo_estimado = d.arancel*d.duracion_real;
+			d.costo_estimado = d.arancel*d.duracion_real; // Genera nuevo atributo de costo carrera
 			return d;
 		})
 
+		//Calcula parámetros que dependen de los datos
 
-		this.carrerasXArea = d3.nest()
-			.key(function(d) {return d.area})
-			.entries(this.data);
+		// Tipos de IE (Universidades, CFT, ...)
+		// Es utilizado para cambiar el color de cada nodo 
+		this.tiposIEs = _.unique(_.pluck(this.data, this.attrTipoIE)).sort();
+		this.tiposSeleccionados = this.tiposIEs;  // Los tipos seleccionados se muestran con mayor intensidad
 
 		// Obtiene un arreglo con los nombres de las áreas
 		this.areas = _.unique(_.pluck(this.data,"area")).sort();
 
-		// Genera menu con opciones
+		this.color = d3.scale.category10();
+		this.color.domain(this.tiposIEs);
+
+
+
+		// Genera menu con opciones de Area del Conocimiento (Educación, Ciencias Sociales, ...)
 		d3.select(this.el).append("select")
 			.attr("class", "area")
 			.selectAll("option")
@@ -271,43 +247,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 
 
-		//Elementos de la leyenda y la diferenciación de colores **Carlos  
-
-		// var categoriesAcreditacion = [
-		// 	"7 años", 
-		// 	"6 años", 
-		// 	"5 años",
-		// 	"4 años", 
-		// 	"3 años", 
-		// 	"2 años", 
-		// 	"En Proceso",
-		// 	"No"];
-
-		// this.colorAcreditacion = d3.scale.ordinal()
-		//     .domain(categoriesAcreditacion)
-		//     .range(d3.range(categoriesAcreditacion.length).map(d3.scale.linear()
-		//       .domain([0, categoriesAcreditacion.length - 1])
-		//       .range([d3.rgb(0, 0, 0), d3.rgb(255, 255, 255)])
-		//       .interpolate(d3.interpolateLab)));
-
-		this.color = d3.scale.category10();
-
-
-			
-
-		var opciones = ["arancel", "duracion",  "empleabilidadagno1","desercionagno1"];
-
-		// d3.select(this.el).append("select")
-		// 	.attr("class", "attrx")
-		// 	.selectAll("option")
-		// 	.data(opciones)
-		// 	.enter()
-		// 		.append("option")
-		// 		.attr("value", function(d) {return d})
-		// 		.text(function(d) {return self.etiquetas[d]})
-
-
-			// Genera elemento SVG contenedor principal de gráficos
+		// Genera elemento SVG contenedor principal de gráficos
 		this.svg = d3.select(this.el).append("svg")
 		    .attr("width", this.width + this.margin.left + this.margin.right)
 		    .attr("height", this.height + this.margin.top + this.margin.bottom)
@@ -367,33 +307,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 		this.yAxis = d3.svg.axis()
 		    .scale(this.yScale)
-		    .orient("left");
-
-
-
-		// this.svg.append("g")
-		//   .attr("class", "x axis")
-		//   .attr("transform", "translate(0," + this.height + ")")
-		//   .attr("opacity",1)
-		//   .call(this.xAxis)
-		// .append("text")
-		//   .attr("class", "label")
-		//   .attr("x", this.width)
-		//   .attr("y", -6)
-		//   .style("text-anchor", "end")
-		//   .text(this.etiquetas[this.attrx]);
-
-		// this.svg.append("g")
-		//   .attr("class", "y axis")
-		//   .call(this.yAxis)
-		//   .attr("opacity",1)
-		// .append("text")
-		//   .attr("class", "label")
-		//   .attr("transform", "rotate(-90)")
-		//   .attr("y", 6)
-		//   .attr("dy", ".71em")
-		//   .style("text-anchor", "end")
-		//   .text(this.etiquetas[this.attry])
+		    .orient("left")
 
 
  		console.log(this.etiquetas[this.attrX]);
@@ -403,7 +317,8 @@ var VistaPrincipal = Backbone.View.extend({
 			height: this.height, width: this.width, 
 			labelX: this.etiquetas[this.attrX],labelY: this.etiquetas[this.attrY]
 		})
- // Construye la leyenda
+
+ 		// Construye la leyenda
 		this.legend = new VistaLeyendaSVG({
 			svg: this.svg,
 			scale : this.colorAcreditacion,
