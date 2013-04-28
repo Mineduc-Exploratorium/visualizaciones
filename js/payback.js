@@ -12,7 +12,7 @@ var VistaPrincipal = Backbone.View.extend({
 	el:"body",
 
 	events : {
-		"change select.area" : "selectArea"
+		"change select#id_inputArea" : "selectArea"
 	},
 	
 	initialize: function() {
@@ -30,11 +30,7 @@ var VistaPrincipal = Backbone.View.extend({
 
     	//Añadidos paneles que gatillan los nuevos eventos **Carlos
 
-    	// Panels con opciones de visualización	(genera eventos selectVisualizacion o selectVulnerablidad
-    	// según las opciones seleccionadas)	
-		this.vistaOpciones= new VistaPanelOpciones({el:"#panelOpciones"});
-		this.vistaOpciones.on("selectTipoIE", this.selectTipoIE);
-
+ 
 		// Vista con tooltip para mostrar ficha de establecimiento
 		//this.tooltip = new VistaToolTipEstablecimiento();
 		this.tooltip = new VistaToolTip();
@@ -86,32 +82,22 @@ var VistaPrincipal = Backbone.View.extend({
 		formatMiles = d3.format(",d");
 		formatDecimal = d3.format('.2f')
 
-		msg = data.institucion;
-		msg += "<br>"+data.carrera;
-		msg += "<br>"+data.tipo_institucion_nivel_0;
-		msg += "<br>Area: " + data.area +" años";
+		msg = "<strong>"+data.institucion+"</strong>";
+		msg += "<br><span class='text-info'>"+data.carrera+"</span>";
 		msg += "<br>Duración: " + data.duracion_real +" años";
 		msg += "<br>Arancel: $" + formatMiles(data.arancel)+" millones";
-		msg += "<br>Costo estimado (arancel x duracion): $" + formatMiles(data.costo_estimado)+" millones";
-		msg += "<br>Ingresos año 4: $|" + data.ingreso_agno4+"| millones";
-
+		msg += "<br>Costo estimado (arancel x duracion): $" + formatDecimal(data.costo_estimado/1000000)+" millones";
+		
 		return msg;
 	}, 
 
-	selectOption : function(e) {
-		console.log("selectOption");
-		option = $(e.target).val();
-
-		this.attrx= option;
-		this.updateNodes();
-		console.log(this.etiquetas[this.attrX]);
-		
-	},
 
 	// Selecciona un nuevo tipo de institucion
-	selectTipoIE : function(tipoIE) {
-		this.tiposSeleccionados = [tipoIE];
-		this.updateNodes();
+	// Parámetros:
+	// tiposSeleccionados:  arreglo con texto de tipos de IEs seleccionados (Ej. ["Centros e Formación Técnica", "Universidades"])
+	selectTipoIE : function(tiposSeleccionados) {
+		this.tiposSeleccionados = tiposSeleccionados;
+		this.reDraw();
 	},
 
 	selectArea : function(e) {
@@ -119,7 +105,7 @@ var VistaPrincipal = Backbone.View.extend({
 		option = $(e.target).val();
 
 		this.area= option;
-		this.updateNodes();
+		this.reDraw();
 	},
 
 	cleanStringInt: function(n) {
@@ -128,27 +114,27 @@ var VistaPrincipal = Backbone.View.extend({
 		return n;
 	},
 
-	updateNodes: function() {
-		console.log("updateNodes");
+	reDraw: function() {
+		console.log("reDraw");
 		var self = this;
 
 		var color = d3.scale.category10();
 
 		// Filtrar los datos por el area seleccionada (Ej. Educación) y adicionalmente
 		// por aqellos que tengan attrx >0 & attry != a "s/i"
-		this.filtereData = _.filter(this.data, function(d) {
+		this.filteredData = _.filter(this.data, function(d) {
 			return (parseFloat(d[self.attrx])>0) && (d.area == self.area)
 					&& (d[self.attry] != "s/i");
 		});
 
+		// Calcula el dominio de las escala x en base al valos de los datos que van en ejes 
+		this.xScale.domain(d3.extent(this.filteredData, function(d) { return d[self.attrx]})).nice();
 
-		// Calcula el dominio de las escalas en base al valos de los datos que van en ejes 
-		// x (psu Lenguaje) e y (financiamiento)
-		this.xScale.domain(d3.extent(this.data, function(d) { return d[self.attrx]})).nice();
-
+		// Join entre datos y nodos tipo "circle"
 		this.nodes = this.svg.selectAll("circle")
-			.data(this.filtereData, function(d) {return (d.institucion+d.carrera)})
+			.data(this.filteredData, function(d) {return (d.institucion+d.carrera)})
 
+		// Eliminar los nodos para los cuales no hay asociación de datos
 		this.nodes.exit()
 				.transition()
 				.duration(2000)
@@ -156,18 +142,21 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("cy", this.height)
 				.attr("r", 0)
 				.remove()
-		
+
+		// Agregar nuevos nodos asociados a datos
 		this.nodes.enter()
 				.append("circle")
 				.attr("opacity", 0.8)
 				.attr("cx", 0)
-				.attr("cy", this.height)
+				.attr("cy", this.height) // Los ubica en esquina inferior izquierda originalmente
+				// Captura eventos para uso de tootlip
 				.on("mouseenter", function(d) {
 					pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
 					self.tooltip.show(d, pos)}
 					)
 				.on("mouseleave", function(d) {self.tooltip.hide()})
 
+		// Actualizar despliegue de nodos existentes
 		this.nodes
 				.transition()
 				.duration(2000)
@@ -178,7 +167,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.attr("opacity", function(d) {
 					// Verificar si el tipo de IE está cintenida en los tipos seleccionados
 					// y asignar valor de opacidad en concordancia
-					return _.contains(self.tiposSeleccionados, d[self.attrTipoIE]) ? 0.8 : 0.1
+					return _.contains(self.tiposSeleccionados, d[self.attrTipoIE]) ? 0.95 : 0.05
 				})
 
 
@@ -209,9 +198,6 @@ var VistaPrincipal = Backbone.View.extend({
 
 		$element = this.$el;
 
-		// Mostrar panel con opciones
-		$element.append(this.vistaOpciones.render().$el);
-
 		// Limpia datos de entrada (P.Ej. Cambiar duración de semestres a años)
 		this.data = _.map(this.data, function(d) {
 			//d.desercionagno1 = parseFloat(d.desercionagno1.replace(/\.|%/g,'').replace(/,/g,'.')).toString();
@@ -225,7 +211,10 @@ var VistaPrincipal = Backbone.View.extend({
 		// Tipos de IE (Universidades, CFT, ...)
 		// Es utilizado para cambiar el color de cada nodo 
 		this.tiposIEs = _.unique(_.pluck(this.data, this.attrTipoIE)).sort();
-		this.tiposSeleccionados = this.tiposIEs;  // Los tipos seleccionados se muestran con mayor intensidad
+
+		// Arreglo con los tidos de IES que están seleccionados para mostrarsse de manera destacada
+		// originalmente se sólo la última opción
+		this.tiposSeleccionados = this.tiposIEs;  
 
 		// Obtiene un arreglo con los nombres de las áreas
 		this.areas = _.unique(_.pluck(this.data,"area")).sort();
@@ -233,11 +222,31 @@ var VistaPrincipal = Backbone.View.extend({
 		this.color = d3.scale.category10();
 		this.color.domain(this.tiposIEs);
 
+		// Panels con opciones de visualización	(genera eventos selectVisualizacion o selectVulnerablidad
+    	// según las opciones seleccionadas)	
+		this.vistaOpciones= new VistaPanelOpciones({el:"#panelOpciones"});
+		this.vistaOpciones.on("selectTipoIE", this.selectTipoIE);
+		this.vistaOpciones.setColorScale(this.color);
+				// Mostrar panel con opciones
+		//$element.append(this.vistaOpciones.render().$el);
+		this.vistaOpciones.render();
 
 
 		// Genera menu con opciones de Area del Conocimiento (Educación, Ciencias Sociales, ...)
-		d3.select(this.el).append("select")
-			.attr("class", "area")
+		var selectorArea = d3.select(this.el)
+			.append("form")
+				.attr("class", "form-inline")
+			.append("div")
+				.attr("class", "control-group")
+
+		selectorArea.append("label")
+			.attr("class", "control-label")
+			.attr("for", "id_inputArea")
+			.text("Area");
+
+		selectorArea.append("select")
+			//.attr("class", "area")
+			.attr("id", "id_inputArea")
 			.selectAll("option")
 			.data(this.areas)
 			.enter()
@@ -330,7 +339,7 @@ var VistaPrincipal = Backbone.View.extend({
 
 		$(this.el).find("svg").find("g").first().append($(this.legend.el));
 
-		this.updateNodes();
+		this.reDraw();
 
 	}
 
@@ -343,26 +352,78 @@ var VistaPrincipal = Backbone.View.extend({
 // Crea un panel con opciones para seleccionar opciones de visualización
 var VistaPanelOpciones = Backbone.View.extend({
 	events: {
-		"click button.tipoIE": "selectTipoIE",
+		"change input": "selectTipoIE",
+	},
+
+	initialize: function() {
+		this.colorScale = d3.scale.ordinal();
+
 	},
 
 	selectTipoIE: function(e) {
-		var tipoIE = $(e.target).attr("tipoIE");
-		this.trigger("selectTipoIE", tipoIE);
+		// Obtiene arreglo con botones activos
+		$(this.el).find("input:checked")
+
+		var selectedButtons = d3.select(this.el).selectAll("input:checked")[0];
+
+		// Genera un arreglo con el texto de cada botón activo
+		var selectedValues = _.map(selectedButtons, function(d) {
+			return $(d).val();
+
+		})
+		this.trigger("selectTipoIE", selectedValues);
 	},
 
-
-	initialize: function() {
-
+	// Define escala de colores que es utilizada para obtener los nombres de las opciones (domain) y 
+	// los respectivos colores
+	setColorScale: function(colorScale) {
+		this.colorScale = colorScale;
 	},
 
 	render: function() {
-		$btngrp0 = $('<div class="btn-group" data-toggle="buttons-radio">');
-		$btngrp0.append('<button type="button" class="btn btn-primary tipoIE active" tipoIE="Centros de Formación Técnica">CFT</button>');
-		$btngrp0.append('<button type="button" class="btn btn-primary tipoIE" tipoIE="Institutos Profesionales">IP</button>');
-		$btngrp0.append('<button type="button" class="btn btn-primary tipoIE" tipoIE="Universidades">Universidades</button>');
 
-		this.$el.append($btngrp0);
+		/*
+		// Genera un grupo de botones con estilo Bootstrap que operen en modalidad checkbok (se puede seleccionar más de uno)
+		var btnGroup = d3.select(this.el).append("div")
+			.attr("class","btn-group")
+
+
+		// Genera un boton por cada categoría en la escala de colores (this.colorScale.domain())
+		btnGroup.selectAll("button")
+			.data(this.colorScale.domain())
+			.enter()
+			.append("button")
+				.attr("type","button")
+				.attr("class","btn")
+				.style("background-color", this.colorScale)
+				.text(function(d) {return d})
+
+		*/
+
+		var optionsGroup = d3.select(this.el).append("div")
+			.selectAll("label")
+			.data(this.colorScale.domain())
+			.enter()
+				.append("label")
+				.attr("class","checkbox inline");
+
+		optionsGroup.append("input")
+			.attr("type", "checkbox")
+			.attr("checked", true)
+			.attr("value", function(d) {return d})
+
+
+		optionsGroup.append("span")
+			.text(function(d) {return d})
+			.style("background-color", this.colorScale)
+
+
+
+
+
+
+		// Activa el último botón (vía JQuery)
+		$(this.el).find("button").last().button('toggle');
 
 		return this;
 	}
