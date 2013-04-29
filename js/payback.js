@@ -29,7 +29,7 @@ var VistaPrincipal = Backbone.View.extend({
 		this.attrx = "costo_estimado";  // Atributo de eje X
 		this.attry = "ingreso_agno4";	// Atributo en eje Y
 		this.attrsize = "";				// Atributo en base al cual se calcula el radio de cada nodo (no)
- 		this.attrTipoIE = "tipo_institucion_nivel_1";
+ 		this.attrTipoIE = "tipo_institucion_nivel_2";
   		this.attrcolor = this.attrTipoIE;	// Atributo en base al cual define color de los nodos
 
 
@@ -137,7 +137,7 @@ var VistaPrincipal = Backbone.View.extend({
 			// Captura eventos para uso de tootlip
 			.on("mouseenter", function(d) {
 				pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
-				self.tooltip.show(d, pos)}
+				self.tooltip.show(d)}
 				)
 			.on("mouseleave", function(d) {self.tooltip.hide()})
 

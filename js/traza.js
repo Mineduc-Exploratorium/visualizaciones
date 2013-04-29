@@ -127,8 +127,7 @@ var VistaPrincipal = Backbone.View.extend({
 		  .style("stroke-width", function(d) { return Math.max(1, d.dy); })
 		  .sort(function(a, b) { return b.dy - a.dy; })
 		  .on("mouseover", function(d) {
-				pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
-				self.tooltip.show(d, pos);
+				self.tooltip.show(d);
 			})			
 		  .on("mouseout", function(d) {
 				self.tooltip.hide();

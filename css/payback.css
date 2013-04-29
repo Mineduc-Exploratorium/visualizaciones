@@ -1,24 +1,3 @@
-
-circle {
-
-  stroke: rgb(31, 119, 180);
-  stroke-width: 1px;
-}
-
-circle.municipal {
-    fill: blue;
-    fill-opacity: 0.8;
-    //stroke: lightblue;
-    //stroke-width: 1px;
-}
-
-circle.otro {
-    fill: red;
-    fill-opacity: 0.8;
-    //stroke: lightblue;
-    //stroke-width: 1px;
-}
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto;
@@ -28,12 +7,5 @@ body {
 
 text {
    font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
 }
 

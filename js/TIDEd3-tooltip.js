@@ -15,35 +15,14 @@ var VistaToolTip = Backbone.View.extend({
 	//
 	// data: {nombre:"Escuela Arturo Prat", rbd: 123, ...}
 	// pos : {x: 100, y: 250}
-	show: function(data, pos) {
+	show: function(data) {
 		$tooltip = this.$el;
 		$tooltipcontent = $tooltip.find(".tooltipcontent")
 
 		$tooltipcontent.html(this.message(data));
-		// PRUEBA
-		/*
-		var msg = "Pos Y : " +pos.y;
-		msg += "<br>Scroll Y : " + $(window).scrollTop();
-		msg += "<br>Window H : " + $(window).height();
-		msg += "<br>Distacia Piso : " + (+$(window).height()-(+pos.y-$(window).scrollTop())) ;
-		msg += "<br>Mi alto : " + $tooltip.height();
-		*/
-		//$tooltipcontent.html(msg);
+		
+		var pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
 
-/*
-		// Recuerda la mayor altura del tooltip para evitar saltos erráticos
-		this.myHeight = $tooltip.height() > this.myHeight ? $tooltip.height() : this.myHeight;
-
-		var distanciaAlPiso = (+$(window).height()-(+pos.y-$(window).scrollTop()));
-		var miAlto = this.myHeight+40;
-
-		var posY;
-		if (distanciaAlPiso < miAlto) {
-			posY = pos.y - miAlto;
-		} else {
-			posY = pos.y+10;
-		}
-		*/
 
 		// Chequea si tooltip queda fuera del área visible
 		//var posY = pos.y-$(window).scrollTop() + $tooltip.height() < +$(window).height() ? pos.y +10 : $(window).height() + $(window).scrollTop() - $tooltip.height() -10 ;

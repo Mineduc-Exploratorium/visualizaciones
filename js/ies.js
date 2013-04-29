@@ -1,12 +1,5 @@
-var col;
-
 $().ready(function() {
-
 	vistaCarreras = new VistaCarreras2({el:"#carreras"});
-
-	window.testView = vistaCarreras;
-
-
 });
 
 
@@ -150,8 +143,7 @@ var VistaCarreras2 = Backbone.View.extend({
 		  .call(force.drag);
 		  
 		node.on("mouseover", function(d) {
-		     		pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
-					self.tooltip.show(d, pos)}
+					self.tooltip.show(d)}
 					)
 			.on("mouseout", function(d) {self.tooltip.hide()})
 
@@ -165,8 +157,6 @@ var VistaCarreras2 = Backbone.View.extend({
 		    .attr("cy", function(d) { return d.y; });
 		});
 
-
-//	$("body").append(this.tooltip.render().$el);
 
 	}
 

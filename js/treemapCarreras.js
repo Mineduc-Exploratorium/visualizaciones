@@ -123,8 +123,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.style("background", function(d) { return (!d.values && d.depth==1) ? color(d.ACREDITACION_CARRERA) : null; })
 				.text(function(d) { return d.children ? null : d.key; })
 				.on("mouseenter", function(d) {
-						pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
-						self.tooltip.show(d, pos)}
+						self.tooltip.show(d)}
 						)
 					.on("mouseleave", function(d) {self.tooltip.hide()})
 				
