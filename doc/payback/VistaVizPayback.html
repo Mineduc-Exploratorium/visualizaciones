@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: VistaPrincipal</title>
+    <title>JSDoc: Class: VistaVizPayback</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Class: VistaPrincipal</h1>
+    <h1 class="page-title">Class: VistaVizPayback</h1>
     
     
 
@@ -27,7 +27,7 @@
     
 <header>
     <h2>
-    VistaPrincipal
+    VistaVizPayback
     </h2>
     
         <div class="class-description">VistaPrincipal vista que despliega visualizacion de ingresos vs costos de carreras</div>
@@ -41,7 +41,7 @@
     
         
 <dt>
-    <h4 class="name" id="VistaPrincipal"><span class="type-signature"></span>new VistaPrincipal<span class="signature">(options)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="VistaVizPayback"><span class="type-signature"></span>new VistaVizPayback<span class="signature">(options)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -121,13 +121,13 @@
 	
         <tr>
             
-                <td class="name"><code>el</code></td>
+                <td class="name"><code>margin</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
             
@@ -137,9 +137,146 @@
             
             
             
-            <td class="description last">Identificador de elemento en DOM donde se despliegau la vista
+            <td class="description last">Objeto con definiciones de márgenes {top: 20, right: 20, bottom: 30, left: 20}</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
 
-VistaPrincipal Inicia parametros de configuración y llamada a datos</td>
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">ancho del área de despliegue SVG</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">alto del área de despliegue SVG</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">arreglo con datos (cada dato es un objeto con atributos)</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>chartParameters</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Model.Backbone</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">definiciones de los nombres de atributos utilizados en el gráfico</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>svg</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">d3.select()</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">elemento SVG utilizado como contenedor del gráfico</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tooltip</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Backbone.View</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last">vista utilizada como tooltip
+VistaVizPayback Inicia parametros de configuración y llamada a datos</td>
         </tr>
 	
 	
@@ -176,7 +313,7 @@ VistaPrincipal Inicia parametros de configuración y llamada a datos</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line22">line 22</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line130">line 130</a>
     </li></ul></dd>
     
     
@@ -228,7 +365,7 @@ VistaPrincipal Inicia parametros de configuración y llamada a datos</td>
         <dl>
             
 <dt>
-    <h4 class="name" id="reDraw"><span class="type-signature"></span>reDraw<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="getAreas"><span class="type-signature"></span>getAreas<span class="signature">()</span><span class="type-signature"> &rarr; {array}</span></h4>
     
     
 </dt>
@@ -236,8 +373,7 @@ VistaPrincipal Inicia parametros de configuración y llamada a datos</td>
     
     
     <div class="description">
-        Función que dibuja los elementos del gráfico. 
-Es llamada cada vez que se hace un cambuo (p.ej. selección de una nueva área)
+        Obtiene arreglo con el listado de áreas (disciplinas) de los datos en el gráfico
     </div>
     
 
@@ -270,7 +406,7 @@ Es llamada cada vez que se hace un cambuo (p.ej. selección de una nueva área)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line130">line 130</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line329">line 329</a>
     </li></ul></dd>
     
     
@@ -291,6 +427,111 @@ Es llamada cada vez que se hace un cambuo (p.ej. selección de una nueva área)
     
     
     
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">array</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="getColorScale"><span class="type-signature"></span>getColorScale<span class="signature">()</span><span class="type-signature"> &rarr; {d3.scale}</span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Obtiene la escala de colores del gráfico.
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line321">line 321</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">d3.scale</span>
+
+
+	</dd>
+</dl>
+
+        
     
     
 </dd>
@@ -339,7 +580,7 @@ Es llamada cada vez que se hace un cambuo (p.ej. selección de una nueva área)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line199">line 199</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line336">line 336</a>
     </li></ul></dd>
     
     
@@ -458,7 +699,7 @@ en un panel de usuario (this.vistaSelectorAreas)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line110">line 110</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line301">line 301</a>
     </li></ul></dd>
     
     
@@ -576,7 +817,7 @@ indique una nueva selección de tipos por parte de un panel de usuario.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line91">line 91</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line288">line 288</a>
     </li></ul></dd>
     
     
@@ -694,7 +935,7 @@ tooltip.tooltipMessage(data)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line69">line 69</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line266">line 266</a>
     </li></ul></dd>
     
     
@@ -757,13 +998,13 @@ tooltip.tooltipMessage(data)
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="VistaLoading.html">VistaLoading</a></li><li><a href="VistaPanelSelectorAreas.html">VistaPanelSelectorAreas</a></li><li><a href="VistaPanelTipoIE.html">VistaPanelTipoIE</a></li><li><a href="VistaPrincipal.html">VistaPrincipal</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="VistaLoading.html">VistaLoading</a></li><li><a href="VistaPanelSelectorAreas.html">VistaPanelSelectorAreas</a></li><li><a href="VistaPanelTipoIE.html">VistaPanelTipoIE</a></li><li><a href="VistaPrincipal.html">VistaPrincipal</a></li><li><a href="VistaVizPayback.html">VistaVizPayback</a></li></ul><h3>Events</h3><ul><li><a href="VistaPanelSelectorAreas.html#event:seleccionArea">seleccionArea</a></li><li><a href="VistaPanelTipoIE.html#event:seleccionTipoIE">seleccionTipoIE</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0-dev</a> on Mon Apr 29 2013 08:52:59 GMT-0400 (CLT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0-dev</a> on Mon Apr 29 2013 16:16:19 GMT-0400 (CLT)
 </footer>
 
 <script> prettyPrint(); </script>
