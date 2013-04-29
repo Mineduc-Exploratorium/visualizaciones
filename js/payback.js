@@ -338,10 +338,6 @@ var VistaPrincipal = Backbone.View.extend(
 
 });
 
-// Evento de salida:
-// - seleccionTipoIE(tiposSeleccionados)
-// -- tiposSeleccionados:  Arreglo con listado de tipos seleccionados (Ej. ["Universidades", "Institutos Profesionales"])
-// 
 var VistaPanelTipoIE = Backbone.View.extend(
 /** @lends VistaPanelTipoIE.prototype */
 {
@@ -369,8 +365,8 @@ var VistaPanelTipoIE = Backbone.View.extend(
 	* Método invocado al detectar evento "change" en la selección de opciones
 	* 
 	* @param {object} e Evento 	
+	* @fires VistaPanelTipoIE#seleccionTipoIE
 	*/
-
 	seleccionTipoIE: function(e) {
 		// Obtiene arreglo con botones activos
 		var selectedButtons = d3.select(this.el).selectAll("input:checked")[0];
@@ -380,6 +376,14 @@ var VistaPanelTipoIE = Backbone.View.extend(
 			return $(d).val();
 
 		})
+
+		/**
+		 * Evento que indica una selección de tipos de IE.
+		 *
+		 * @event VistaPanelTipoIE#seleccionTipoIE
+		 * @type {array}
+		 * @property {array} selectedValues - Arreglo con listado de tipos seleccionados (Ej. ["Universidades", "Institutos Profesionales"])
+		 */
 		this.trigger("seleccionTipoIE", selectedValues);
 	},
 
@@ -411,11 +415,7 @@ var VistaPanelTipoIE = Backbone.View.extend(
 	}
 });
 
-// 
-// Eventos de salida
-// - seleccionArea(area) 
-// -- area: identificador del área seleccionada
-// 
+
 var VistaPanelSelectorAreas = Backbone.View.extend(
 /** @lends VistaPanelSelectorAreas.prototype */
   {
@@ -443,10 +443,18 @@ var VistaPanelSelectorAreas = Backbone.View.extend(
 	* Método invocado al detectar evento "change" en el select con opciones de área
 	* 
 	* @param {object} e Evento 	
+	* @fires VistaPanelSelectorAreas#seleccionArea
 	*/
 	seleccionArea : function(e) {
 		area = $(e.target).val();
 
+		/**
+		 * Evento que indica una selección de área.
+		 *
+		 * @event VistaPanelSelectorAreas#seleccionArea
+		 * @type {string}
+		 * @property {string} area - Area seleccionada (Ej. "Salud")
+		 */
 		this.trigger("seleccionArea", area)
 	},
 
