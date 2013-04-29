@@ -12,9 +12,7 @@ var VistaPrincipal = Backbone.View.extend({
 	el:"body",
 
 	events : {
-		"change select.attrx" : "selectOption",
-		"change select.area" : "selectArea",
-		"mouseover" : "mousetrack"
+	
 
 	},
 	
@@ -36,7 +34,7 @@ var VistaPrincipal = Backbone.View.extend({
 		this.attry = "ingresoagno4";
 		this.attrsize = "empleabilidadagno1";
  		this.attrcolor = "acreditacion";
- 		this.area = "Administración y Comercio"
+ 		
  
     	// Carga de datos
     	//
@@ -69,24 +67,7 @@ var VistaPrincipal = Backbone.View.extend({
 		return msg;
 	}, 
 
-	selectOption : function(e) {
-		console.log("selectOption");
-		option = $(e.target).val();
-
-		this.attrx= option;
-		this.updateNodes();
-		console.log(this.etiquetas[this.attrX]);
-		
-	},
-
-	selectArea : function(e) {
-		console.log("selectArea");
-		option = $(e.target).val();
-
-		this.area= option;
-		this.updateNodes();
-	},
-
+	
 	cleanStringInt: function(n) {
 
 		//return n.replace("$", "").replace(" ", "").replace(".", "").replace(",", "").replace(/\.|%/g,'');

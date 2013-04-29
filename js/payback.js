@@ -217,16 +217,16 @@ var VistaPrincipal = Backbone.View.extend(
 
 		// Tipos de IE (Universidades, CFT, ...)
 		// Es utilizado para cambiar el color de cada nodo 
-		this.tiposIEs = _.unique(_.pluck(this.data, this.attrTipoIE)).sort();
+		this.tiposIEs = _.unique(_.pluck(this.data, this.attrTipoIE)).sort(); // ["Centros de Formación Técnica", "Institutos Profesionales", "Universidades CRUCH", "Universidades Privadas"]
 
 		// Arreglo con los tidos de IES que están seleccionados para mostrarsse de manera destacada
 		// originalmente se sólo la última opción
 		this.tiposSeleccionados = this.tiposIEs;  
 
 		// Obtiene un arreglo con los nombres de las áreas (Ej ["Salud", "Educación", ...])
-		this.areas = _.unique(_.pluck(this.data,"area")).sort();
+		this.areas = _.unique(_.pluck(this.data,"area")).sort(); //["Administración y Comercio", "Agropecuaria", "Arte y Arquitectura", "Ciencias Básicas", "Ciencias Sociales", "Derecho", "Educación", "Humanidades", "Salud", "Tecnología"]
 		// Selecciona la primera área como areaSeleccionada
-		this.areaSeleccionada = this.areas.length >0 ? this.areas[0] : ""; 
+		this.areaSeleccionada = this.areas.length >0 ? this.areas[0] : "";   //"Administración y Comercio"
 
 		// Filtra Data
 		// ===========
@@ -237,12 +237,14 @@ var VistaPrincipal = Backbone.View.extend(
 					(parseFloat(d[self.attrx])>0) && 	// Atributo x es un número válido
 					(d[self.attry] != "s/i");			// Atributo y es categoría valida (no s/i)
 		});
+		console.log(this.filteredData);
 
 		// Genera escalas
 		// ==============
 		// Genera escala de color utilizada en el gráfico
 		this.colorScale = d3.scale.category10();
 		// El dominio corresponde a los tipos de IEs
+		
 		this.colorScale.domain(this.tiposIEs);
 
 		// parametros de Ingreso: nombres (utilizado en eje Y); y piso (utilizado para calcular tiempo de break even)
