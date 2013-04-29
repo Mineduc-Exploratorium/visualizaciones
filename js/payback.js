@@ -47,7 +47,9 @@ var VistaPrincipal = Backbone.View.extend(
 		this.svg = d3.select(this.el).append("svg")
 
 		// Contenedor del panel de tipos
-		var elSelectorTipoIEs = d3.select(this.el).append("div").attr("id", "panelSelectorTipos")[0][0];
+		var elSelectorTipoIEs = d3.select(this.el).append("div")
+			.attr("id", "panelSelectorTipos")
+			.style("padding-left", "200px")[0][0];
 
 
 		// Vista con tooltip para mostrar ficha de establecimiento
