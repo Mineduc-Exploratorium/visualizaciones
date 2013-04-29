@@ -64,7 +64,7 @@ var VistaPrincipal = Backbone.View.extend({
 		var titles = treeCarreras.titles();
 
 		var color = d3.scale.ordinal()
-			.range(["red", "blue"]);
+			.range(["blue", "red"]);
 
 		var legendPlaceHolder = d3.select(this.el).append("div")
 		    .style("position", "relative")
@@ -84,6 +84,8 @@ var VistaPrincipal = Backbone.View.extend({
 
 		formatNumber = d3.format(",d");
 
+
+
 		// Barra con Títulos de cada grupo
 		mainDiv.append("div")
 			.style("position", "relative")
@@ -96,10 +98,12 @@ var VistaPrincipal = Backbone.View.extend({
 		    .enter()
 		    	.append("div")
 		    	.style("float", "left")
+		    	.style("position", "relative")
 		    	.style("width", function(d) {return d.width+"px"})
-		    	.style("height", 40 + "px")
-		    	.attr("class", "etiqueta")
-		    	.html(function(d) {return d.title +"<br>"+formatNumber(d.size) + " estudiantes"});
+		    	.append("div")
+		    	//.style("height", 40 + "px")
+		    		.attr("class", "etiqueta")
+		    		.html(function(d) {return d.title +"<br>"+formatNumber(d.size) + " estudiantes"});
 
 
 		// Despliegue de los nodos de carreras
@@ -119,8 +123,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.style("background", function(d) { return (!d.values && d.depth==1) ? color(d.ACREDITACION_CARRERA) : null; })
 				.text(function(d) { return d.children ? null : d.key; })
 				.on("mouseenter", function(d) {
-						pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
-						self.tooltip.show(d, pos)}
+						self.tooltip.show(d)}
 						)
 					.on("mouseleave", function(d) {self.tooltip.hide()})
 				

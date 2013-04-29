@@ -1,0 +1,10 @@
+value	source	target
+4316	2012-M	Centros de Formación Técnica
+6642	2012-M	Institutos Profesionales
+11125	2012-M	Universidades
+23	2012-PP	Centros de Formación Técnica
+110	2012-PP	Institutos Profesionales
+4329	2012-PP	Universidades
+5513	2012-PS	Centros de Formación Técnica
+11380	2012-PS	Institutos Profesionales
+30302	2012-PS	Universidades

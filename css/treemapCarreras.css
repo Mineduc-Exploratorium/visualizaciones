@@ -11,6 +11,8 @@ body {
   font-size: 10px;
   line-height: 10px;
   white-space: normal;
+  text-align: center;
+  bottom: 0px;
 }
 
 .node {
