@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: VistaPanelSelectorAreas</title>
+    <title>JSDoc: Class: VistaPanelTipoIE</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Class: VistaPanelSelectorAreas</h1>
+    <h1 class="page-title">Class: VistaPanelTipoIE</h1>
     
     
 
@@ -27,10 +27,10 @@
     
 <header>
     <h2>
-    VistaPanelSelectorAreas
+    VistaPanelTipoIE
     </h2>
     
-        <div class="class-description">VistaPanelSelectorAreas Panel con un elemento "select" que permite escoger un área que será utilizada para modificar el despliegue del gráfico</div>
+        <div class="class-description">VistaPanelTipoIE Panel con un elementos (checkboxes) que permiten seleccionar un conjunto de "tipos de IEs" (Ej. ["Universidades", "Institutos Profesionales"])</div>
     
 </header>  
 
@@ -41,7 +41,7 @@
     
         
 <dt>
-    <h4 class="name" id="VistaPanelSelectorAreas"><span class="type-signature"></span>new VistaPanelSelectorAreas<span class="signature">(options)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="VistaPanelTipoIE"><span class="type-signature"></span>new VistaPanelTipoIE<span class="signature">(options)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -144,7 +144,7 @@
 	
         <tr>
             
-                <td class="name"><code>areas</code></td>
+                <td class="name"><code>colorScale</code></td>
             
             
             <td class="type">
@@ -160,7 +160,7 @@
             
             
             
-            <td class="description last">Arreglo con el listado de áreas a seleccionar (Ej. ["Salud", "Educación", ...])</td>
+            <td class="description last">escala ordinal de d3 con categorías en domain() y colores en range()</td>
         </tr>
 	
 	
@@ -197,7 +197,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line432">line 432</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line419">line 419</a>
     </li></ul></dd>
     
     
@@ -290,7 +290,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line464">line 464</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line458">line 458</a>
     </li></ul></dd>
     
     
@@ -318,7 +318,7 @@
         
             
 <dt>
-    <h4 class="name" id="seleccionArea"><span class="type-signature"></span>seleccionArea<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="seleccionTipoIE"><span class="type-signature"></span>seleccionTipoIE<span class="signature">(e)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -326,7 +326,7 @@
     
     
     <div class="description">
-        Método invocado al detectar evento "change" en el select con opciones de área
+        Método invocado al detectar evento "change" en la selección de opciones
     </div>
     
 
@@ -407,7 +407,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line448">line 448</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line435">line 435</a>
     </li></ul></dd>
     
     
@@ -422,7 +422,7 @@
     
     <h5>Fires:</h5>
     <ul>
-        <li><a href="VistaPanelSelectorAreas.html#event:seleccionArea">VistaPanelSelectorAreas#event:seleccionArea</a></li>
+        <li><a href="VistaPanelTipoIE.html#event:seleccionTipoIE">VistaPanelTipoIE#event:seleccionTipoIE</a></li>
     </ul>
     
 
@@ -448,7 +448,7 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="event:seleccionArea">seleccionArea</h4>
+    <h4 class="name" id="event:seleccionTipoIE">seleccionTipoIE</h4>
     
     
 </dt>
@@ -456,7 +456,7 @@
     
     
     <div class="description">
-        Evento que indica una selección de área.
+        Evento que indica una selección de tipos de IE.
     </div>
     
 
@@ -465,7 +465,7 @@
         <ul>
             <li>
                 
-<span class="param-type">string</span>
+<span class="param-type">array</span>
 
 
             </li>
@@ -506,13 +506,13 @@
 	
         <tr>
             
-                <td class="name"><code>area</code></td>
+                <td class="name"><code>selectedValues</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">array</span>
 
 
             
@@ -522,7 +522,7 @@
             
             
             
-            <td class="description last">Area seleccionada (Ej. "Salud")</td>
+            <td class="description last">Arreglo con listado de tipos seleccionados (Ej. ["Universidades", "Institutos Profesionales"])</td>
         </tr>
 	
 	
@@ -550,7 +550,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line451">line 451</a>
+        <a href="payback.js.html">payback.js</a>, <a href="payback.js.html#line445">line 445</a>
     </li></ul></dd>
     
     
@@ -587,13 +587,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="VistaLoading.html">VistaLoading</a></li><li><a href="VistaPanelSelectorAreas.html">VistaPanelSelectorAreas</a></li><li><a href="VistaPanelTipoIE.html">VistaPanelTipoIE</a></li><li><a href="VistaPrincipal.html">VistaPrincipal</a></li></ul><h3>Events</h3><ul><li><a href="VistaPanelSelectorAreas.html#event:seleccionArea">seleccionArea</a></li><li><a href="VistaPanelTipoIE.html#event:seleccionTipoIE">seleccionTipoIE</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="VistaLoading.html">VistaLoading</a></li><li><a href="VistaPanelSelectorAreas.html">VistaPanelSelectorAreas</a></li><li><a href="VistaPanelTipoIE.html">VistaPanelTipoIE</a></li><li><a href="VistaPrincipal.html">VistaPrincipal</a></li><li><a href="VistaVizPayback.html">VistaVizPayback</a></li></ul><h3>Events</h3><ul><li><a href="VistaPanelSelectorAreas.html#event:seleccionArea">seleccionArea</a></li><li><a href="VistaPanelTipoIE.html#event:seleccionTipoIE">seleccionTipoIE</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0-dev</a> on Mon Apr 29 2013 11:19:14 GMT-0400 (CLT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0-dev</a> on Mon Apr 29 2013 16:16:18 GMT-0400 (CLT)
 </footer>
 
 <script> prettyPrint(); </script>
