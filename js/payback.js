@@ -72,7 +72,7 @@ var VistaPrincipal = Backbone.View.extend(
 		// Crea un nuevo panel para seleccionar áreas
 		// -----------------------------------------
 		// Genera el contenido del panel y escucha a evento con area seleccionada
-		this.vistaSelectorAreas = new VistaPanelSelectorAreas({el: "#panelSelectorAreas", areas: this.vizView.areas})
+		this.vistaSelectorAreas = new VistaPanelSelectorAreas({el: "#panelSelectorAreas", areas: this.vizView.getAreas()})
 		this.vistaSelectorAreas.on("seleccionArea", this.vizView.seleccionArea);
 
 
