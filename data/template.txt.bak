@@ -1,0 +1,1405 @@
+institucion	carrera	area	tipo_institucion_nivel_1	duracion_real	ingreso_agno4	arancel
+CFT Andrés Bello	Administración de Empresas	Administración y Comercio	Centros de Formación Técnica	6.1	Menor a $400 mil	660000
+CFT Andrés Bello	Asistente Jurídico	Derecho	Centros de Formación Técnica	6.5	s/i	660000
+CFT Andrés Bello	Computación e Informática	Tecnología	Centros de Formación Técnica	6.8	Menor a $400 mil	700000
+CFT Andrés Bello	Contabilidad General	Administración y Comercio	Centros de Formación Técnica	6.4	s/i	660000
+CFT Andrés Bello	Electrónica Industrial	Tecnología	Centros de Formación Técnica	7.3	Menor a $400 mil	700000
+CFT Andrés Bello	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	6.4	De $400 mil a $600 mil	700000
+CFT Andrés Bello	Técnico en Construcción Civil	Tecnología	Centros de Formación Técnica	7.6	s/i	700000
+CFT Andrés Bello	Técnico en Trabajo Social	Ciencias Sociales	Centros de Formación Técnica	6.1	s/i	660000
+CFT Barros Arana	Técnico en Enfermería	Salud	Centros de Formación Técnica	6.8	Menor a $400 mil	1000000
+CFT CEDUC - UCN	Electricidad y Electrónica Industrial	Tecnología	Centros de Formación Técnica	6.7	s/i	1104240
+CFT CEDUC - UCN	Enfermería y Telemedicina	Salud	Centros de Formación Técnica	6.5	s/i	1105296
+CFT CEDUC - UCN	Maquinaria Pesada	Tecnología	Centros de Formación Técnica	7.5	s/i	1114801
+CFT CEDUC - UCN	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	7.0	s/i	1108537
+CFT Ceitec	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	6.0	s/i	720000
+CFT Ceponal	Técnico en Enfermería	Salud	Centros de Formación Técnica	6.1	s/i	1100000
+CFT Crecic	Administración de Empresas (Modulos)	Administración y Comercio	Centros de Formación Técnica	6.8	s/i	728219
+CFT Crecic	Secretariado	Administración y Comercio	Centros de Formación Técnica	6.7	s/i	780000
+CFT Cámara de Comercio de Santiago	Administración Comercial	Administración y Comercio	Centros de Formación Técnica	6.6	s/i	1080292
+CFT Cámara de Comercio de Santiago	Administración en Comercio Exterior	Administración y Comercio	Centros de Formación Técnica	6.9	De $400 mil a $600 mil	1071471
+CFT Cámara de Comercio de Santiago	Logística Operativa	Administración y Comercio	Centros de Formación Técnica	6.4	s/i	1132946
+CFT DUOC UC	Administración Financiera	Administración y Comercio	Centros de Formación Técnica	6.3	De $600 mil a $800 mil	1200000
+CFT DUOC UC	Administración Hotelera, Turismo de Aventura, Turismo Técnico mención en Empresas Turísticas	Administración y Comercio	Centros de Formación Técnica	7.4	De $400 mil a $600 mil	1350682
+CFT DUOC UC	Administración de Empresas mención Marketing	Administración y Comercio	Centros de Formación Técnica	6.5	De $400 mil a $600 mil	1187576
+CFT DUOC UC	Administración de Recursos Humanos	Administración y Comercio	Centros de Formación Técnica	6.2	De $400 mil a $600 mil	1191002
+CFT DUOC UC	Administración de Redes Computacionales	Tecnología	Centros de Formación Técnica	6.7	s/i	1320000
+CFT DUOC UC	Asistente Ejecutivo	Administración y Comercio	Centros de Formación Técnica	6.5	s/i	1080000
+CFT DUOC UC	Comercio Exterior	Administración y Comercio	Centros de Formación Técnica	6.3	De $400 mil a $600 mil	1200000
+CFT DUOC UC	Contabilidad General mención Legislación Tributaria	Administración y Comercio	Centros de Formación Técnica	6.6	De $600 mil a $800 mil	1150000
+CFT DUOC UC	Gastronomía	Administración y Comercio	Centros de Formación Técnica	7.7	Menor a $400 mil	1630000
+CFT DUOC UC	Técnico Jurídico	Derecho	Centros de Formación Técnica	6.6	s/i	1121535
+CFT DUOC UC	Técnico en Gestión Logística	Administración y Comercio	Centros de Formación Técnica	s/i	s/i	1200000
+CFT Diego Portales	Asistente Técnico del Educador de Párvulos	Educación	Centros de Formación Técnica	6.7	Menor a $400 mil	717431
+CFT Diego Portales	Asistente del Educador Diferencial	Educación	Centros de Formación Técnica	6.0	Menor a $400 mil	600000
+CFT Diego Portales	Gastronomía y Cocina Internacional	Administración y Comercio	Centros de Formación Técnica	8.7	Menor a $400 mil	1123755
+CFT Diego Portales	Secreatariado Ejecutivo Computacional	Administración y Comercio	Centros de Formación Técnica	6.4	Menor a $400 mil	668000
+CFT Diego Portales	Técnico en Construcción	Tecnología	Centros de Formación Técnica	6.0	Menor a $400 mil	680855
+CFT EDUCAP	Gestión Contable y Tributaria	Administración y Comercio	Centros de Formación Técnica	6.1	s/i	627000
+CFT EDUCAP	Técnico en Educación Parvularia	Educación	Centros de Formación Técnica	6.2	Menor a $400 mil	627000
+CFT Escuela Superior de Administración de Negocios del Norte ESANE	Prevención de Riesgos Modular	Tecnología	Centros de Formación Técnica	7.4	De $800 mil a $1 millón	s/i
+CFT Escuela de Intérpretes INCENI	Intérprete Inglés-Castellano	Humanidades	Centros de Formación Técnica	s/i	De $400 mil a $600 mil	1090000
+CFT Fontanar	Servicios Gastronómicos Hoteleros y de Restaurante	Administración y Comercio	Centros de Formación Técnica	7.5	s/i	1091748
+CFT Fontanar	Técnico en Enfermería	Salud	Centros de Formación Técnica	5.7	s/i	920796
+CFT ICEL	Cocina Nacional e Internacional	Administración y Comercio	Centros de Formación Técnica	6.4	s/i	859000
+CFT ICEL	Mecánica Automotriz	Tecnología	Centros de Formación Técnica	7.1	De $400 mil a $600 mil	779000
+CFT ICEL	Técnico Jurídico	Derecho	Centros de Formación Técnica	6.8	s/i	565890
+CFT ICEL	Técnico en Educación Parvularia	Educación	Centros de Formación Técnica	6.4	Menor a $400 mil	579000
+CFT ICEL	Técnico en Odontología	Salud	Centros de Formación Técnica	6.0	s/i	739000
+CFT INACAP	Administración de Empresas mención Finanzas	Administración y Comercio	Centros de Formación Técnica	6.8	De $400 mil a $600 mil	1360797
+CFT INACAP	Analista Programador	Tecnología	Centros de Formación Técnica	8.4	De $600 mil a $800 mil	1392110
+CFT INACAP	Asistente Jurídico	Derecho	Centros de Formación Técnica	7.2	De $400 mil a $600 mil	1038250
+CFT INACAP	Asistente en Educación de Párvulos	Educación	Centros de Formación Técnica	5.8	s/i	1185534
+CFT INACAP	Automatización y Control Industrial	Tecnología	Centros de Formación Técnica	7.3	De $600 mil a $800 mil	1360324
+CFT INACAP	Biotecnología Industrial	Tecnología	Centros de Formación Técnica	7.0	s/i	1220091
+CFT INACAP	Comercio Exterior	Administración y Comercio	Centros de Formación Técnica	7.0	De $400 mil a $600 mil	1235663
+CFT INACAP	Contabilidad General	Administración y Comercio	Centros de Formación Técnica	6.8	De $400 mil a $600 mil	1355371
+CFT INACAP	Dibujo Técnico Industrial	Tecnología	Centros de Formación Técnica	6.5	De $600 mil a $800 mil	1158000
+CFT INACAP	Dibujo de Proyectos de Arquitectura e Ingeniería	Arte y Arquitectura	Centros de Formación Técnica	7.0	De $400 mil a $600 mil	1076667
+CFT INACAP	Diseño y Programación Multimedia	Tecnología	Centros de Formación Técnica	6.6	s/i	1234123
+CFT INACAP	Electricidad Industrial mención Electromecánica	Tecnología	Centros de Formación Técnica	7.6	De $600 mil a $800 mil	1343019
+CFT INACAP	Electrónica Industrial	Tecnología	Centros de Formación Técnica	7.6	De $600 mil a $800 mil	1336243
+CFT INACAP	Gastronomía Internacional	Administración y Comercio	Centros de Formación Técnica	7.6	Menor a $400 mil	1634850
+CFT INACAP	Gestión y Control de Calidad	Administración y Comercio	Centros de Formación Técnica	6.2	De $400 mil a $600 mil	1121583
+CFT INACAP	Laboratorista Clínico, Banco de Sangre e Imagenología	Salud	Centros de Formación Técnica	6.1	s/i	1243970
+CFT INACAP	Laboratorista Químico Minero	Tecnología	Centros de Formación Técnica	8.0	De $400 mil a $600 mil	1254052
+CFT INACAP	Logística	Administración y Comercio	Centros de Formación Técnica	6.5	s/i	1302028
+CFT INACAP	Mantenimiento Industrial	Tecnología	Centros de Formación Técnica	6.8	De $600 mil a $800 mil	1391438
+CFT INACAP	Mecánica Automotriz	Tecnología	Centros de Formación Técnica	7.2	De $400 mil a $600 mil	1414795
+CFT INACAP	Mecánica en Producción Industrial	Tecnología	Centros de Formación Técnica	6.7	s/i	1436735
+CFT INACAP	Paisajismo	Arte y Arquitectura	Centros de Formación Técnica	6.1	s/i	1988000
+CFT INACAP	Preparador Físico	Educación	Centros de Formación Técnica	6.9	s/i	1179717
+CFT INACAP	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	7.1	De $600 mil a $800 mil	1366217
+CFT INACAP	Programador de Aplicaciones Computacionales	Tecnología	Centros de Formación Técnica	s/i	s/i	1374281
+CFT INACAP	Refrigeración y Climatización	Tecnología	Centros de Formación Técnica	6.4	De $400 mil a $600 mil	1498305
+CFT INACAP	Soporte Computacional	Tecnología	Centros de Formación Técnica	7.5	De $400 mil a $600 mil	1150159
+CFT INACAP	Tecnología Agrícola	Agropecuaria	Centros de Formación Técnica	6.4	De $400 mil a $600 mil	1431290
+CFT INACAP	Tecnología Industrial de los Alimentos	Tecnología	Centros de Formación Técnica	7.1	De $400 mil a $600 mil	1282821
+CFT INACAP	Tecnología en Operaciones Mineras y Metalurgia	Tecnología	Centros de Formación Técnica	7.9	s/i	1337695
+CFT INACAP	Tecnología en Vitivinicultura	Agropecuaria	Centros de Formación Técnica	6.7	s/i	1219267
+CFT INACAP	Telecomunicaciones, Conectividad y Redes	Tecnología	Centros de Formación Técnica	6.6	De $400 mil a $600 mil	1463035
+CFT INACAP	Topografía	Tecnología	Centros de Formación Técnica	6.7	s/i	1213327
+CFT INACAP	Técnico en Construcción y Edificación	Tecnología	Centros de Formación Técnica	6.3	De $400 mil a $600 mil	1355120
+CFT INACAP	Técnico en Enfermería	Salud	Centros de Formación Técnica	6.5	Menor a $400 mil	1318487
+CFT INACAP	Técnico en Farmacia	Salud	Centros de Formación Técnica	6.2	s/i	1180742
+CFT INACAP	Técnico en Hoteles y Restaurantes, y Turismo con menciones	Administración y Comercio	Centros de Formación Técnica	6.9	Menor a $400 mil	1419299
+CFT INACAP	Técnico en Odontología	Salud	Centros de Formación Técnica	5.7	Menor a $400 mil	1290858
+CFT Instituto Central de Capacitación Educacional ICCE	Administración de Empresas	Administración y Comercio	Centros de Formación Técnica	9.0	s/i	906308
+CFT Instituto Superior de Estudios Jurídicos CANON	Técnico Jurídico	Derecho	Centros de Formación Técnica	7.5	De $400 mil a $600 mil	743725
+CFT Instituto Tecnológico de Chile I.T.C.	Análisis de Sistemas	Tecnología	Centros de Formación Técnica	9.5	De $600 mil a $800 mil	888874
+CFT Instituto Tecnológico de Chile I.T.C.	Gestión de Soporte y Redes	Tecnología	Centros de Formación Técnica	s/i	s/i	800128
+CFT Instituto de Secretariado INSEC	Secretariado Ejecutivo Bilingüe	Administración y Comercio	Centros de Formación Técnica	7.1	Menor a $400 mil	616800
+CFT Instituto de Secretariado INSEC	Secretariado Ejecutivo Gerencial	Administración y Comercio	Centros de Formación Técnica	6.3	Menor a $400 mil	666011
+CFT Iprosec	Técnico de Nivel Superior en Administración de Empresas	Administración y Comercio	Centros de Formación Técnica	5.8	s/i	662400
+CFT Iprosec	Técnico de Nivel Superior en Asistente de Párvulos	Educación	Centros de Formación Técnica	5.9	s/i	688900
+CFT Iprosec	Técnico de Nivel Superior en Electricidad	Tecnología	Centros de Formación Técnica	5.8	s/i	902300
+CFT Juan Bohon	Asistente de Educador de Párvulos	Educación	Centros de Formación Técnica	6.8	s/i	649000
+CFT Juan Bohon	Gastronomía y Cocina Internacional	Administración y Comercio	Centros de Formación Técnica	6.2	s/i	979000
+CFT Juan Bohon	Topografía	Tecnología	Centros de Formación Técnica	6.2	s/i	759000
+CFT La Araucana	Administración de Empresas	Administración y Comercio	Centros de Formación Técnica	6.6	De $400 mil a $600 mil	859536
+CFT La Araucana	Administración de Sistemas Logísticos	Administración y Comercio	Centros de Formación Técnica	7.0	s/i	866878
+CFT La Araucana	Administración y Soporte de Redes	Tecnología	Centros de Formación Técnica	9.3	s/i	939899
+CFT La Araucana	Asistente de Educación Parvularia y Básica	Educación	Centros de Formación Técnica	6.5	s/i	708457
+CFT La Araucana	Contabilidad General	Administración y Comercio	Centros de Formación Técnica	6.8	s/i	879058
+CFT La Araucana	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	6.7	s/i	887631
+CFT La Araucana	Producción y Gestión de Eventos	Administración y Comercio	Centros de Formación Técnica	7.3	s/i	775018
+CFT La Araucana	Técnico Jurídico	Derecho	Centros de Formación Técnica	6.7	s/i	697239
+CFT Laplace	Administración de Empresas mención Gestión de Marketing, Personal o Finanzas	Administración y Comercio	Centros de Formación Técnica	s/i	De $400 mil a $600 mil	620000
+CFT Los Leones	Laboratorista Dental	Salud	Centros de Formación Técnica	6.4	Menor a $400 mil	888548
+CFT Los Leones	Secretariado Ejecutivo Computacional	Administración y Comercio	Centros de Formación Técnica	6.7	Menor a $400 mil	491767
+CFT Los Leones	Turismo	Administración y Comercio	Centros de Formación Técnica	7.8	De $400 mil a $600 mil	562767
+CFT Lota-Arauco	Administración Pública	Ciencias Sociales	Centros de Formación Técnica	6.0	Menor a $400 mil	1037841
+CFT Lota-Arauco	Administración de Redes y Soporte Computacional	Tecnología	Centros de Formación Técnica	6.7	Menor a $400 mil	1037841
+CFT Lota-Arauco	Mecánica Industrial	Tecnología	Centros de Formación Técnica	7.5	De $400 mil a $600 mil	1037841
+CFT Lota-Arauco	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	7.2	De $400 mil a $600 mil	1037841
+CFT Lota-Arauco	Técnico de Nivel Superior en Industrias de la Madera	Tecnología	Centros de Formación Técnica	8.5	s/i	1037841
+CFT Luis Alberto Vera	Asistente de Educación Parvularia	Educación	Centros de Formación Técnica	s/i	s/i	800000
+CFT Magnos	Administración de Empresas mención Marketing y Ventas	Administración y Comercio	Centros de Formación Técnica	6.3	s/i	888000
+CFT Magnos	Asistente de Odontología	Salud	Centros de Formación Técnica	6.3	s/i	988000
+CFT Magnos	Técnico en Enfermería	Salud	Centros de Formación Técnica	6.2	s/i	988000
+CFT Manpower	Administración de Empresas mención Marketing y Ventas o Comercio Exterior o Gestión de Capital Humano	Administración y Comercio	Centros de Formación Técnica	7.3	s/i	1085000
+CFT Manpower	Asistente Ejecutivo Bilingüe	Administración y Comercio	Centros de Formación Técnica	6.4	s/i	1438679
+CFT Massachusetts	Secretariado Ejecutivo Computacional mención Jurídica o Relaciones Públicas	Administración y Comercio	Centros de Formación Técnica	s/i	s/i	599500
+CFT Massachusetts	Técnico Jurídico	Derecho	Centros de Formación Técnica	7.5	Menor a $400 mil	599500
+CFT Massachusetts	Técnico en Construcción	Tecnología	Centros de Formación Técnica	7.0	s/i	599500
+CFT Massachusetts	Técnico en Enfermería	Salud	Centros de Formación Técnica	7.1	Menor a $400 mil	894631
+CFT Profasoc	Técnico de Nivel Superior en Enfermería	Salud	Centros de Formación Técnica	7.8	s/i	1000000
+CFT Salesianos Don Bosco	Electrónica Industrial	Tecnología	Centros de Formación Técnica	8.1	De $400 mil a $600 mil	1086750
+CFT Salesianos Don Bosco	Técnico en Mecánica Automotriz	Tecnología	Centros de Formación Técnica	8.7	De $400 mil a $600 mil	1086750
+CFT Salesianos Don Bosco	Técnico en Mecánica Industrial	Tecnología	Centros de Formación Técnica	7.4	s/i	1086750
+CFT San Agustín de Talca	Técnico Social con Mención	Ciencias Sociales	Centros de Formación Técnica	s/i	s/i	955000
+CFT San Agustín de Talca	Técnico en Obras Civiles	Tecnología	Centros de Formación Técnica	8.0	De $400 mil a $600 mil	1156000
+CFT Santo Tomás	Agente de Ventas mención Visitador Médico	Salud	Centros de Formación Técnica	7.6	De $400 mil a $600 mil	1076013
+CFT Santo Tomás	Cocina Internacional y Tradicional Chilena	Administración y Comercio	Centros de Formación Técnica	7.2	Menor a $400 mil	1260771
+CFT Santo Tomás	Contabilidad General	Administración y Comercio	Centros de Formación Técnica	7.1	s/i	909427
+CFT Santo Tomás	Higienista Dental	Salud	Centros de Formación Técnica	6.5	Menor a $400 mil	1099701
+CFT Santo Tomás	Laboratorista Dental	Salud	Centros de Formación Técnica	7.5	Menor a $400 mil	1174811
+CFT Santo Tomás	Preparador Físico	Educación	Centros de Formación Técnica	7.2	s/i	1089125
+CFT Santo Tomás	Prevención de Riesgos	Tecnología	Centros de Formación Técnica	6.7	De $400 mil a $600 mil	1046455
+CFT Santo Tomás	Topografía	Tecnología	Centros de Formación Técnica	6.2	s/i	921599
+CFT Santo Tomás	Técnico Agrícola	Agropecuaria	Centros de Formación Técnica	7.3	De $400 mil a $600 mil	1028389
+CFT Santo Tomás	Técnico Jurídico	Derecho	Centros de Formación Técnica	7.2	De $400 mil a $600 mil	925598
+CFT Santo Tomás	Técnico en Administración	Administración y Comercio	Centros de Formación Técnica	5.6	s/i	957839
+CFT Santo Tomás	Técnico en Análisis Químico	Tecnología	Centros de Formación Técnica	s/i	De $400 mil a $600 mil	1120065
+CFT Santo Tomás	Técnico en Construcciones Civiles	Tecnología	Centros de Formación Técnica	7.4	s/i	985941
+CFT Santo Tomás	Técnico en Educación Especial	Educación	Centros de Formación Técnica	6.5	Menor a $400 mil	951978
+CFT Santo Tomás	Técnico en Educación Parvularia	Educación	Centros de Formación Técnica	6.0	Menor a $400 mil	882286
+CFT Santo Tomás	Técnico en Enfermería	Salud	Centros de Formación Técnica	6.7	Menor a $400 mil	1252721
+CFT Santo Tomás	Técnico en Laboratorio Clínico Banco de Sangre e Imagenología	Salud	Centros de Formación Técnica	6.3	s/i	1079425
+CFT Santo Tomás	Técnico en Podología Clínica	Salud	Centros de Formación Técnica	6.2	s/i	979860
+CFT Santo Tomás	Técnico en Producción Acuícola	Agropecuaria	Centros de Formación Técnica	9.9	s/i	850000
+CFT Simón Bolívar	Administración de Empresas	Administración y Comercio	Centros de Formación Técnica	7.5	De $400 mil a $600 mil	495000
+CFT Simón Bolívar	Análisis de Sistemas	Tecnología	Centros de Formación Técnica	10.2	De $400 mil a $600 mil	495000
+CFT Simón Bolívar	Comercio Exterior	Administración y Comercio	Centros de Formación Técnica	7.2	De $400 mil a $600 mil	495000
+CFT Simón Bolívar	Contabilidad	Administración y Comercio	Centros de Formación Técnica	7.0	De $400 mil a $600 mil	495000
+CFT Simón Bolívar	Control Industrial	Tecnología	Centros de Formación Técnica	8.0	De $400 mil a $600 mil	495000
+CFT Simón Bolívar	Secretariado Ejecutivo Bilingüe	Administración y Comercio	Centros de Formación Técnica	6.9	Menor a $400 mil	495000
+CFT Simón Bolívar	Turismo y Hotelería	Administración y Comercio	Centros de Formación Técnica	6.8	Menor a $400 mil	495000
+CFT Simón Bolívar	Técnico Jurídico	Derecho	Centros de Formación Técnica	7.7	De $400 mil a $600 mil	495000
+CFT Simón Bolívar	Técnico en Arsenalería Quirúrgica	Salud	Centros de Formación Técnica	9.0	s/i	620000
+CFT Simón Bolívar	Técnico en Enfermería Médica	Salud	Centros de Formación Técnica	7.5	s/i	620000
+CFT UCEVALPO	Construcción	Tecnología	Centros de Formación Técnica	8.6	s/i	950000
+CFT UCEVALPO	Prevención de Riesgos Industriales	Tecnología	Centros de Formación Técnica	7.6	s/i	950000
+CFT UDA	Instrumentación Industrial	Tecnología	Centros de Formación Técnica	9.7	s/i	1070000
+CFT UValpo	Contabilidad General	Administración y Comercio	Centros de Formación Técnica	s/i	s/i	1004258
+CFT UValpo	Técnico de Nivel Superior en Enfermería	Salud	Centros de Formación Técnica	7.6	Menor a $400 mil	1134346
+CFT de ENAC	Técnico en Educación Parvularia y Nivel Básico	Educación	Centros de Formación Técnica	6.5	s/i	649667
+CFT de ENAC	Técnico en Enfermería	Salud	Centros de Formación Técnica	6.8	Menor a $400 mil	980000
+CFT de ENAC	Técnico en Imagenología y Radioterapia	Salud	Centros de Formación Técnica	6.6	s/i	970000
+CFT de ENAC	Técnico en Laboratorio Clínico y Banco de Sangre	Salud	Centros de Formación Técnica	7.1	s/i	970000
+CFT de ENAC	Técnico en Trabaso Social	Ciencias Sociales	Centros de Formación Técnica	6.4	Menor a $400 mil	698722
+CFT de Enseñanza de Alta Costura Paulina Diard	Diseño de Vestuario, Moldaje y Confección	Arte y Arquitectura	Centros de Formación Técnica	6.7	s/i	798000
+CFT de Tarapacá	Asistencia Jurídica	Derecho	Centros de Formación Técnica	7.1	Menor a $400 mil	1125000
+CFT de Tarapacá	Técnico en Administración Pública	Ciencias Sociales	Centros de Formación Técnica	7.7	s/i	1020000
+CFT del Medio Ambiente	Ecoturismo	Administración y Comercio	Centros de Formación Técnica	s/i	s/i	1360800
+CFT del Medio Ambiente	Prevención de Riesgos y Medio Ambiente	Tecnología	Centros de Formación Técnica	7.2	s/i	848909
+CFT del Medio Ambiente	Salud y Terapias Naturales	Salud	Centros de Formación Técnica	6.4	s/i	1326830
+IP AIEP	Asistente de Párvulo	Educación	Institutos Profesionales	6.0	Menor a $400 mil	933253
+IP AIEP	Auditoría	Administración y Comercio	Institutos Profesionales	10.1	s/i	1072032
+IP AIEP	Comunicación y Relaciones Públicas	Ciencias Sociales	Institutos Profesionales	6.6	De $400 mil a $600 mil	1112146
+IP AIEP	Construcción Civil	Tecnología	Institutos Profesionales	10.4	s/i	1075490
+IP AIEP	Contabilidad General	Administración y Comercio	Institutos Profesionales	6.3	De $400 mil a $600 mil	1068033
+IP AIEP	Dibujo de Arquitectura y Obras Civiles	Arte y Arquitectura	Institutos Profesionales	6.6	De $400 mil a $600 mil	1031510
+IP AIEP	Diseño Gráfico	Arte y Arquitectura	Institutos Profesionales	6.7	Menor a $400 mil	1118568
+IP AIEP	Diseño Gráfico Profesional	Arte y Arquitectura	Institutos Profesionales	8.9	s/i	1147231
+IP AIEP	Diseño de Vestuario Profesional mención Alta Costura	Arte y Arquitectura	Institutos Profesionales	9.6	s/i	1370000
+IP AIEP	Ingeniería de Ejecución en Informática	Tecnología	Institutos Profesionales	10.2	De $800 mil a $1 millón	1110213
+IP AIEP	Ingeniería de Ejecución en Sonido	Tecnología	Institutos Profesionales	12.0	s/i	1292808
+IP AIEP	Ingeniería en Prevención de Riesgos	Tecnología	Institutos Profesionales	10.1	s/i	1086182
+IP AIEP	Masoterapia	Salud	Institutos Profesionales	6.1	s/i	1460000
+IP AIEP	Peluquería y Cosmetología	Arte y Arquitectura	Institutos Profesionales	6.1	s/i	1368309
+IP AIEP	Prevención de Riesgos	Tecnología	Institutos Profesionales	6.4	De $600 mil a $800 mil	1058420
+IP AIEP	Programación Computacional	Tecnología	Institutos Profesionales	6.2	Menor a $400 mil	1094990
+IP AIEP	Programación y Análisis de Sistemas	Tecnología	Institutos Profesionales	8.1	De $400 mil a $600 mil	1054109
+IP AIEP	Publicidad	Ciencias Sociales	Institutos Profesionales	8.5	s/i	1171036
+IP AIEP	Teatro	Arte y Arquitectura	Institutos Profesionales	s/i	s/i	1800000
+IP AIEP	Topografía	Tecnología	Institutos Profesionales	7.3	De $800 mil a $1 millón	1158101
+IP AIEP	Trabajo Social	Ciencias Sociales	Institutos Profesionales	10.2	s/i	1003924
+IP AIEP	Técnico Deportivo y Personal Trainer	Educación	Institutos Profesionales	6.4	Menor a $400 mil	1067715
+IP AIEP	Técnico Jurídico	Derecho	Institutos Profesionales	6.7	De $400 mil a $600 mil	977817
+IP AIEP	Técnico en Administración de la Producción Agropecuaria y Agroindustrial	Administración y Comercio	Institutos Profesionales	6.6	Menor a $400 mil	1074454
+IP AIEP	Técnico en Administración y Gestión  de Empresas	Administración y Comercio	Institutos Profesionales	6.4	De $400 mil a $600 mil	1070159
+IP AIEP	Técnico en Construcción	Tecnología	Institutos Profesionales	6.7	De $400 mil a $600 mil	1044110
+IP AIEP	Técnico en Diseño de Vestuario	Arte y Arquitectura	Institutos Profesionales	6.5	Menor a $400 mil	1370000
+IP AIEP	Técnico en Enfermería Menciones	Salud	Institutos Profesionales	6.1	Menor a $400 mil	1306077
+IP AIEP	Técnico en Odontología	Salud	Institutos Profesionales	6.0	Menor a $400 mil	1238011
+IP AIEP	Técnico en Sonido	Tecnología	Institutos Profesionales	6.9	De $400 mil a $600 mil	1298579
+IP AIEP	Técnico en Trabajo Social	Ciencias Sociales	Institutos Profesionales	6.2	Menor a $400 mil	997805
+IP Agrario Adolfo Matthei	Ingeniería de Ejecución en Agronomía	Agropecuaria	Institutos Profesionales	s/i	s/i	1166000
+IP CIISA	Construcción y Administración de Redes Analógicas y Digitales	Tecnología	Institutos Profesionales	8.2	s/i	1158229
+IP CIISA	Ingeniería de Ejecución en Computación e Informática	Tecnología	Institutos Profesionales	10.8	s/i	1221304
+IP CIISA	Ingeniería de Ejecución en Telemática	Tecnología	Institutos Profesionales	s/i	s/i	1316239
+IP Carlos Casanueva	Orientación en Relaciones Humanas y Familia	Ciencias Sociales	Institutos Profesionales	s/i	s/i	1220400
+IP Carlos Casanueva	Técnico en Bibliotecología y Centros de Información	Humanidades	Institutos Profesionales	6.0	s/i	683744
+IP Carlos Casanueva	Técnico en Educación Parvularia con mención Montessori	Educación	Institutos Profesionales	7.3	s/i	714000
+IP Chileno Británico de Cultura	Pedagogía en Inglés	Educación	Institutos Profesionales	17.5	s/i	1758000
+IP Diego Portales	Contador Auditor	Administración y Comercio	Institutos Profesionales	10.5	De $400 mil a $600 mil	665637
+IP Diego Portales	Educación Parvularia	Educación	Institutos Profesionales	9.5	Menor a $400 mil	766176
+IP Diego Portales	Ingeniería en Administración de Empresas	Administración y Comercio	Institutos Profesionales	10.1	De $400 mil a $600 mil	664727
+IP Diego Portales	Ingeniería en Computación e Informática	Tecnología	Institutos Profesionales	10.9	De $400 mil a $600 mil	734981
+IP Diego Portales	Ingeniería en Prevención de Riesgos	Tecnología	Institutos Profesionales	10.5	De $600 mil a $800 mil	677055
+IP Diego Portales	Servicio Social	Ciencias Sociales	Institutos Profesionales	10.1	De $400 mil a $600 mil	748216
+IP Diego Portales	Topografía	Tecnología	Institutos Profesionales	8.0	s/i	650000
+IP Diego Portales	Técnico en Prevención de Riesgos	Tecnología	Institutos Profesionales	7.2	De $400 mil a $600 mil	785273
+IP Dr. Virginio Gómez G.	Auditoría	Administración y Comercio	Institutos Profesionales	9.1	De $600 mil a $800 mil	1254366
+IP Dr. Virginio Gómez G.	Ingeniería de Ejecución Electrónica	Tecnología	Institutos Profesionales	10.2	De $800 mil a $1 millón	1456000
+IP Dr. Virginio Gómez G.	Ingeniería de Ejecución Mecánica	Tecnología	Institutos Profesionales	s/i	De $600 mil a $800 mil	1366988
+IP Dr. Virginio Gómez G.	Ingeniería de Ejecución en Administración	Administración y Comercio	Institutos Profesionales	9.7	De $400 mil a $600 mil	1234052
+IP Dr. Virginio Gómez G.	Ingeniería de Ejecución en Computación e Informática	Tecnología	Institutos Profesionales	11.3	De $600 mil a $800 mil	1310680
+IP Dr. Virginio Gómez G.	Ingeniería de Ejecución en Prevención de Riesgos	Tecnología	Institutos Profesionales	9.1	De $600 mil a $800 mil	1272957
+IP Dr. Virginio Gómez G.	Ingeniería en Construcción	Tecnología	Institutos Profesionales	10.6	De $600 mil a $800 mil	1327083
+IP Dr. Virginio Gómez G.	Relaciones Públicas	Ciencias Sociales	Institutos Profesionales	9.3	s/i	1222000
+IP Dr. Virginio Gómez G.	Técnico Higienista Dental	Salud	Institutos Profesionales	5.1	s/i	1250000
+IP Dr. Virginio Gómez G.	Técnico Laboratorista Clinico y Banco de Sangre	Salud	Institutos Profesionales	6.2	s/i	1178550
+IP Dr. Virginio Gómez G.	Técnico Laboratorista Dental	Salud	Institutos Profesionales	6.7	s/i	1100000
+IP Dr. Virginio Gómez G.	Técnico Operador de Plantas Industriales	Tecnología	Institutos Profesionales	5.4	De $400 mil a $600 mil	1105421
+IP Dr. Virginio Gómez G.	Técnico en Administración	Administración y Comercio	Institutos Profesionales	5.5	s/i	1078788
+IP Dr. Virginio Gómez G.	Técnico en Computación e Informática	Tecnología	Institutos Profesionales	6.6	s/i	1113696
+IP Dr. Virginio Gómez G.	Técnico en Construcción	Tecnología	Institutos Profesionales	5.4	s/i	1053687
+IP Dr. Virginio Gómez G.	Técnico en Diseño Gráfico	Arte y Arquitectura	Institutos Profesionales	5.2	s/i	950000
+IP Dr. Virginio Gómez G.	Técnico en Educación Diferencial	Educación	Institutos Profesionales	6.3	s/i	1134545
+IP Dr. Virginio Gómez G.	Técnico en Electromecánica	Tecnología	Institutos Profesionales	6.0	s/i	1124394
+IP Dr. Virginio Gómez G.	Técnico en Enfermería	Salud	Institutos Profesionales	6.2	s/i	1202018
+IP Dr. Virginio Gómez G.	Técnico en Instrumentación y Control	Tecnología	Institutos Profesionales	5.8	De $600 mil a $800 mil	1127083
+IP Dr. Virginio Gómez G.	Técnico en Prevención de Riesgos	Tecnología	Institutos Profesionales	s/i	s/i	1118822
+IP Dr. Virginio Gómez G.	Técnico en Redes de Computadores	Tecnología	Institutos Profesionales	s/i	s/i	1092000
+IP Duoc UC	Actuación	Arte y Arquitectura	Institutos Profesionales	11.2	De $400 mil a $600 mil	2251990
+IP Duoc UC	Administración Financiera	Administración y Comercio	Institutos Profesionales	6.9	De $400 mil a $600 mil	1156750
+IP Duoc UC	Administración de Empresas mención Marketing	Administración y Comercio	Institutos Profesionales	6.7	De $400 mil a $600 mil	1150255
+IP Duoc UC	Administración de Recursos Humanos	Administración y Comercio	Institutos Profesionales	7.0	De $400 mil a $600 mil	1165103
+IP Duoc UC	Administración de Redes Computacionales	Tecnología	Institutos Profesionales	8.2	De $400 mil a $600 mil	1253028
+IP Duoc UC	Administración de Ventas	Administración y Comercio	Institutos Profesionales	6.9	s/i	1183069
+IP Duoc UC	Analista Programador Computacional	Tecnología	Institutos Profesionales	7.9	De $600 mil a $800 mil	1263644
+IP Duoc UC	Auditoría	Administración y Comercio	Institutos Profesionales	11.0	De $600 mil a $800 mil	1557020
+IP Duoc UC	Comercio Exterior	Administración y Comercio	Institutos Profesionales	7.6	s/i	1168200
+IP Duoc UC	Comunicación Audiovisual	Arte y Arquitectura	Institutos Profesionales	11.0	De $400 mil a $600 mil	2254663
+IP Duoc UC	Contabilidad General mención Legislación Tributaria	Administración y Comercio	Institutos Profesionales	7.4	De $400 mil a $600 mil	1151770
+IP Duoc UC	Dibujo Arquitectónico y Estructural	Arte y Arquitectura	Institutos Profesionales	7.8	De $400 mil a $600 mil	1207012
+IP Duoc UC	Diseño Gráfico	Arte y Arquitectura	Institutos Profesionales	11.5	De $400 mil a $600 mil	1782410
+IP Duoc UC	Diseño Industrial	Tecnología	Institutos Profesionales	13.4	De $400 mil a $600 mil	1744576
+IP Duoc UC	Diseño de Ambientes	Arte y Arquitectura	Institutos Profesionales	11.7	De $400 mil a $600 mil	1707583
+IP Duoc UC	Diseño de Vestuario	Arte y Arquitectura	Institutos Profesionales	11.1	De $400 mil a $600 mil	1802303
+IP Duoc UC	Ecoturismo	Administración y Comercio	Institutos Profesionales	10.0	De $400 mil a $600 mil	1994152
+IP Duoc UC	Gastronomía	Administración y Comercio	Institutos Profesionales	8.5	s/i	1315246
+IP Duoc UC	Gastronomía Internacional	Administración y Comercio	Institutos Profesionales	10.3	s/i	2165518
+IP Duoc UC	Ingeniería Agrícola	Agropecuaria	Institutos Profesionales	11.0	De $400 mil a $600 mil	1769939
+IP Duoc UC	Ingeniería en Acuicultura	Agropecuaria	Institutos Profesionales	11.3	De $400 mil a $600 mil	1620000
+IP Duoc UC	Ingeniería en Administración	Administración y Comercio	Institutos Profesionales	10.2	De $600 mil a $800 mil	1712502
+IP Duoc UC	Ingeniería en Administración de Recursos Humanos	Administración y Comercio	Institutos Profesionales	s/i	s/i	1740587
+IP Duoc UC	Ingeniería en Automatización de Procesos Industriales	Tecnología	Institutos Profesionales	s/i	s/i	1796694
+IP Duoc UC	Ingeniería en Comercio Exterior	Administración y Comercio	Institutos Profesionales	11.1	De $600 mil a $800 mil	1740983
+IP Duoc UC	Ingeniería en Conectividad y Redes	Tecnología	Institutos Profesionales	11.1	De $800 mil a $1 millón	1791762
+IP Duoc UC	Ingeniería en Construcción	Tecnología	Institutos Profesionales	10.4	De $800 mil a $1 millón	1720735
+IP Duoc UC	Ingeniería en Electricidad y Electrónica	Tecnología	Institutos Profesionales	11.9	s/i	1727763
+IP Duoc UC	Ingeniería en Gestión Logística	Administración y Comercio	Institutos Profesionales	s/i	s/i	1690299
+IP Duoc UC	Ingeniería en Informática	Tecnología	Institutos Profesionales	11.7	De $1 millón a $1 millón 200 mil	1749246
+IP Duoc UC	Ingeniería en Marketing	Administración y Comercio	Institutos Profesionales	8.8	s/i	1762008
+IP Duoc UC	Ingeniería en Mecánica Automotriz y Autotrónica	Tecnología	Institutos Profesionales	11.5	De $800 mil a $1 millón	1718147
+IP Duoc UC	Ingeniería en Medio Ambiente	Tecnología	Institutos Profesionales	11.8	De $600 mil a $800 mil	1880000
+IP Duoc UC	Ingeniería en Prevención de Riesgos	Tecnología	Institutos Profesionales	10.1	De $600 mil a $800 mil	1613371
+IP Duoc UC	Preparador Físico	Educación	Institutos Profesionales	8.3	s/i	1264901
+IP Duoc UC	Publicidad	Ciencias Sociales	Institutos Profesionales	10.4	De $400 mil a $600 mil	1940250
+IP Duoc UC	Publicidad	Ciencias Sociales	Institutos Profesionales	7.0	Menor a $400 mil	1350000
+IP Duoc UC	Relaciones Públicas mención Marketing	Ciencias Sociales	Institutos Profesionales	10.5	De $400 mil a $600 mil	1869480
+IP Duoc UC	Tecnología en Sonido	Tecnología	Institutos Profesionales	7.8	s/i	1435556
+IP Duoc UC	Turismo Técnico Mención, Administración Hotelera y Turismo de Aventura	Administración y Comercio	Institutos Profesionales	7.8	De $400 mil a $600 mil	1126060
+IP Duoc UC	Técnico Agrícola	Agropecuaria	Institutos Profesionales	9.2	De $400 mil a $600 mil	1207630
+IP Duoc UC	Técnico Audiovisual	Arte y Arquitectura	Institutos Profesionales	7.7	De $400 mil a $600 mil	1626810
+IP Duoc UC	Técnico Jurídico	Derecho	Institutos Profesionales	7.1	s/i	1115224
+IP Duoc UC	Técnico Topógrafo	Tecnología	Institutos Profesionales	7.6	De $600 mil a $800 mil	1210000
+IP Duoc UC	Técnico Veterinario	Agropecuaria	Institutos Profesionales	7.4	s/i	1242061
+IP Duoc UC	Técnico de Enfermería	Salud	Institutos Profesionales	6.7	Menor a $400 mil	1244056
+IP Duoc UC	Técnico de Laboratorio Clínico y Banco de Sangre	Salud	Institutos Profesionales	6.8	Menor a $400 mil	1246378
+IP Duoc UC	Técnico de Radiodiagnóstico y Radioterapia	Salud	Institutos Profesionales	6.9	Menor a $400 mil	1235383
+IP Duoc UC	Técnico en Construcción	Tecnología	Institutos Profesionales	7.7	De $400 mil a $600 mil	1204697
+IP Duoc UC	Técnico en Diseño Gráfico	Arte y Arquitectura	Institutos Profesionales	7.2	s/i	1380000
+IP Duoc UC	Técnico en Electricidad y Electrónica	Tecnología	Institutos Profesionales	7.4	De $400 mil a $600 mil	1214920
+IP Duoc UC	Técnico en Mecánica Automotriz y Autotrónica	Tecnología	Institutos Profesionales	7.6	De $400 mil a $600 mil	1216177
+IP Duoc UC	Técnico en Odontología	Salud	Institutos Profesionales	6.9	s/i	1270572
+IP Duoc UC	Técnico en Prevención de Riesgos.Pev	Tecnología	Institutos Profesionales	6.6	s/i	1207444
+IP EATRI Instituto Profesional	Interpretación de Enlace Inglés-Castellano	Humanidades	Institutos Profesionales	6.2	s/i	802200
+IP EATRI Instituto Profesional	Traductor e Intérprete	Humanidades	Institutos Profesionales	10.6	De $400 mil a $600 mil	1723573
+IP ESUCOMEX	Administración de Empresas con mención en RR.HH., Finanzas o Ventas	Administración y Comercio	Institutos Profesionales	7.6	s/i	847544
+IP ESUCOMEX	Comercio Exterior	Administración y Comercio	Institutos Profesionales	7.4	s/i	841674
+IP ESUCOMEX	Contabilidad General	Administración y Comercio	Institutos Profesionales	7.1	s/i	827575
+IP ESUCOMEX	Contador Auditor	Administración y Comercio	Institutos Profesionales	11.0	De $600 mil a $800 mil	923063
+IP ESUCOMEX	Decoración de Interiores	Arte y Arquitectura	Institutos Profesionales	7.5	s/i	862500
+IP ESUCOMEX	Ingeniería de Ejecución en Administración de Empresas	Administración y Comercio	Institutos Profesionales	9.6	s/i	895862
+IP ESUCOMEX	Ingeniería de Ejecución en Comercio Internacional	Administración y Comercio	Institutos Profesionales	10.6	De $600 mil a $800 mil	960000
+IP ESUCOMEX	Secretariado Ejecutivo Bilingüe	Administración y Comercio	Institutos Profesionales	7.2	s/i	690989
+IP ESUCOMEX	Soporte en Redes Computacionales	Tecnología	Institutos Profesionales	9.3	s/i	878250
+IP ESUCOMEX	Técnico Jurídico	Derecho	Institutos Profesionales	8.1	s/i	743596
+IP Escuela Moderna de Música	Intérprete Instrumental y Especialista en Arreglos Instrumentales	Arte y Arquitectura	Institutos Profesionales	12.3	s/i	2731228
+IP Escuela de Contadores Auditores de Santiago	Contador Auditor	Administración y Comercio	Institutos Profesionales	14.8	De $800 mil a $1 millón	1395747
+IP Hogar Catequístico	Pedagogía en Educación Religiosa	Educación	Institutos Profesionales	s/i	s/i	1076750
+IP Hogar Catequístico	Pedagogía en Educación Religiosa para Educación Básica	Educación	Institutos Profesionales	12.2	s/i	979232
+IP INACAP	Administración Gastronómica Internacional	Administración y Comercio	Institutos Profesionales	10.7	De $400 mil a $600 mil	1869612
+IP INACAP	Administración de Empresas Turísticas y Administración Hoteles y Restaurantes	Administración y Comercio	Institutos Profesionales	10.8	De $400 mil a $600 mil	1695108
+IP INACAP	Construcción Civil	Tecnología	Institutos Profesionales	11.1	De $800 mil a $1 millón	1375243
+IP INACAP	Contador Auditor	Administración y Comercio	Institutos Profesionales	10.9	De $600 mil a $800 mil	1338268
+IP INACAP	Diseño Gráfico Profesional	Arte y Arquitectura	Institutos Profesionales	11.3	De $400 mil a $600 mil	1495386
+IP INACAP	Diseño de Vestuario	Arte y Arquitectura	Institutos Profesionales	11.0	De $400 mil a $600 mil	1720245
+IP INACAP	Ingeniería Agrícola mención Ganadería	Agropecuaria	Institutos Profesionales	11.0	De $400 mil a $600 mil	1481851
+IP INACAP	Ingeniería Mecánica en Mantenimiento y Producción Industrial	Tecnología	Institutos Profesionales	10.3	s/i	1412087
+IP INACAP	Ingeniería en Administración Industrial	Tecnología	Institutos Profesionales	9.9	De $600 mil a $800 mil	1363338
+IP INACAP	Ingeniería en Construcción	Tecnología	Institutos Profesionales	12.3	De $800 mil a $1 millón	1401786
+IP INACAP	Ingeniería en Geomensura	Tecnología	Institutos Profesionales	s/i	De $800 mil a $1 millón	1278176
+IP INACAP	Ingeniería en Maquinaria y Vehículos Automotrices	Tecnología	Institutos Profesionales	11.8	De $600 mil a $800 mil	1411236
+IP INACAP	Ingeniería en Minas	Tecnología	Institutos Profesionales	11.3	De $1 millón 200 mil a $1 millón 400 mil	1335165
+IP INACAP	Ingeniería en Negocios Internacionales	Administración y Comercio	Institutos Profesionales	s/i	De $600 mil a $800 mil	1515967
+IP INACAP	Ingeniería en Prevención de Riesgos, Calidad y Ambiente	Tecnología	Institutos Profesionales	10.1	De $800 mil a $1 millón	1361809
+IP INACAP	Ingeniería en Refrigeración y Climatización Industrial	Tecnología	Institutos Profesionales	12.8	De $600 mil a $800 mil	1531987
+IP INACAP	Ingeniería en Telecomunicaciones, Conectividad y Redes	Tecnología	Institutos Profesionales	11.3	De $1 millón a $1 millón 200 mil	1558988
+IP INACAP	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	10.6	s/i	1351804
+IP INACAP	Publicidad	Ciencias Sociales	Institutos Profesionales	10.4	De $400 mil a $600 mil	1529424
+IP INACAP	Servicio Social	Ciencias Sociales	Institutos Profesionales	8.8	De $400 mil a $600 mil	1334984
+IP IPEGE	Técnico en Administración de Empresas	Administración y Comercio	Institutos Profesionales	7.0	s/i	748845
+IP IPEGE	Técnico en Enfermería	Salud	Institutos Profesionales	6.2	s/i	853791
+IP Instituto Nacional del Fútbol	Técnico y Arbitro de Futbol	Educación	Institutos Profesionales	5.5	s/i	1195404
+IP Instituto de Estudios Bancarios Guillermo Subercaseaux	Contador Auditor con mención Banca e Instituciones Financieras	Administración y Comercio	Institutos Profesionales	9.3	s/i	1350000
+IP Instituto de Estudios Bancarios Guillermo Subercaseaux	Ingeniería Financiera	Administración y Comercio	Institutos Profesionales	9.3	s/i	1350000
+IP Instituto de Estudios Bancarios Guillermo Subercaseaux	Técnico en Comercio Internacional	Administración y Comercio	Institutos Profesionales	6.9	s/i	1250000
+IP Instituto de Estudios Bancarios Guillermo Subercaseaux	Técnico en Gestión de Servicios Financieros	Administración y Comercio	Institutos Profesionales	6.4	De $600 mil a $800 mil	1250000
+IP La Araucana	Administración de Empresas	Administración y Comercio	Institutos Profesionales	6.1	s/i	748659
+IP La Araucana	Asistente de Educación Parvularia y Básica	Educación	Institutos Profesionales	6.6	Menor a $400 mil	756637
+IP La Araucana	Contabilidad General	Administración y Comercio	Institutos Profesionales	6.0	s/i	779443
+IP La Araucana	Contador Auditor	Administración y Comercio	Institutos Profesionales	11.1	De $600 mil a $800 mil	1171307
+IP La Araucana	Ingeniería en Computación e Informática	Tecnología	Institutos Profesionales	10.5	De $800 mil a $1 millón	1103693
+IP La Araucana	Ingeniería en Gestión Financiera	Administración y Comercio	Institutos Profesionales	10.6	s/i	1241193
+IP La Araucana	Ingeniería en Gestión de Empresas	Administración y Comercio	Institutos Profesionales	9.7	De $600 mil a $800 mil	1108505
+IP La Araucana	Ingeniería en Gestión de Marketing	Administración y Comercio	Institutos Profesionales	s/i	De $600 mil a $800 mil	1184889
+IP La Araucana	Ingeniería en Gestión de Recursos Humanos	Administración y Comercio	Institutos Profesionales	10.0	De $600 mil a $800 mil	1139782
+IP La Araucana	Ingeniería en Prevención de Riesgos	Tecnología	Institutos Profesionales	11.1	De $600 mil a $800 mil	1041995
+IP La Araucana	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	9.4	s/i	1010071
+IP La Araucana	Servicio Social	Ciencias Sociales	Institutos Profesionales	8.6	De $400 mil a $600 mil	1006109
+IP La Araucana	Técnico Jurídico	Derecho	Institutos Profesionales	6.7	s/i	746717
+IP La Araucana	Vitivinicultura	Agropecuaria	Institutos Profesionales	7.2	s/i	837881
+IP Latinoamericano de Comercio Exterior	Administración Pública, mención Gestión y Desarrollo Regiónal y Local	Ciencias Sociales	Institutos Profesionales	9.6	s/i	772655
+IP Latinoamericano de Comercio Exterior	Administración de Empresas, mención Finanzas	Administración y Comercio	Institutos Profesionales	7.0	s/i	770064
+IP Latinoamericano de Comercio Exterior	Auditoría	Administración y Comercio	Institutos Profesionales	10.7	s/i	801278
+IP Latinoamericano de Comercio Exterior	Comercio Exterior	Administración y Comercio	Institutos Profesionales	8.5	De $600 mil a $800 mil	709353
+IP Latinoamericano de Comercio Exterior	Contabilidad mención Auditoría	Administración y Comercio	Institutos Profesionales	7.6	s/i	710307
+IP Latinoamericano de Comercio Exterior	Educador Asistente en Educación Especial y Diferencial	Educación	Institutos Profesionales	6.9	s/i	770791
+IP Latinoamericano de Comercio Exterior	Educador Asistente en Educación de Párvulos	Educación	Institutos Profesionales	6.7	s/i	808572
+IP Latinoamericano de Comercio Exterior	Ingeniería en Administración de Empresas	Administración y Comercio	Institutos Profesionales	9.9	s/i	854789
+IP Latinoamericano de Comercio Exterior	Pedagogía en Educación Media Técnico Profesional	Educación	Institutos Profesionales	10.5	s/i	748235
+IP Latinoamericano de Comercio Exterior	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	9.5	s/i	822304
+IP Latinoamericano de Comercio Exterior	Técnico Jurídico	Derecho	Institutos Profesionales	6.9	s/i	747751
+IP Latinoamericano de Comercio Exterior	Técnico en Enfermería	Salud	Institutos Profesionales	7.2	s/i	953703
+IP Libertador de Los Andes	Educación General Básica	Educación	Institutos Profesionales	11.0	De $400 mil a $600 mil	1480000
+IP Libertador de Los Andes	Servicio Social	Ciencias Sociales	Institutos Profesionales	9.7	s/i	1480000
+IP Los Lagos	Ingeniería en Administración de Empresas	Administración y Comercio	Institutos Profesionales	s/i	s/i	913170
+IP Los Leones	Administración de Negocios y Ventas	Administración y Comercio	Institutos Profesionales	6.5	s/i	948905
+IP Los Leones	Comunicación Social en Marketing	Ciencias Sociales	Institutos Profesionales	11.1	De $400 mil a $600 mil	915022
+IP Los Leones	Comunicación Social en Marketing	Ciencias Sociales	Institutos Profesionales	6.6	De $400 mil a $600 mil	912000
+IP Los Leones	Contabilidad General	Administración y Comercio	Institutos Profesionales	6.8	s/i	986974
+IP Los Leones	Contador Auditor	Administración y Comercio	Institutos Profesionales	10.4	s/i	989217
+IP Los Leones	Diseño Gráfico Publicitario	Arte y Arquitectura	Institutos Profesionales	11.5	Menor a $400 mil	1018732
+IP Los Leones	Diseño Gráfico Publicitario	Arte y Arquitectura	Institutos Profesionales	6.8	Menor a $400 mil	1015736
+IP Los Leones	Educación Parvularia	Educación	Institutos Profesionales	11.6	Menor a $400 mil	897922
+IP Los Leones	Fotografía Periodística y Publicitaria	Arte y Arquitectura	Institutos Profesionales	6.5	Menor a $400 mil	999837
+IP Los Leones	Fotografía Periodística y Publicitaria Profesional	Arte y Arquitectura	Institutos Profesionales	11.1	Menor a $400 mil	1000393
+IP Los Leones	Ingeniería en Administración de Negocios y Ventas	Administración y Comercio	Institutos Profesionales	10.7	s/i	953451
+IP Los Leones	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	12.2	De $400 mil a $600 mil	929594
+IP Los Leones	Publicidad	Ciencias Sociales	Institutos Profesionales	7.0	Menor a $400 mil	966250
+IP Los Leones	Publicidad	Ciencias Sociales	Institutos Profesionales	11.3	De $400 mil a $600 mil	970172
+IP Los Leones	Relaciones Públicas	Ciencias Sociales	Institutos Profesionales	10.8	De $400 mil a $600 mil	986837
+IP Los Leones	Relaciones Públicas	Ciencias Sociales	Institutos Profesionales	7.0	De $400 mil a $600 mil	979672
+IP Los Leones	Servicio Social	Ciencias Sociales	Institutos Profesionales	10.6	s/i	949684
+IP Los Leones	Servicio Social	Ciencias Sociales	Institutos Profesionales	6.8	s/i	946391
+IP Los Leones	Teatro	Arte y Arquitectura	Institutos Profesionales	6.4	s/i	1172727
+IP Providencia	Educación Diferencial mención Deficiencia Mental	Educación	Institutos Profesionales	9.2	De $400 mil a $600 mil	1123222
+IP Providencia	Educación Parvularia mención Lenguaje y Ciencias	Educación	Institutos Profesionales	9.1	De $400 mil a $600 mil	1062459
+IP Providencia	Nutrición y Dietética	Salud	Institutos Profesionales	10.1	s/i	1011938
+IP Providencia	Pedagogía en Educación General Básica mención Lenguaje y Matemáticas	Educación	Institutos Profesionales	9.6	De $400 mil a $600 mil	940506
+IP Providencia	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	s/i	s/i	845000
+IP Providencia	Técnico Jurídico de Nivel Superior	Derecho	Institutos Profesionales	9.5	s/i	890255
+IP Providencia	Técnico de Enfermería	Salud	Institutos Profesionales	7.0	Menor a $400 mil	1011762
+IP Santo Tomás	Analista Programador	Tecnología	Institutos Profesionales	7.1	Menor a $400 mil	926147
+IP Santo Tomás	Comunicación Audiovisual Digital	Arte y Arquitectura	Institutos Profesionales	9.9	De $400 mil a $600 mil	1522297
+IP Santo Tomás	Ingeniería de Ejecución Agropecuaria	Agropecuaria	Institutos Profesionales	11.5	s/i	1204983
+IP Santo Tomás	Ingeniería de Ejecución en Informática	Tecnología	Institutos Profesionales	10.3	De $400 mil a $600 mil	1208584
+IP Santo Tomás	Ingeniería de Ejecución en Prevención de Riesgos	Tecnología	Institutos Profesionales	10.1	s/i	1240893
+IP Santo Tomás	Ingeniería de Ejecución en Sonido	Tecnología	Institutos Profesionales	10.3	s/i	1361390
+IP Santo Tomás	Servicio Social	Ciencias Sociales	Institutos Profesionales	10.4	De $400 mil a $600 mil	1131642
+IP Santo Tomás	Técnico en Comunicación Audiovisual Digital	Arte y Arquitectura	Institutos Profesionales	7.3	Menor a $400 mil	1267886
+IP Santo Tomás	Técnico en Diseño Publicitario Multimedial	Arte y Arquitectura	Institutos Profesionales	8.1	Menor a $400 mil	1062620
+IP Santo Tomás	Técnico en Plataformas Informáticas	Tecnología	Institutos Profesionales	7.2	De $400 mil a $600 mil	948355
+IP Santo Tomás	Técnico en Sonido	Tecnología	Institutos Profesionales	8.4	Menor a $400 mil	1146667
+IP Santo Tomás	Técnico en Trabajo Social	Ciencias Sociales	Institutos Profesionales	6.7	Menor a $400 mil	977964
+IP Santo Tomás	Técnico en Turismo	Administración y Comercio	Institutos Profesionales	7.5	Menor a $400 mil	915780
+IP de Arte y Comunicación ARCOS	Comunicación Audiovisual	Arte y Arquitectura	Institutos Profesionales	8.4	s/i	2680000
+IP de Arte y Comunicación ARCOS	Fotografía Profesional	Arte y Arquitectura	Institutos Profesionales	13.5	s/i	2593571
+IP de Arte y Comunicación ARCOS	Técnico de Nivel Superior en Fotografía Periodística y Publicitaria	Arte y Arquitectura	Institutos Profesionales	6.7	s/i	1510919
+IP de Chile	Asistente Jurídico	Derecho	Institutos Profesionales	7.3	De $400 mil a $600 mil	843740
+IP de Chile	Auditoría	Administración y Comercio	Institutos Profesionales	10.9	De $600 mil a $800 mil	1058493
+IP de Chile	Ingeniería en Administración de Empresas	Administración y Comercio	Institutos Profesionales	11.8	De $600 mil a $800 mil	1050616
+IP de Chile	Ingeniería en Gestión Turística	Administración y Comercio	Institutos Profesionales	11.2	s/i	1150768
+IP de Chile	Ingeniería en Informática	Tecnología	Institutos Profesionales	13.0	s/i	1048442
+IP de Chile	Kinesiología	Salud	Institutos Profesionales	12.1	s/i	1629347
+IP de Chile	Pedagogía en Educación General Básica	Educación	Institutos Profesionales	9.9	De $400 mil a $600 mil	1038742
+IP de Chile	Pedagogía en Educación Parvularia	Educación	Institutos Profesionales	9.6	De $400 mil a $600 mil	1007662
+IP de Chile	Preparación Física y Técnico en Deportes	Educación	Institutos Profesionales	8.2	Menor a $400 mil	911706
+IP de Chile	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	10.2	De $400 mil a $600 mil	987942
+IP de Chile	Publicidad	Ciencias Sociales	Institutos Profesionales	11.8	s/i	1072843
+IP de Chile	Relaciones Públicas Empresariales	Ciencias Sociales	Institutos Profesionales	10.3	s/i	1035563
+IP de Chile	Trabajo Social	Ciencias Sociales	Institutos Profesionales	10.3	s/i	986867
+IP de Chile	Técnico en Construcción	Tecnología	Institutos Profesionales	7.9	s/i	912900
+IP de Chile	Técnico en Electricidad y Electrónica	Tecnología	Institutos Profesionales	6.7	s/i	934112
+IP de Chile	Técnico en Enfermería	Salud	Institutos Profesionales	6.1	s/i	1050952
+IP de Chile	Técnico en Gastronomía	Administración y Comercio	Institutos Profesionales	7.4	s/i	1120390
+IP de Chile	Técnico en Mecánica Automotriz y Autotrónica	Tecnología	Institutos Profesionales	6.9	s/i	917249
+IP de Chile	Técnico en Sonido	Tecnología	Institutos Profesionales	6.8	s/i	1019798
+IP de ENAC	Educación de Párvulos	Educación	Institutos Profesionales	11.0	De $400 mil a $600 mil	825000
+IP de Los Ángeles	Educación Diferencial con mención en Trastornos del Aprendizaje	Educación	Institutos Profesionales	8.6	De $400 mil a $600 mil	980000
+IP del Valle Central	Construcción Civil (Continuidad)	Tecnología	Institutos Profesionales	9.8	De $800 mil a $1 millón	1384967
+IP del Valle Central	Educación Parvularia	Educación	Institutos Profesionales	9.7	Menor a $400 mil	966973
+IP del Valle Central	Ingeniería de Ejecución en Prevención de Riesgos y Medio Ambiente	Tecnología	Institutos Profesionales	13.8	De $800 mil a $1 millón	972131
+IP del Valle Central	Pedagogía en Historia y Geografía	Educación	Institutos Profesionales	12.5	s/i	990456
+IP del Valle Central	Pedagogía en Inglés	Educación	Institutos Profesionales	12.1	De $400 mil a $600 mil	1003877
+IP del Valle Central	Psicopedagogía	Ciencias Sociales	Institutos Profesionales	11.5	s/i	904210
+IP del Valle Central	Trabajo Social	Ciencias Sociales	Institutos Profesionales	s/i	De $400 mil a $600 mil	835644
+IP del Valle Central	Técnico Dental mención Asistente Higienista-Laboratorista	Salud	Institutos Profesionales	6.9	s/i	903060
+IP del Valle Central	Técnico Veterinario	Agropecuaria	Institutos Profesionales	7.4	s/i	866969
+IP del Valle Central	Técnico de Nivel Superior en Prevención de Riesgos	Tecnología	Institutos Profesionales	8.7	s/i	811720
+IP del Valle Central	Técnico de Nivel Superior en Trabajo Social	Ciencias Sociales	Institutos Profesionales	6.3	Menor a $400 mil	735773
+IP del Valle Central	Técnico en Construcción	Tecnología	Institutos Profesionales	s/i	s/i	778396
+IP del Valle Central	Técnico en Enfermería	Salud	Institutos Profesionales	7.3	Menor a $400 mil	956149
+Pontificia Universidad Católica de Chile	Actuación Teatral	Arte y Arquitectura	Universidades CRUCH	10.4	De $400 mil a $600 mil	3200000
+Pontificia Universidad Católica de Chile	Agronomía	Agropecuaria	Universidades CRUCH	13.4	De $1 millón a $1 millón 200 mil	4019697
+Pontificia Universidad Católica de Chile	Arquitectura	Arte y Arquitectura	Universidades CRUCH	16.5	De $1 millón a $1 millón 200 mil	4520000
+Pontificia Universidad Católica de Chile	Construcción Civil	Tecnología	Universidades CRUCH	13.2	De $1 millón 200 mil a $1 millón 400 mil	4020000
+Pontificia Universidad Católica de Chile	Derecho	Derecho	Universidades CRUCH	15.5	De $1 millón 600 mil a $1 millón 800 mil	4130000
+Pontificia Universidad Católica de Chile	Diseño	Arte y Arquitectura	Universidades CRUCH	11.2	De $600 mil a $800 mil	4020000
+Pontificia Universidad Católica de Chile	Educación Parvularia	Educación	Universidades CRUCH	10.9	De $400 mil a $600 mil	3200000
+Pontificia Universidad Católica de Chile	Enfermería	Salud	Universidades CRUCH	12.3	De $1 millón a $1 millón 200 mil	3330000
+Pontificia Universidad Católica de Chile	Geografía	Ciencias Sociales	Universidades CRUCH	12.7	De $800 mil a $1 millón	2820000
+Pontificia Universidad Católica de Chile	Ingeniería Civil	Tecnología	Universidades CRUCH	13.1	De $1 millón 800 mil a $2 millones	5060000
+Pontificia Universidad Católica de Chile	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	12.8	De $1 millón 800 mil a $2 millones	4700000
+Pontificia Universidad Católica de Chile	Licenciatura en Arte	Arte y Arquitectura	Universidades CRUCH	10.5	De $400 mil a $600 mil	3486737
+Pontificia Universidad Católica de Chile	Licenciatura en Astronomía y Lic. Física	Ciencias Básicas	Universidades CRUCH	12.5	De $600 mil a $800 mil	3022667
+Pontificia Universidad Católica de Chile	Licenciatura en Bioquímica	Ciencias Básicas	Universidades CRUCH	13.6	De $600 mil a $800 mil	3740000
+Pontificia Universidad Católica de Chile	Licenciatura en Ciencias Biológicas	Ciencias Básicas	Universidades CRUCH	12.3	s/i	2820000
+Pontificia Universidad Católica de Chile	Licenciatura en Ciencias Políticas	Ciencias Sociales	Universidades CRUCH	10.6	De $800 mil a $1 millón	4130000
+Pontificia Universidad Católica de Chile	Licenciatura en Historia	Humanidades	Universidades CRUCH	9.0	De $600 mil a $800 mil	2820000
+Pontificia Universidad Católica de Chile	Licenciatura en Letras	Humanidades	Universidades CRUCH	10.2	De $600 mil a $800 mil	2820000
+Pontificia Universidad Católica de Chile	Matemática/Estadística	Tecnología	Universidades CRUCH	13.0	De $1 millón a $1 millón 200 mil	2820000
+Pontificia Universidad Católica de Chile	Medicina	Salud	Universidades CRUCH	15.5	De $1 millón 800 mil a $2 millones	5280000
+Pontificia Universidad Católica de Chile	Pedagogía en Educación General Básica	Educación	Universidades CRUCH	11.2	De $400 mil a $600 mil	2030000
+Pontificia Universidad Católica de Chile	Periodismo	Ciencias Sociales	Universidades CRUCH	11.4	De $800 mil a $1 millón	4020000
+Pontificia Universidad Católica de Chile	Programas de Formación Pedagógica	Educación	Universidades CRUCH	s/i	De $600 mil a $800 mil	3200000
+Pontificia Universidad Católica de Chile	Psicología	Ciencias Sociales	Universidades CRUCH	11.6	De $800 mil a $1 millón	4130000
+Pontificia Universidad Católica de Chile	Química y Farmacia	Salud	Universidades CRUCH	15.5	De $1 millón a $1 millón 200 mil	3200000
+Pontificia Universidad Católica de Chile	Sociología	Ciencias Sociales	Universidades CRUCH	11.9	De $800 mil a $1 millón	3740000
+Pontificia Universidad Católica de Chile	Trabajo Social	Ciencias Sociales	Universidades CRUCH	10.8	De $600 mil a $800 mil	3200000
+Pontificia Universidad Católica de Valparaíso	Agronomía	Agropecuaria	Universidades CRUCH	15.3	De $800 mil a $1 millón	3272000
+Pontificia Universidad Católica de Valparaíso	Arquitectura	Arte y Arquitectura	Universidades CRUCH	16.3	De $600 mil a $800 mil	3272000
+Pontificia Universidad Católica de Valparaíso	Bioquímica	Ciencias Básicas	Universidades CRUCH	17.4	s/i	2432000
+Pontificia Universidad Católica de Valparaíso	Contador Auditor	Administración y Comercio	Universidades CRUCH	17.5	De $800 mil a $1 millón	2432000
+Pontificia Universidad Católica de Valparaíso	Derecho	Derecho	Universidades CRUCH	20.7	De $1 millón 400 mil a $1 millón 600 mil	3272000
+Pontificia Universidad Católica de Valparaíso	Educación Diferencial mención Trastornos del Aprendizaje Específico	Educación	Universidades CRUCH	11.7	De $400 mil a $600 mil	1918000
+Pontificia Universidad Católica de Valparaíso	Educación Parvularia	Educación	Universidades CRUCH	10.1	De $400 mil a $600 mil	1787000
+Pontificia Universidad Católica de Valparaíso	Geografía	Ciencias Sociales	Universidades CRUCH	15.3	De $800 mil a $1 millón	1918000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil Bioquímica	Tecnología	Universidades CRUCH	17.0	De $1 millón a $1 millón 200 mil	2950000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil Electrónica	Tecnología	Universidades CRUCH	17.5	De $1 millón 400 mil a $1 millón 600 mil	2950000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil Eléctrica	Tecnología	Universidades CRUCH	s/i	De $1 millón 600 mil a $1 millón 800 mil	2950000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	16.1	De $1 millón 200 mil a $1 millón 400 mil	3272000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil Mecánica	Tecnología	Universidades CRUCH	19.8	s/i	2950000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil Química	Tecnología	Universidades CRUCH	20.6	De $1 millón 400 mil a $1 millón 600 mil	2950000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Civil en Informática	Tecnología	Universidades CRUCH	18.2	s/i	3003000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	14.6	De $1 millón 200 mil a $1 millón 400 mil	3272000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Electrónica	Tecnología	Universidades CRUCH	17.5	s/i	2332000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Eléctrica	Tecnología	Universidades CRUCH	16.9	s/i	2332000
+Pontificia Universidad Católica de Valparaíso	Ingeniería Mecánica	Tecnología	Universidades CRUCH	s/i	s/i	2332000
+Pontificia Universidad Católica de Valparaíso	Ingeniería de Alimentos	Tecnología	Universidades CRUCH	16.9	s/i	2754000
+Pontificia Universidad Católica de Valparaíso	Ingeniería de Ejecución en Bioprocesos	Tecnología	Universidades CRUCH	11.4	De $600 mil a $800 mil	2332000
+Pontificia Universidad Católica de Valparaíso	Ingeniería de Ejecución en Informática	Tecnología	Universidades CRUCH	14.6	De $1 millón 200 mil a $1 millón 400 mil	2332000
+Pontificia Universidad Católica de Valparaíso	Ingeniería de Transporte	Tecnología	Universidades CRUCH	14.1	De $1 millón a $1 millón 200 mil	2332000
+Pontificia Universidad Católica de Valparaíso	Ingeniería en Acuicultura y Pesquera	Agropecuaria	Universidades CRUCH	s/i	s/i	2754000
+Pontificia Universidad Católica de Valparaíso	Ingeniería en Construcción	Tecnología	Universidades CRUCH	17.5	De $1 millón 200 mil a $1 millón 400 mil	2950000
+Pontificia Universidad Católica de Valparaíso	Interpretación o Traducción Inglés-Español	Humanidades	Universidades CRUCH	s/i	De $400 mil a $600 mil	2332000
+Pontificia Universidad Católica de Valparaíso	Kinesiología	Salud	Universidades CRUCH	15.3	De $600 mil a $800 mil	3272000
+Pontificia Universidad Católica de Valparaíso	Pedagogía Educación Básica	Educación	Universidades CRUCH	s/i	De $400 mil a $600 mil	1787000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Castellano y/o Licenciatura en Lengua y Literatura Hispánica	Educación	Universidades CRUCH	12.9	De $400 mil a $600 mil	1825000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Educación Física	Educación	Universidades CRUCH	13.1	De $400 mil a $600 mil	1825000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Filosofía y Religión	Educación	Universidades CRUCH	14.7	s/i	1787000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Física, Biología y Química	Educación	Universidades CRUCH	12.9	De $400 mil a $600 mil	1780303
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Historia, Geografía y Ciencias Sociales y/o Licenciatura en Historia	Educación	Universidades CRUCH	14.1	De $400 mil a $600 mil	1958000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Inglés y/o Licenciatura en Lengua y Literatura Inglesa	Educación	Universidades CRUCH	12.9	s/i	1825000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Matemáticas y/o Licenciatura en Matemáticas	Educación	Universidades CRUCH	12.4	De $600 mil a $800 mil	1825000
+Pontificia Universidad Católica de Valparaíso	Pedagogía en Música y/o Licenciatura en Ciencias y Artes Musicales	Educación	Universidades CRUCH	12.8	De $400 mil a $600 mil	1787000
+Pontificia Universidad Católica de Valparaíso	Periodismo	Ciencias Sociales	Universidades CRUCH	14.1	De $600 mil a $800 mil	2754000
+Pontificia Universidad Católica de Valparaíso	Psicología	Ciencias Sociales	Universidades CRUCH	16.0	De $600 mil a $800 mil	3272000
+Pontificia Universidad Católica de Valparaíso	Trabajo Social	Ciencias Sociales	Universidades CRUCH	14.3	De $600 mil a $800 mil	1918000
+Universidad Academia de Humanismo Cristiano	Administración Pública	Ciencias Sociales	Universidades Privadas	s/i	s/i	1643868
+Universidad Academia de Humanismo Cristiano	Derecho	Derecho	Universidades Privadas	s/i	s/i	2253225
+Universidad Academia de Humanismo Cristiano	Ingeniería de Ejecución en Gestión Pública	Ciencias Sociales	Universidades Privadas	17.7	De $800 mil a $1 millón	1454000
+Universidad Academia de Humanismo Cristiano	Pedagogía en Educación Básica	Educación	Universidades Privadas	11.6	De $400 mil a $600 mil	1690914
+Universidad Academia de Humanismo Cristiano	Pedagogía en Historia y Ciencias Sociales	Educación	Universidades Privadas	13.6	s/i	1818000
+Universidad Academia de Humanismo Cristiano	Psicología	Ciencias Sociales	Universidades Privadas	14.8	De $600 mil a $800 mil	2244000
+Universidad Academia de Humanismo Cristiano	Sociología	Ciencias Sociales	Universidades Privadas	17.8	s/i	2163000
+Universidad Academia de Humanismo Cristiano	Trabajo Social	Ciencias Sociales	Universidades Privadas	17.0	De $600 mil a $800 mil	1807000
+Universidad Adolfo Ibáñez	Derecho	Derecho	Universidades Privadas	14.3	De $1 millón 200 mil a $1 millón 400 mil	3831102
+Universidad Adolfo Ibáñez	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	15.1	De $1 millón 600 mil a $1 millón 800 mil	4078029
+Universidad Adolfo Ibáñez	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	12.8	De $1 millón 600 mil a $1 millón 800 mil	4327653
+Universidad Adolfo Ibáñez	Periodismo	Ciencias Sociales	Universidades Privadas	15.1	s/i	3538242
+Universidad Adolfo Ibáñez	Psicología	Ciencias Sociales	Universidades Privadas	12.0	De $800 mil a $1 millón	3585701
+Universidad Adventista de Chile	Pedagogía en Educación General Básica	Educación	Universidades Privadas	10.2	De $400 mil a $600 mil	1665000
+Universidad Adventista de Chile	Técnico de Nivel Superior en Enfermería	Salud	Universidades Privadas	5.1	Menor a $400 mil	1045000
+Universidad Alberto Hurtado	Derecho	Derecho	Universidades Privadas	s/i	s/i	3511000
+Universidad Alberto Hurtado	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	s/i	s/i	3079923
+Universidad Alberto Hurtado	Psicología	Ciencias Sociales	Universidades Privadas	12.5	De $600 mil a $800 mil	3370250
+Universidad Alberto Hurtado	Sociología	Ciencias Sociales	Universidades Privadas	12.2	De $800 mil a $1 millón	3060000
+Universidad Alberto Hurtado	Trabajo Social	Ciencias Sociales	Universidades Privadas	11.3	s/i	2510000
+Universidad Arturo Prat	Arquitectura	Arte y Arquitectura	Universidades CRUCH	s/i	s/i	2033000
+Universidad Arturo Prat	Contador Público y Auditor	Administración y Comercio	Universidades CRUCH	12.9	De $600 mil a $800 mil	1434025
+Universidad Arturo Prat	Derecho	Derecho	Universidades CRUCH	18.6	s/i	2078596
+Universidad Arturo Prat	Educación Parvularia	Educación	Universidades CRUCH	12.4	De $400 mil a $600 mil	1446000
+Universidad Arturo Prat	Enfermería	Salud	Universidades CRUCH	13.6	De $800 mil a $1 millón	1797771
+Universidad Arturo Prat	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	16.2	De $1 millón 400 mil a $1 millón 600 mil	2403653
+Universidad Arturo Prat	Ingeniería Civil Metalúrgica	Tecnología	Universidades CRUCH	s/i	s/i	1973000
+Universidad Arturo Prat	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	13.9	De $800 mil a $1 millón	2164357
+Universidad Arturo Prat	Ingeniería de Ejecución en Administración de Empresas	Administración y Comercio	Universidades CRUCH	10.2	De $600 mil a $800 mil	2006374
+Universidad Arturo Prat	Ingeniería de Ejecución en Administración de Empresas mención Administración Pública	Ciencias Sociales	Universidades CRUCH	10.4	s/i	951000
+Universidad Arturo Prat	Licenciatura en Trabajo Social	Ciencias Sociales	Universidades CRUCH	13.2	De $600 mil a $800 mil	1736000
+Universidad Arturo Prat	Pedagogía en Educación Básica	Educación	Universidades CRUCH	12.4	De $400 mil a $600 mil	1399000
+Universidad Arturo Prat	Pedagogía en Educación Física	Educación	Universidades CRUCH	12.9	s/i	1393000
+Universidad Arturo Prat	Pedagogía en Inglés	Educación	Universidades CRUCH	13.4	De $400 mil a $600 mil	1511000
+Universidad Arturo Prat	Psicología	Ciencias Sociales	Universidades CRUCH	12.9	s/i	1998526
+Universidad Arturo Prat	Química y Farmacia	Salud	Universidades CRUCH	16.6	s/i	2022000
+Universidad Arturo Prat	Técnico de Nivel Superior Administración de Empresas	Administración y Comercio	Universidades CRUCH	7.3	s/i	921149
+Universidad Arturo Prat	Técnico de Nivel Superior Asistente Jurídico	Derecho	Universidades CRUCH	10.5	s/i	994000
+Universidad Arturo Prat	Técnico de Nivel Superior Enfermería	Salud	Universidades CRUCH	8.1	s/i	955895
+Universidad Arturo Prat	Técnico de Nivel Superior Prevención de Riesgos	Tecnología	Universidades CRUCH	7.5	De $600 mil a $800 mil	999577
+Universidad Arturo Prat	Técnico de Nivel Superior Traductor Bilingüe Inglés-Español	Humanidades	Universidades CRUCH	11.3	De $400 mil a $600 mil	1013000
+Universidad Arturo Prat	Técnico en Óptica	Salud	Universidades CRUCH	9.5	s/i	1013000
+Universidad Austral de Chile	Administración de Empresas de Turismo	Administración y Comercio	Universidades CRUCH	14.2	De $400 mil a $600 mil	1903000
+Universidad Austral de Chile	Agronomía	Agropecuaria	Universidades CRUCH	17.9	De $1 millón a $1 millón 200 mil	2943000
+Universidad Austral de Chile	Antropología	Ciencias Sociales	Universidades CRUCH	19.3	s/i	1976000
+Universidad Austral de Chile	Arquitectura	Arte y Arquitectura	Universidades CRUCH	16.5	s/i	3058000
+Universidad Austral de Chile	Auditoría	Administración y Comercio	Universidades CRUCH	12.5	De $800 mil a $1 millón	2279614
+Universidad Austral de Chile	Biología Marina	Agropecuaria	Universidades CRUCH	18.6	s/i	2350000
+Universidad Austral de Chile	Bioquímica	Ciencias Básicas	Universidades CRUCH	19.0	s/i	2434000
+Universidad Austral de Chile	Derecho	Derecho	Universidades CRUCH	18.3	De $1 millón 400 mil a $1 millón 600 mil	2756000
+Universidad Austral de Chile	Enfermería	Salud	Universidades CRUCH	12.8	De $1 millón a $1 millón 200 mil	2756000
+Universidad Austral de Chile	Fonoaudiología	Salud	Universidades CRUCH	12.8	s/i	2756000
+Universidad Austral de Chile	Ingeniería Civil en Informática	Tecnología	Universidades CRUCH	19.4	De $1 millón 200 mil a $1 millón 400 mil	2756000
+Universidad Austral de Chile	Ingeniería Civil en Obras Civiles	Tecnología	Universidades CRUCH	19.2	De $1 millón 400 mil a $1 millón 600 mil	2756000
+Universidad Austral de Chile	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	14.0	De $1 millón a $1 millón 200 mil	2756000
+Universidad Austral de Chile	Ingeniería Forestal	Agropecuaria	Universidades CRUCH	17.8	De $600 mil a $800 mil	2652000
+Universidad Austral de Chile	Ingeniería Naval	Tecnología	Universidades CRUCH	17.5	s/i	2600000
+Universidad Austral de Chile	Ingeniería en Acuicultura	Agropecuaria	Universidades CRUCH	19.1	s/i	2444000
+Universidad Austral de Chile	Ingeniería en Alimentos	Tecnología	Universidades CRUCH	17.3	De $600 mil a $800 mil	2434000
+Universidad Austral de Chile	Ingeniería en Computación	Tecnología	Universidades CRUCH	17.1	s/i	2444000
+Universidad Austral de Chile	Ingeniería en Construcción	Tecnología	Universidades CRUCH	17.5	De $800 mil a $1 millón	2600000
+Universidad Austral de Chile	Licenciatura en Ciencias Biológicas	Ciencias Básicas	Universidades CRUCH	12.8	s/i	2350000
+Universidad Austral de Chile	Medicina	Salud	Universidades CRUCH	15.0	De $1 millón 800 mil a $2 millones	3900000
+Universidad Austral de Chile	Medicina Veterinaria	Agropecuaria	Universidades CRUCH	17.2	De $800 mil a $1 millón	3120000
+Universidad Austral de Chile	Obstetricia y Puericultura	Salud	Universidades CRUCH	12.7	De $800 mil a $1 millón	2756000
+Universidad Austral de Chile	Pedagogía en Comunicación en Lengua Inglesa	Educación	Universidades CRUCH	12.0	s/i	1976000
+Universidad Austral de Chile	Pedagogía en Educación Física Deportes y Recreación	Educación	Universidades CRUCH	9.4	s/i	1976000
+Universidad Austral de Chile	Pedagogía en Lenguaje y Comunicación	Educación	Universidades CRUCH	10.3	De $400 mil a $600 mil	1976000
+Universidad Austral de Chile	Periodismo	Ciencias Sociales	Universidades CRUCH	14.0	De $400 mil a $600 mil	2350000
+Universidad Austral de Chile	Psicología	Ciencias Sociales	Universidades CRUCH	12.1	s/i	2756000
+Universidad Austral de Chile	Química y Farmacia	Salud	Universidades CRUCH	19.3	De $1 millón a $1 millón 200 mil	2756000
+Universidad Austral de Chile	Tecnología Médica	Salud	Universidades CRUCH	14.2	De $600 mil a $800 mil	2756000
+Universidad Austral de Chile	Terapia Ocupacional	Salud	Universidades CRUCH	12.3	s/i	2756000
+Universidad Autónoma de Chile	Arquitectura	Arte y Arquitectura	Universidades Privadas	16.9	s/i	2436000
+Universidad Autónoma de Chile	Contador Público Auditor	Administración y Comercio	Universidades Privadas	11.2	s/i	1676433
+Universidad Autónoma de Chile	Derecho	Derecho	Universidades Privadas	16.7	s/i	2424758
+Universidad Autónoma de Chile	Enfermería	Salud	Universidades Privadas	11.2	s/i	2699609
+Universidad Autónoma de Chile	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	s/i	s/i	2616818
+Universidad Autónoma de Chile	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	13.7	s/i	2315494
+Universidad Autónoma de Chile	Ingeniería en Construcción	Tecnología	Universidades Privadas	13.2	s/i	2361943
+Universidad Autónoma de Chile	Ingeniería en Informática	Tecnología	Universidades Privadas	14.2	s/i	1611297
+Universidad Autónoma de Chile	Kinesiología	Salud	Universidades Privadas	12.3	s/i	2690221
+Universidad Autónoma de Chile	Nutrición y Dietética	Salud	Universidades Privadas	11.1	s/i	2796851
+Universidad Autónoma de Chile	Pedagogía en Castellano	Educación	Universidades Privadas	10.3	s/i	1653600
+Universidad Autónoma de Chile	Pedagogía en Educación Básica	Educación	Universidades Privadas	9.9	De $400 mil a $600 mil	1684907
+Universidad Autónoma de Chile	Pedagogía en Educación Física	Educación	Universidades Privadas	11.0	s/i	1894058
+Universidad Autónoma de Chile	Pedagogía en Educación Parvularia	Educación	Universidades Privadas	9.5	De $400 mil a $600 mil	1644135
+Universidad Autónoma de Chile	Pedagogía en Historia, Geografía y Ciencias Sociales	Educación	Universidades Privadas	11.4	De $400 mil a $600 mil	1653600
+Universidad Autónoma de Chile	Pedagogía en Inglés	Educación	Universidades Privadas	11.6	De $400 mil a $600 mil	1753219
+Universidad Autónoma de Chile	Pedagogía en Matemáticas y Física	Educación	Universidades Privadas	10.1	s/i	1653600
+Universidad Autónoma de Chile	Psicología	Ciencias Sociales	Universidades Privadas	12.4	s/i	2424950
+Universidad Autónoma de Chile	Trabajo Social	Ciencias Sociales	Universidades Privadas	13.0	De $400 mil a $600 mil	1621858
+Universidad Autónoma de Chile	Técnico Universitario en Administración mención Gestión de Empresas	Administración y Comercio	Universidades Privadas	7.2	s/i	1125911
+Universidad Autónoma de Chile	Técnico Universitario en Relaciones Públicas y Producción Eventos	Ciencias Sociales	Universidades Privadas	8.2	s/i	1057000
+Universidad Bernardo O'Higgins	Derecho	Derecho	Universidades Privadas	18.3	s/i	2100000
+Universidad Bernardo O'Higgins	Ingeniería de Ejecución en Cartografía	Tecnología	Universidades Privadas	s/i	s/i	1604000
+Universidad Bernardo O'Higgins	Ingeniería de Ejecución en Prevención de Riesgos y Medio Ambiente	Tecnología	Universidades Privadas	10.9	De $800 mil a $1 millón	1601000
+Universidad Bernardo O'Higgins	Pedagogía en Educación General Básica	Educación	Universidades Privadas	11.1	s/i	1482000
+Universidad Bernardo O'Higgins	Periodismo	Ciencias Sociales	Universidades Privadas	s/i	s/i	1837000
+Universidad Bolivariana	Administración Pública	Ciencias Sociales	Universidades Privadas	11.6	s/i	1306758
+Universidad Bolivariana	Derecho	Derecho	Universidades Privadas	17.6	De $800 mil a $1 millón	1771332
+Universidad Bolivariana	Enfermería	Salud	Universidades Privadas	s/i	s/i	1869798
+Universidad Bolivariana	Ingeniería Industrial	Tecnología	Universidades Privadas	s/i	s/i	1193750
+Universidad Bolivariana	Ingeniería en Prevención de Riesgos	Tecnología	Universidades Privadas	s/i	s/i	1267429
+Universidad Bolivariana	Pedagogía en Educación Básica	Educación	Universidades Privadas	10.9	s/i	1202931
+Universidad Bolivariana	Pedagogía en Educación Física y Deporte	Educación	Universidades Privadas	s/i	s/i	1290000
+Universidad Bolivariana	Psicología	Ciencias Sociales	Universidades Privadas	17.4	s/i	1530163
+Universidad Bolivariana	Trabajo Social	Ciencias Sociales	Universidades Privadas	12.2	De $400 mil a $600 mil	1203163
+Universidad Católica Silva Henríquez	Contador Público y Auditor	Administración y Comercio	Universidades Privadas	s/i	s/i	1912200
+Universidad Católica Silva Henríquez	Educación Parvularia	Educación	Universidades Privadas	9.4	De $400 mil a $600 mil	2121900
+Universidad Católica Silva Henríquez	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	13.0	De $800 mil a $1 millón	2006300
+Universidad Católica Silva Henríquez	Pedagogía en Castellano	Educación	Universidades Privadas	11.4	De $400 mil a $600 mil	2121900
+Universidad Católica Silva Henríquez	Pedagogía en Educación Básica	Educación	Universidades Privadas	9.3	De $400 mil a $600 mil	2121900
+Universidad Católica Silva Henríquez	Pedagogía en Educación Diferencial	Educación	Universidades Privadas	10.2	De $400 mil a $600 mil	2121900
+Universidad Católica Silva Henríquez	Pedagogía en Educación Física	Educación	Universidades Privadas	11.4	De $400 mil a $600 mil	2272700
+Universidad Católica Silva Henríquez	Pedagogía en Historia y Geografía	Educación	Universidades Privadas	11.9	De $400 mil a $600 mil	2121900
+Universidad Católica Silva Henríquez	Pedagogía en Inglés	Educación	Universidades Privadas	11.9	De $400 mil a $600 mil	2239800
+Universidad Católica Silva Henríquez	Pedagogía en Matemáticas e Informática Educativa	Educación	Universidades Privadas	11.4	De $600 mil a $800 mil	2121900
+Universidad Católica Silva Henríquez	Pedagogía en Religión en Educación Básica y Media	Educación	Universidades Privadas	s/i	s/i	1856500
+Universidad Católica Silva Henríquez	Psicología	Ciencias Sociales	Universidades Privadas	11.7	s/i	2239800
+Universidad Católica Silva Henríquez	Sociología	Ciencias Sociales	Universidades Privadas	11.4	De $600 mil a $800 mil	2121900
+Universidad Católica Silva Henríquez	Trabajo Social	Ciencias Sociales	Universidades Privadas	10.3	De $600 mil a $800 mil	2121900
+Universidad Católica de Temuco	Agronomía	Agropecuaria	Universidades CRUCH	15.7	De $800 mil a $1 millón	2389639
+Universidad Católica de Temuco	Derecho	Derecho	Universidades CRUCH	15.4	De $1 millón a $1 millón 200 mil	2905000
+Universidad Católica de Temuco	Educación de Párvulos	Educación	Universidades CRUCH	10.6	De $400 mil a $600 mil	1835000
+Universidad Católica de Temuco	Ingeniería en Acuicultura	Agropecuaria	Universidades CRUCH	14.8	s/i	2332127
+Universidad Católica de Temuco	Licenciatura en Antropología	Ciencias Sociales	Universidades CRUCH	15.8	s/i	2141000
+Universidad Católica de Temuco	Medicina Veterinaria	Agropecuaria	Universidades CRUCH	17.1	De $600 mil a $800 mil	3119000
+Universidad Católica de Temuco	Pedagogía Media en Ciencias Naturales y Biología	Educación	Universidades CRUCH	s/i	De $400 mil a $600 mil	1835000
+Universidad Católica de Temuco	Pedagogía Media en Matemática	Educación	Universidades CRUCH	s/i	De $400 mil a $600 mil	1835000
+Universidad Católica de Temuco	Pedagogía en Educación Básica	Educación	Universidades CRUCH	11.1	De $400 mil a $600 mil	1835000
+Universidad Católica de Temuco	Pedagogía en Educación Diferencial con Especialidad en N.E.E.T. y Deficiencia Mental	Educación	Universidades CRUCH	10.9	De $400 mil a $600 mil	1835000
+Universidad Católica de Temuco	Pedagogía en Inglés	Educación	Universidades CRUCH	12.0	s/i	2141000
+Universidad Católica de Temuco	Trabajo Social	Ciencias Sociales	Universidades CRUCH	11.7	De $600 mil a $800 mil	1835000
+Universidad Católica de la Santísima Concepción	Biología Marina	Agropecuaria	Universidades CRUCH	15.6	De $400 mil a $600 mil	2138000
+Universidad Católica de la Santísima Concepción	Contador Auditor	Administración y Comercio	Universidades CRUCH	13.2	De $600 mil a $800 mil	1897320
+Universidad Católica de la Santísima Concepción	Educación de Párvulos	Educación	Universidades CRUCH	9.9	De $400 mil a $600 mil	1766000
+Universidad Católica de la Santísima Concepción	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	18.0	De $800 mil a $1 millón	2423000
+Universidad Católica de la Santísima Concepción	Ingeniería Civil Informática	Tecnología	Universidades CRUCH	18.5	De $1 millón 200 mil a $1 millón 400 mil	2423000
+Universidad Católica de la Santísima Concepción	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	14.4	De $800 mil a $1 millón	2357000
+Universidad Católica de la Santísima Concepción	Ingeniería de Ejecución Industrial	Tecnología	Universidades CRUCH	19.6	s/i	1140159
+Universidad Católica de la Santísima Concepción	Ingeniería de Ejecución en Administración de Empresas mención Finanzas y Comercio Internacional	Administración y Comercio	Universidades CRUCH	s/i	s/i	1099624
+Universidad Católica de la Santísima Concepción	Licenciatura en Derecho	Derecho	Universidades CRUCH	18.1	De $1 millón a $1 millón 200 mil	2501000
+Universidad Católica de la Santísima Concepción	Licenciatura en Enfermería	Salud	Universidades CRUCH	10.7	De $800 mil a $1 millón	2689000
+Universidad Católica de la Santísima Concepción	Licenciatura en Medicina	Salud	Universidades CRUCH	14.5	Sobre $2 millones	4296000
+Universidad Católica de la Santísima Concepción	Nutrición y Dietética	Salud	Universidades CRUCH	11.9	s/i	1928000
+Universidad Católica de la Santísima Concepción	Pedagogía Media en Religión y Moral	Educación	Universidades CRUCH	13.3	s/i	1465000
+Universidad Católica de la Santísima Concepción	Pedagogía en Educación General Básica	Educación	Universidades CRUCH	9.6	De $400 mil a $600 mil	1511000
+Universidad Católica de la Santísima Concepción	Pedagogía en Educación Media en Inglés	Educación	Universidades CRUCH	12.9	s/i	1651000
+Universidad Católica de la Santísima Concepción	Pedagogía en Educación Media en Lenguaje y Comunicación	Educación	Universidades CRUCH	12.0	s/i	1620000
+Universidad Católica de la Santísima Concepción	Periodismo	Ciencias Sociales	Universidades CRUCH	13.7	De $600 mil a $800 mil	2203000
+Universidad Católica de la Santísima Concepción	Química Ambiental	Ciencias Básicas	Universidades CRUCH	s/i	s/i	2098000
+Universidad Católica de la Santísima Concepción	Trabajo Social	Ciencias Sociales	Universidades CRUCH	12.9	s/i	1735000
+Universidad Católica de la Santísima Concepción	Técnico Universitario en Enfermería	Salud	Universidades CRUCH	8.3	s/i	997739
+Universidad Católica del Maule	Agronomía	Agropecuaria	Universidades CRUCH	19.1	s/i	2460000
+Universidad Católica del Maule	Auditoría	Administración y Comercio	Universidades CRUCH	14.8	De $800 mil a $1 millón	1600000
+Universidad Católica del Maule	Educación Especial con mención Trastornos Específicos del Aprendizaje/Retardo Mental	Educación	Universidades CRUCH	11.0	De $400 mil a $600 mil	1870000
+Universidad Católica del Maule	Enfermería	Salud	Universidades CRUCH	13.1	De $1 millón a $1 millón 200 mil	2570000
+Universidad Católica del Maule	Ingeniería Civil Informática	Tecnología	Universidades CRUCH	17.6	s/i	2630000
+Universidad Católica del Maule	Ingeniería Forestal	Agropecuaria	Universidades CRUCH	21.5	De $600 mil a $800 mil	2360000
+Universidad Católica del Maule	Ingeniería en Construcción	Tecnología	Universidades CRUCH	16.8	De $1 millón a $1 millón 200 mil	2570000
+Universidad Católica del Maule	Kinesiología	Salud	Universidades CRUCH	14.8	De $800 mil a $1 millón	2570000
+Universidad Católica del Maule	Pedagogía en Ciencias mención en Biología, Física, Química	Educación	Universidades CRUCH	11.6	s/i	1870000
+Universidad Católica del Maule	Pedagogía en Educación Física con Mención	Educación	Universidades CRUCH	12.0	De $400 mil a $600 mil	1870000
+Universidad Católica del Maule	Pedagogía en Educación General Básica	Educación	Universidades CRUCH	11.1	De $400 mil a $600 mil	1820000
+Universidad Católica del Maule	Pedagogía en Educación Parvularia	Educación	Universidades CRUCH	9.5	De $400 mil a $600 mil	1820000
+Universidad Católica del Maule	Pedagogía en Religión y Filosofía	Educación	Universidades CRUCH	12.5	De $400 mil a $600 mil	1820000
+Universidad Católica del Maule	Psicología con mención Psicología de la Salud-Psicología Educacional	Ciencias Sociales	Universidades CRUCH	12.4	s/i	2470000
+Universidad Católica del Maule	Trabajo Social	Ciencias Sociales	Universidades CRUCH	12.5	De $600 mil a $800 mil	1910000
+Universidad Católica del Norte	Arquitectura	Arte y Arquitectura	Universidades CRUCH	18.3	De $1 millón a $1 millón 200 mil	2754000
+Universidad Católica del Norte	Biología Marina	Agropecuaria	Universidades CRUCH	16.9	s/i	2499000
+Universidad Católica del Norte	Contador Auditor/Contador Público	Administración y Comercio	Universidades CRUCH	14.2	De $1 millón a $1 millón 200 mil	2532290
+Universidad Católica del Norte	Derecho	Derecho	Universidades CRUCH	17.3	De $1 millón 600 mil a $1 millón 800 mil	2754000
+Universidad Católica del Norte	Geología	Ciencias Básicas	Universidades CRUCH	21.1	s/i	2754000
+Universidad Católica del Norte	Ingeniería Civil	Tecnología	Universidades CRUCH	19.8	De $1 millón 600 mil a $1 millón 800 mil	2656000
+Universidad Católica del Norte	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	18.0	De $1 millón 800 mil a $2 millones	2656000
+Universidad Católica del Norte	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	13.7	De $1 millón a $1 millón 200 mil	2754000
+Universidad Católica del Norte	Ingeniería de Ejecución en Metalurgia	Tecnología	Universidades CRUCH	14.7	s/i	2268000
+Universidad Católica del Norte	Ingeniería en Acuicultura	Agropecuaria	Universidades CRUCH	s/i	s/i	2416000
+Universidad Católica del Norte	Ingeniería en Construcción	Tecnología	Universidades CRUCH	17.2	De $1 millón 200 mil a $1 millón 400 mil	2499000
+Universidad Católica del Norte	Ingeniería en Prevención de Riesgos y Medioambiente	Tecnología	Universidades CRUCH	12.5	s/i	2499000
+Universidad Católica del Norte	Medicina	Salud	Universidades CRUCH	15.1	s/i	3919000
+Universidad Católica del Norte	Pedagogía en Educación Básica	Educación	Universidades CRUCH	s/i	s/i	1871000
+Universidad Católica del Norte	Pedagogía en Inglés	Educación	Universidades CRUCH	12.1	s/i	2268000
+Universidad Católica del Norte	Periodismo	Ciencias Sociales	Universidades CRUCH	11.9	De $600 mil a $800 mil	2499000
+Universidad Católica del Norte	Psicología	Ciencias Sociales	Universidades CRUCH	12.8	De $800 mil a $1 millón	2499000
+Universidad Católica del Norte	Química y Farmacia	Salud	Universidades CRUCH	16.6	s/i	2754000
+Universidad Central de Chile	Administración Pública	Ciencias Sociales	Universidades Privadas	11.3	De $1 millón a $1 millón 200 mil	2621000
+Universidad Central de Chile	Arquitectura	Arte y Arquitectura	Universidades Privadas	18.8	De $800 mil a $1 millón	3587000
+Universidad Central de Chile	Ciencia Política	Ciencias Sociales	Universidades Privadas	11.5	s/i	2621000
+Universidad Central de Chile	Derecho	Derecho	Universidades Privadas	18.8	De $1 millón 200 mil a $1 millón 400 mil	2979870
+Universidad Central de Chile	Educación General Básica	Educación	Universidades Privadas	9.5	De $400 mil a $600 mil	2113290
+Universidad Central de Chile	Educación Parvularia	Educación	Universidades Privadas	9.2	De $400 mil a $600 mil	1979014
+Universidad Central de Chile	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	s/i	s/i	2997566
+Universidad Central de Chile	Ingeniería Civil en Computación e Informática	Tecnología	Universidades Privadas	19.3	De $1 millón 600 mil a $1 millón 800 mil	3199000
+Universidad Central de Chile	Ingeniería Civil en Obras Civiles	Tecnología	Universidades Privadas	s/i	De $1 millón 400 mil a $1 millón 600 mil	3248000
+Universidad Central de Chile	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	11.5	De $1 millón 200 mil a $1 millón 400 mil	3616742
+Universidad Central de Chile	Ingeniería de Ejecución en Administración de Negocios	Administración y Comercio	Universidades Privadas	10.4	De $800 mil a $1 millón	2121527
+Universidad Central de Chile	Ingeniería en Construcción	Tecnología	Universidades Privadas	s/i	De $1 millón a $1 millón 200 mil	4492507
+Universidad Central de Chile	Pedagogía en Educación Diferencial e Integral de Necesidades Educativas Especiales	Educación	Universidades Privadas	9.5	s/i	2160700
+Universidad Central de Chile	Pedagogía en Educación Física	Educación	Universidades Privadas	10.8	s/i	2126545
+Universidad Central de Chile	Pedagogía en Lengua y Cultura Inglesa	Educación	Universidades Privadas	9.7	s/i	1982000
+Universidad Central de Chile	Psicología	Ciencias Sociales	Universidades Privadas	11.5	De $800 mil a $1 millón	2938670
+Universidad Central de Chile	Sociología	Ciencias Sociales	Universidades Privadas	10.6	s/i	2371654
+Universidad Central de Chile	Trabajo Social	Ciencias Sociales	Universidades Privadas	s/i	s/i	2031697
+Universidad Diego Portales	Arquitectura	Arte y Arquitectura	Universidades Privadas	15.7	s/i	3616000
+Universidad Diego Portales	Ciencia Política	Ciencias Sociales	Universidades Privadas	10.9	s/i	2160000
+Universidad Diego Portales	Contador Auditor-Contador Público	Administración y Comercio	Universidades Privadas	11.5	De $1 millón a $1 millón 200 mil	2764125
+Universidad Diego Portales	Derecho	Derecho	Universidades Privadas	17.5	De $1 millón 400 mil a $1 millón 600 mil	3616000
+Universidad Diego Portales	Diseño	Arte y Arquitectura	Universidades Privadas	12.7	De $600 mil a $800 mil	2071000
+Universidad Diego Portales	Enfermería	Salud	Universidades Privadas	12.4	De $1 millón a $1 millón 200 mil	3428000
+Universidad Diego Portales	Historia	Humanidades	Universidades Privadas	11.8	s/i	3616000
+Universidad Diego Portales	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	15.2	De $1 millón 400 mil a $1 millón 600 mil	3300000
+Universidad Diego Portales	Ingeniería Civil en Informática y Telecomunicaciones	Tecnología	Universidades Privadas	17.0	s/i	3616000
+Universidad Diego Portales	Ingeniería Civil en Obras Civiles	Tecnología	Universidades Privadas	15.5	s/i	3616000
+Universidad Diego Portales	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	13.5	De $1 millón 200 mil a $1 millón 400 mil	3106000
+Universidad Diego Portales	Ingeniería en Finanzas	Administración y Comercio	Universidades Privadas	11.1	De $1 millón 200 mil a $1 millón 400 mil	3616000
+Universidad Diego Portales	Ingeniería en Informática y Gestión	Tecnología	Universidades Privadas	13.9	De $1 millón a $1 millón 200 mil	2076335
+Universidad Diego Portales	Medicina	Salud	Universidades Privadas	15.4	s/i	5494000
+Universidad Diego Portales	Odontología	Salud	Universidades Privadas	15.4	s/i	5494000
+Universidad Diego Portales	Pedagogía en Educación General Básica	Educación	Universidades Privadas	9.6	De $400 mil a $600 mil	2160000
+Universidad Diego Portales	Pedagogía en Educación Parvularia	Educación	Universidades Privadas	10.3	s/i	2254000
+Universidad Diego Portales	Periodismo	Ciencias Sociales	Universidades Privadas	11.9	De $800 mil a $1 millón	2160000
+Universidad Diego Portales	Psicología	Ciencias Sociales	Universidades Privadas	11.5	De $800 mil a $1 millón	3099000
+Universidad Diego Portales	Publicidad	Ciencias Sociales	Universidades Privadas	11.4	De $800 mil a $1 millón	3484000
+Universidad Diego Portales	Sociología	Ciencias Sociales	Universidades Privadas	13.1	s/i	2066000
+Universidad Diego Portales	Tecnología Médica	Salud	Universidades Privadas	15.2	s/i	2066000
+Universidad Finis Terrae	Actuación	Arte y Arquitectura	Universidades Privadas	s/i	s/i	3420000
+Universidad Finis Terrae	Arquitectura	Arte y Arquitectura	Universidades Privadas	14.8	De $1 millón a $1 millón 200 mil	3880000
+Universidad Finis Terrae	Artes Visuales	Arte y Arquitectura	Universidades Privadas	11.0	De $400 mil a $600 mil	3210000
+Universidad Finis Terrae	Derecho	Derecho	Universidades Privadas	17.4	De $1 millón 200 mil a $1 millón 400 mil	3185050
+Universidad Finis Terrae	Diseño	Arte y Arquitectura	Universidades Privadas	12.7	De $600 mil a $800 mil	3660000
+Universidad Finis Terrae	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	15.1	De $1 millón 400 mil a $1 millón 600 mil	3015610
+Universidad Finis Terrae	Kinesiología	Salud	Universidades Privadas	12.9	s/i	3700000
+Universidad Finis Terrae	Medicina	Salud	Universidades Privadas	15.3	s/i	5940000
+Universidad Finis Terrae	Nutrición y Dietética	Salud	Universidades Privadas	13.1	s/i	3590000
+Universidad Finis Terrae	Odontología	Salud	Universidades Privadas	15.2	s/i	5790000
+Universidad Finis Terrae	Periodismo	Ciencias Sociales	Universidades Privadas	12.8	De $800 mil a $1 millón	2980000
+Universidad Iberoamericana de Ciencias y Tecnología UNICIT	Enfermería	Salud	Universidades Privadas	s/i	s/i	2250000
+Universidad Iberoamericana de Ciencias y Tecnología UNICIT	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	s/i	De $1 millón a $1 millón 200 mil	1648571
+Universidad Iberoamericana de Ciencias y Tecnología UNICIT	Kinesiología	Salud	Universidades Privadas	s/i	s/i	2250000
+Universidad Iberoamericana de Ciencias y Tecnología UNICIT	Medicina Veterinaria	Agropecuaria	Universidades Privadas	s/i	De $600 mil a $800 mil	2784150
+Universidad Internacional SEK	Periodismo	Ciencias Sociales	Universidades Privadas	s/i	s/i	1705109
+Universidad Internacional SEK	Psicología	Ciencias Sociales	Universidades Privadas	s/i	De $600 mil a $800 mil	1912681
+Universidad La República	Derecho	Derecho	Universidades Privadas	20.1	De $1 millón a $1 millón 200 mil	1608352
+Universidad La República	Enfermería	Salud	Universidades Privadas	12.4	De $1 millón a $1 millón 200 mil	1736045
+Universidad La República	Pedagogía General Básica	Educación	Universidades Privadas	12.2	s/i	1150000
+Universidad La República	Pedagogía en Educación Física	Educación	Universidades Privadas	11.4	s/i	1382020
+Universidad Metropolitana de Ciencias de la Educación	Kinesiología	Salud	Universidades CRUCH	13.7	De $800 mil a $1 millón	2255000
+Universidad Metropolitana de Ciencias de la Educación	Licenciatura en Educación Matemática y Pedagogía en Matemática mención Ciencias Naturales, o Informática Educativa, o Estadística Educacional, o Educación en Tecnología, o Educación en Astronomía	Educación	Universidades CRUCH	13.8	De $600 mil a $800 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Licenciatura en Educación con mención en Castellano y Pedagogía en Castellano	Educación	Universidades CRUCH	13.9	De $600 mil a $800 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Licenciatura en Educación con mención en Historia o Geografía y Pedagogía en Historia, Geografía y Educación Cívica	Educación	Universidades CRUCH	12.3	De $400 mil a $600 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Licenciatura en Educación y Pedagogía en Educación Básica con mención en Matemática, o en Lenguaje y Comunicación, o en Ciencias Naturales, o en Ciencias Sociales, o en Primer Ciclo (Santiago)	Educación	Universidades CRUCH	12.1	De $400 mil a $600 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Licenciatura en Educación y Pedagogía en Filosofía	Educación	Universidades CRUCH	13.2	s/i	1675000
+Universidad Metropolitana de Ciencias de la Educación	Pedagogía en Alemán, Francés e Inglés	Educación	Universidades CRUCH	13.7	De $400 mil a $600 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Pedagogía en Artes Visuales y Música	Educación	Universidades CRUCH	13.1	De $400 mil a $600 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Pedagogía en Educación Diferencial Especialidad	Educación	Universidades CRUCH	12.1	De $400 mil a $600 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Pedagogía en Educación Física, Deportes y Recreación	Educación	Universidades CRUCH	11.1	De $600 mil a $800 mil	1675000
+Universidad Metropolitana de Ciencias de la Educación	Pedagogía en Química, Biología y Física	Educación	Universidades CRUCH	14.2	De $600 mil a $800 mil	1675000
+Universidad Nacional Andrés Bello	Arquitectura	Arte y Arquitectura	Universidades Privadas	17.3	De $800 mil a $1 millón	3469953
+Universidad Nacional Andrés Bello	Bioquímica	Ciencias Básicas	Universidades Privadas	15.2	s/i	3228583
+Universidad Nacional Andrés Bello	Contador Auditor	Administración y Comercio	Universidades Privadas	12.1	De $800 mil a $1 millón	2256646
+Universidad Nacional Andrés Bello	Derecho	Derecho	Universidades Privadas	17.4	De $1 millón 200 mil a $1 millón 400 mil	3434564
+Universidad Nacional Andrés Bello	Diseño mención en Gráfico, Industria de Interiores, de Iluminación Arquitectónica, de Envases y Embalajes	Arte y Arquitectura	Universidades Privadas	15.0	De $600 mil a $800 mil	3410213
+Universidad Nacional Andrés Bello	Ecoturismo e Ingeniería en Turismo y Hoteleria	Administración y Comercio	Universidades Privadas	11.4	s/i	2716189
+Universidad Nacional Andrés Bello	Educación Física para la Educación General Básica	Educación	Universidades Privadas	10.8	De $400 mil a $600 mil	2771335
+Universidad Nacional Andrés Bello	Educación General Básica	Educación	Universidades Privadas	10.4	De $400 mil a $600 mil	2190934
+Universidad Nacional Andrés Bello	Educación Musical para la Educación Preescolar y Básica	Educación	Universidades Privadas	11.7	De $400 mil a $600 mil	2500430
+Universidad Nacional Andrés Bello	Educación Parvularia	Educación	Universidades Privadas	11.7	De $400 mil a $600 mil	2278632
+Universidad Nacional Andrés Bello	Enfermería	Salud	Universidades Privadas	13.5	De $1 millón a $1 millón 200 mil	3325597
+Universidad Nacional Andrés Bello	Fonoaudiología	Salud	Universidades Privadas	14.2	s/i	3619986
+Universidad Nacional Andrés Bello	Ingeniería Ambiental	Tecnología	Universidades Privadas	16.3	De $800 mil a $1 millón	3273115
+Universidad Nacional Andrés Bello	Ingeniería Civil	Tecnología	Universidades Privadas	s/i	s/i	3574262
+Universidad Nacional Andrés Bello	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	16.6	De $1 millón a $1 millón 200 mil	3538326
+Universidad Nacional Andrés Bello	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	12.5	De $1 millón 200 mil a $1 millón 400 mil	3557976
+Universidad Nacional Andrés Bello	Ingeniería Industrial	Tecnología	Universidades Privadas	11.5	De $1 millón a $1 millón 200 mil	2398000
+Universidad Nacional Andrés Bello	Ingeniería en Acuicultura	Agropecuaria	Universidades Privadas	s/i	De $600 mil a $800 mil	3155829
+Universidad Nacional Andrés Bello	Ingeniería en Administración de Empresas	Administración y Comercio	Universidades Privadas	11.6	De $800 mil a $1 millón	2367843
+Universidad Nacional Andrés Bello	Ingeniería en Computación e Informática	Tecnología	Universidades Privadas	11.9	De $1 millón a $1 millón 200 mil	2319810
+Universidad Nacional Andrés Bello	Ingeniería en Construcción	Tecnología	Universidades Privadas	19.5	De $1 millón a $1 millón 200 mil	3495776
+Universidad Nacional Andrés Bello	Ingeniería en Seguridad y Prevención de Riesgos	Tecnología	Universidades Privadas	10.3	s/i	2233459
+Universidad Nacional Andrés Bello	Kinesiología	Salud	Universidades Privadas	13.4	De $800 mil a $1 millón	3510651
+Universidad Nacional Andrés Bello	Licenciatura en Artes Visuales	Arte y Arquitectura	Universidades Privadas	10.3	s/i	2928533
+Universidad Nacional Andrés Bello	Licenciatura en Historia	Humanidades	Universidades Privadas	10.6	De $400 mil a $600 mil	2651776
+Universidad Nacional Andrés Bello	Medicina	Salud	Universidades Privadas	15.2	s/i	5604213
+Universidad Nacional Andrés Bello	Nutrición y Dietética	Salud	Universidades Privadas	13.6	s/i	3388416
+Universidad Nacional Andrés Bello	Odontología	Salud	Universidades Privadas	15.3	De $1 millón 200 mil a $1 millón 400 mil	5521080
+Universidad Nacional Andrés Bello	Pedagogía en Inglés	Educación	Universidades Privadas	10.3	s/i	2480805
+Universidad Nacional Andrés Bello	Periodismo	Ciencias Sociales	Universidades Privadas	14.4	De $600 mil a $800 mil	3721618
+Universidad Nacional Andrés Bello	Programa de Pedagogía en Educación Media para Licenciados	Educación	Universidades Privadas	s/i	s/i	1470161
+Universidad Nacional Andrés Bello	Psicología	Ciencias Sociales	Universidades Privadas	14.9	De $600 mil a $800 mil	3608947
+Universidad Nacional Andrés Bello	Psicopedagogía	Ciencias Sociales	Universidades Privadas	10.6	De $400 mil a $600 mil	2330654
+Universidad Nacional Andrés Bello	Publicidad	Ciencias Sociales	Universidades Privadas	12.1	s/i	3495564
+Universidad Nacional Andrés Bello	Química y Farmacia	Salud	Universidades Privadas	17.2	s/i	3555111
+Universidad Nacional Andrés Bello	Tecnología Médica	Salud	Universidades Privadas	14.5	De $1 millón a $1 millón 200 mil	3472866
+Universidad Nacional Andrés Bello	Terapia Ocupacional	Salud	Universidades Privadas	13.9	s/i	3387131
+Universidad Nacional Andrés Bello	Trabajo Social	Ciencias Sociales	Universidades Privadas	10.7	s/i	2445390
+Universidad Pedro de Valdivia	Derecho	Derecho	Universidades Privadas	s/i	s/i	1972145
+Universidad Pedro de Valdivia	Enfermería	Salud	Universidades Privadas	10.0	s/i	2262757
+Universidad Pedro de Valdivia	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	13.2	s/i	2045740
+Universidad Pedro de Valdivia	Pedagogía en Educación Física	Educación	Universidades Privadas	7.9	s/i	1620484
+Universidad Pedro de Valdivia	Psicología	Ciencias Sociales	Universidades Privadas	12.7	De $600 mil a $800 mil	1944357
+Universidad San Sebastián	Derecho	Derecho	Universidades Privadas	16.8	s/i	3206527
+Universidad San Sebastián	Educación Parvularia	Educación	Universidades Privadas	9.9	De $400 mil a $600 mil	2039000
+Universidad San Sebastián	Enfermería	Salud	Universidades Privadas	13.0	De $800 mil a $1 millón	3195163
+Universidad San Sebastián	Fonoaudiología	Salud	Universidades Privadas	12.2	s/i	3301744
+Universidad San Sebastián	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	12.5	De $1 millón a $1 millón 200 mil	3259558
+Universidad San Sebastián	Kinesiología	Salud	Universidades Privadas	13.7	De $800 mil a $1 millón	3630410
+Universidad San Sebastián	Medicina	Salud	Universidades Privadas	15.8	De $1 millón 800 mil a $2 millones	5915872
+Universidad San Sebastián	Medicina Veterinaria	Agropecuaria	Universidades Privadas	15.6	s/i	3374740
+Universidad San Sebastián	Nutrición y Dietética	Salud	Universidades Privadas	13.8	De $600 mil a $800 mil	2930567
+Universidad San Sebastián	Odontología	Salud	Universidades Privadas	14.7	De $1 millón 200 mil a $1 millón 400 mil	5478640
+Universidad San Sebastián	Pedagogía de Educación Media en Educación Física	Educación	Universidades Privadas	11.4	De $400 mil a $600 mil	2205613
+Universidad San Sebastián	Pedagogía de Educación Media en Inglés	Educación	Universidades Privadas	11.8	s/i	2206114
+Universidad San Sebastián	Pedagogía en Educación Básica	Educación	Universidades Privadas	8.9	De $400 mil a $600 mil	1811585
+Universidad San Sebastián	Pedagogía en Educación Diferencial	Educación	Universidades Privadas	10.8	De $400 mil a $600 mil	1992551
+Universidad San Sebastián	Pedagogía en Historia, Geografía y Ciencias Sociales	Educación	Universidades Privadas	11.3	s/i	2242377
+Universidad San Sebastián	Psicología	Ciencias Sociales	Universidades Privadas	12.5	De $600 mil a $800 mil	3212200
+Universidad San Sebastián	Tecnología Médica	Salud	Universidades Privadas	13.8	De $800 mil a $1 millón	3557697
+Universidad San Sebastián	Trabajo Social	Ciencias Sociales	Universidades Privadas	11.9	De $400 mil a $600 mil	2145000
+Universidad San Sebastián	Técnico en Enfermería	Salud	Universidades Privadas	6.3	s/i	1203994
+Universidad Santo Tomás	Agronomía	Agropecuaria	Universidades Privadas	13.7	s/i	2721846
+Universidad Santo Tomás	Contador Auditor	Administración y Comercio	Universidades Privadas	11.7	De $800 mil a $1 millón	1630262
+Universidad Santo Tomás	Derecho	Derecho	Universidades Privadas	18.5	s/i	2368208
+Universidad Santo Tomás	Diseño Gráfico	Arte y Arquitectura	Universidades Privadas	12.1	De $400 mil a $600 mil	2032073
+Universidad Santo Tomás	Educación Básica	Educación	Universidades Privadas	10.4	De $400 mil a $600 mil	1502763
+Universidad Santo Tomás	Educación Diferencial	Educación	Universidades Privadas	10.8	s/i	1549621
+Universidad Santo Tomás	Educación Parvularia	Educación	Universidades Privadas	10.3	De $400 mil a $600 mil	1497293
+Universidad Santo Tomás	Enfermería	Salud	Universidades Privadas	13.1	s/i	2470670
+Universidad Santo Tomás	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	15.3	De $800 mil a $1 millón	2217576
+Universidad Santo Tomás	Kinesiología	Salud	Universidades Privadas	13.3	s/i	2529146
+Universidad Santo Tomás	Medicina Veterinaria	Agropecuaria	Universidades Privadas	15.5	De $600 mil a $800 mil	2755232
+Universidad Santo Tomás	Pedagogía en Educación Física	Educación	Universidades Privadas	11.0	s/i	1889080
+Universidad Santo Tomás	Pedagogía en Inglés	Educación	Universidades Privadas	11.2	s/i	1860117
+Universidad Santo Tomás	Periodismo	Ciencias Sociales	Universidades Privadas	s/i	De $400 mil a $600 mil	2288644
+Universidad Santo Tomás	Psicología	Ciencias Sociales	Universidades Privadas	12.2	De $600 mil a $800 mil	2325083
+Universidad Santo Tomás	Relaciones Públicas	Ciencias Sociales	Universidades Privadas	10.2	De $400 mil a $600 mil	1766852
+Universidad Santo Tomás	Trabajo Social	Ciencias Sociales	Universidades Privadas	10.8	De $400 mil a $600 mil	1635475
+Universidad Tecnológica Metropolitana	Arquitectura	Arte y Arquitectura	Universidades CRUCH	17.7	De $800 mil a $1 millón	2389846
+Universidad Tecnológica Metropolitana	Bibliotecología y Documentación	Humanidades	Universidades CRUCH	13.3	De $600 mil a $800 mil	2049453
+Universidad Tecnológica Metropolitana	Construcción Civil	Tecnología	Universidades CRUCH	13.3	s/i	2172373
+Universidad Tecnológica Metropolitana	Contador Público Auditor	Administración y Comercio	Universidades CRUCH	15.1	De $1 millón a $1 millón 200 mil	2172373
+Universidad Tecnológica Metropolitana	Dibujante Proyectista	Arte y Arquitectura	Universidades CRUCH	s/i	De $400 mil a $600 mil	1659418
+Universidad Tecnológica Metropolitana	Diseño Industrial	Tecnología	Universidades CRUCH	s/i	De $600 mil a $800 mil	2389846
+Universidad Tecnológica Metropolitana	Diseño en Comunicación Visual	Arte y Arquitectura	Universidades CRUCH	17.7	s/i	2327204
+Universidad Tecnológica Metropolitana	Ingeniería Civil Industrial Mención	Tecnología	Universidades CRUCH	15.5	De $1 millón 200 mil a $1 millón 400 mil	2327204
+Universidad Tecnológica Metropolitana	Ingeniería Civil en Computación mención Informática	Tecnología	Universidades CRUCH	s/i	s/i	2327204
+Universidad Tecnológica Metropolitana	Ingeniería Civil en Obras Civiles	Tecnología	Universidades CRUCH	s/i	s/i	2327204
+Universidad Tecnológica Metropolitana	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	14.5	De $1 millón a $1 millón 200 mil	2327204
+Universidad Tecnológica Metropolitana	Ingeniería Ejecución Industrial	Tecnología	Universidades CRUCH	13.4	De $1 millón 200 mil a $1 millón 400 mil	2292221
+Universidad Tecnológica Metropolitana	Ingeniería Ejecución Informática	Tecnología	Universidades CRUCH	15.6	De $1 millón 200 mil a $1 millón 400 mil	2327204
+Universidad Tecnológica Metropolitana	Ingeniería Ejecución en Electrónica	Tecnología	Universidades CRUCH	18.8	De $1 millón 200 mil a $1 millón 400 mil	2316039
+Universidad Tecnológica Metropolitana	Ingeniería en Administración Agroindustrial	Tecnología	Universidades CRUCH	15.8	De $600 mil a $800 mil	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Comercio Internacional	Administración y Comercio	Universidades CRUCH	18.8	De $800 mil a $1 millón	2166931
+Universidad Tecnológica Metropolitana	Ingeniería en Construcción	Tecnología	Universidades CRUCH	13.5	De $800 mil a $1 millón	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Geomensura y Cartografía	Tecnología	Universidades CRUCH	18.4	De $800 mil a $1 millón	2144162
+Universidad Tecnológica Metropolitana	Ingeniería en Gestión Turística	Administración y Comercio	Universidades CRUCH	14.4	De $400 mil a $600 mil	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Industria Alimentaria	Tecnología	Universidades CRUCH	18.1	De $600 mil a $800 mil	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Mecánica	Tecnología	Universidades CRUCH	18.7	De $1 millón a $1 millón 200 mil	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Prevención de Riesgos y Medio Ambiente	Tecnología	Universidades CRUCH	13.7	De $800 mil a $1 millón	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Química	Tecnología	Universidades CRUCH	17.4	De $800 mil a $1 millón	2172373
+Universidad Tecnológica Metropolitana	Ingeniería en Transporte y Tránsito	Tecnología	Universidades CRUCH	17.3	De $800 mil a $1 millón	2172373
+Universidad Tecnológica Metropolitana	Química Industrial	Tecnología	Universidades CRUCH	16.4	De $600 mil a $800 mil	2327204
+Universidad Tecnológica Metropolitana	Trabajo Social	Ciencias Sociales	Universidades CRUCH	12.8	De $600 mil a $800 mil	2049453
+Universidad Tecnológica de Chile INACAP	Ingeniería Civil en Informática	Tecnología	Universidades Privadas	s/i	De $1 millón a $1 millón 200 mil	1739755
+Universidad Tecnológica de Chile INACAP	Ingeniería Civil en Sonido y Acústica	Tecnología	Universidades Privadas	s/i	s/i	2836000
+Universidad Tecnológica de Chile INACAP	Ingeniería Electrónica	Tecnología	Universidades Privadas	10.1	s/i	1370529
+Universidad Tecnológica de Chile INACAP	Ingeniería en Administración de Empresas Mención	Administración y Comercio	Universidades Privadas	9.6	De $600 mil a $800 mil	1368579
+Universidad Tecnológica de Chile INACAP	Ingeniería en Automatización y Control Industrial	Tecnología	Universidades Privadas	9.9	s/i	1370234
+Universidad Tecnológica de Chile INACAP	Ingeniería en Electricidad mención Potencia	Tecnología	Universidades Privadas	10.3	s/i	1430722
+Universidad Tecnológica de Chile INACAP	Ingeniería en Informática	Tecnología	Universidades Privadas	9.8	De $800 mil a $1 millón	1394704
+Universidad Tecnológica de Chile INACAP	Ingeniería en Sonido	Tecnología	Universidades Privadas	16.4	s/i	2836000
+Universidad Tecnológica de Chile INACAP	Pedagogía en Artes Musicales	Educación	Universidades Privadas	11.5	s/i	2360000
+Universidad Tecnológica de Chile INACAP	Tecnología en Sonido	Tecnología	Universidades Privadas	7.7	De $400 mil a $600 mil	2062000
+Universidad Tecnológica de Chile INACAP	Trabajo Social	Ciencias Sociales	Universidades Privadas	10.0	De $400 mil a $600 mil	1360452
+Universidad Tecnológica de Chile INACAP	Traducción Inglés-Español Mención Negocios Internacionales	Humanidades	Universidades Privadas	s/i	De $400 mil a $600 mil	1352463
+Universidad Técnica Federico Santa María	Arquitectura	Arte y Arquitectura	Universidades CRUCH	s/i	De $800 mil a $1 millón	3100000
+Universidad Técnica Federico Santa María	Construcción Civil	Tecnología	Universidades CRUCH	19.7	De $1 millón a $1 millón 200 mil	2850000
+Universidad Técnica Federico Santa María	Ingeniería Civil	Tecnología	Universidades CRUCH	20.8	De $1 millón 800 mil a $2 millones	3400000
+Universidad Técnica Federico Santa María	Ingeniería Civil Electrónica	Tecnología	Universidades CRUCH	17.6	De $1 millón 400 mil a $1 millón 600 mil	3400000
+Universidad Técnica Federico Santa María	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	14.9	De $1 millón 600 mil a $1 millón 800 mil	3356360
+Universidad Técnica Federico Santa María	Ingeniería Civil Mecánica	Tecnología	Universidades CRUCH	16.6	De $1 millón 600 mil a $1 millón 800 mil	3400000
+Universidad Técnica Federico Santa María	Ingeniería Civil Química	Tecnología	Universidades CRUCH	17.6	s/i	3400000
+Universidad Técnica Federico Santa María	Ingeniería Civil en Informática	Tecnología	Universidades CRUCH	15.9	De $1 millón 200 mil a $1 millón 400 mil	3400000
+Universidad Técnica Federico Santa María	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	15.8	De $1 millón 400 mil a $1 millón 600 mil	3390207
+Universidad Técnica Federico Santa María	Ingeniería de Ejecución Mecánica de Procesos y Mantenimiento Industrial	Tecnología	Universidades CRUCH	15.3	De $1 millón 200 mil a $1 millón 400 mil	2388893
+Universidad Técnica Federico Santa María	Ingeniería de Ejecución en Prevención de Riesgos	Tecnología	Universidades CRUCH	11.2	De $800 mil a $1 millón	2192489
+Universidad Técnica Federico Santa María	Técnico Universitario en Construcción	Tecnología	Universidades CRUCH	8.2	De $400 mil a $600 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Control Medio Ambiente	Tecnología	Universidades CRUCH	13.3	s/i	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Control de Alimentos	Tecnología	Universidades CRUCH	10.6	De $400 mil a $600 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Electricidad	Tecnología	Universidades CRUCH	9.3	De $800 mil a $1 millón	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Electrónica	Tecnología	Universidades CRUCH	10.3	De $600 mil a $800 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Informática	Tecnología	Universidades CRUCH	11.9	De $800 mil a $1 millón	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Mecánica Automotriz	Tecnología	Universidades CRUCH	9.5	De $600 mil a $800 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Mecánica Industrial	Tecnología	Universidades CRUCH	9.2	De $600 mil a $800 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Prevención de Riesgos	Tecnología	Universidades CRUCH	8.6	De $600 mil a $800 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Proyecto de Ingeniería	Tecnología	Universidades CRUCH	10.8	De $600 mil a $800 mil	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Proyecto y Diseño Mecánico	Tecnología	Universidades CRUCH	10.2	s/i	1550000
+Universidad Técnica Federico Santa María	Técnico Universitario en Química	Tecnología	Universidades CRUCH	9.9	De $400 mil a $600 mil	1550000
+Universidad UCINF	Análisis de Sistemas	Tecnología	Universidades Privadas	7.2	De $600 mil a $800 mil	1014000
+Universidad UCINF	Derecho	Derecho	Universidades Privadas	10.6	s/i	1853000
+Universidad UCINF	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	s/i	s/i	1583000
+Universidad UCINF	Ingeniería de Ejecución en Informática	Tecnología	Universidades Privadas	9.7	De $1 millón a $1 millón 200 mil	1428258
+Universidad UCINF	Pedagogía en Educación Básica	Educación	Universidades Privadas	9.9	De $400 mil a $600 mil	1311000
+Universidad UCINF	Pedagogía en Educación Diferencial	Educación	Universidades Privadas	9.9	De $400 mil a $600 mil	1394000
+Universidad UCINF	Pedagogía en Educación Física	Educación	Universidades Privadas	10.2	s/i	1737000
+Universidad UCINF	Pedagogía en Educación Parvularia	Educación	Universidades Privadas	9.6	De $400 mil a $600 mil	1237000
+Universidad UCINF	Preparador Físico	Educación	Universidades Privadas	5.8	s/i	1024000
+Universidad UCINF	Psicología	Ciencias Sociales	Universidades Privadas	10.4	De $600 mil a $800 mil	1871000
+Universidad UCINF	Psicopedagogía	Ciencias Sociales	Universidades Privadas	9.0	s/i	1101000
+Universidad UCINF	Trabajo Social	Ciencias Sociales	Universidades Privadas	9.2	s/i	1181000
+Universidad UCINF	Traducción e Interpretariado Inglés-Epañol	Humanidades	Universidades Privadas	8.8	s/i	1779116
+Universidad de Aconcagua	Educación Parvularia	Educación	Universidades Privadas	12.1	s/i	1332300
+Universidad de Aconcagua	Pedagogía en Educación Básica	Educación	Universidades Privadas	12.7	De $400 mil a $600 mil	1368600
+Universidad de Aconcagua	Técnico Nivel Superior en Enfermería	Salud	Universidades Privadas	8.2	s/i	997400
+Universidad de Aconcagua	Técnico Nivel Superior en Prevención de Riesgos y Medio Ambiente	Tecnología	Universidades Privadas	9.0	De $600 mil a $800 mil	1034637
+Universidad de Antofagasta	Administración de Empresas mención RR.HH.	Administración y Comercio	Universidades CRUCH	14.0	s/i	2335000
+Universidad de Antofagasta	Derecho	Derecho	Universidades CRUCH	21.9	s/i	2899000
+Universidad de Antofagasta	Diseño Gráfico Publicitario	Arte y Arquitectura	Universidades CRUCH	14.0	s/i	2538000
+Universidad de Antofagasta	Educación Parvularia	Educación	Universidades CRUCH	11.5	De $400 mil a $600 mil	1962000
+Universidad de Antofagasta	Enfermería	Salud	Universidades CRUCH	13.1	De $1 millón a $1 millón 200 mil	2721000
+Universidad de Antofagasta	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	19.8	De $1 millón 600 mil a $1 millón 800 mil	2670978
+Universidad de Antofagasta	Kinesiología	Salud	Universidades CRUCH	12.9	De $800 mil a $1 millón	2695000
+Universidad de Antofagasta	Medicina	Salud	Universidades CRUCH	16.8	Sobre $2 millones	4258000
+Universidad de Antofagasta	Obstetricia y Puericultura	Salud	Universidades CRUCH	13.3	De $800 mil a $1 millón	2687000
+Universidad de Antofagasta	Odontología	Salud	Universidades CRUCH	16.5	De $1 millón 600 mil a $1 millón 800 mil	4150000
+Universidad de Antofagasta	Pedagogía en Biología y Ciencias Naturales	Educación	Universidades CRUCH	14.4	s/i	2028000
+Universidad de Antofagasta	Pedagogía en Educación Física	Educación	Universidades CRUCH	10.3	s/i	2028000
+Universidad de Antofagasta	Pedagogía en Educación General Básica	Educación	Universidades CRUCH	9.8	De $400 mil a $600 mil	2009000
+Universidad de Antofagasta	Pedagogía en Lenguaje y Comunicación	Educación	Universidades CRUCH	s/i	s/i	2028000
+Universidad de Antofagasta	Tecnología Médica	Salud	Universidades CRUCH	14.1	De $600 mil a $800 mil	2827000
+Universidad de Antofagasta	Trabajo Social	Ciencias Sociales	Universidades CRUCH	11.8	De $600 mil a $800 mil	1929405
+Universidad de Antofagasta	Técnico en Explotación Minera y Técnico en Metalurgia	Tecnología	Universidades CRUCH	7.0	s/i	1280000
+Universidad de Arte y Ciencias Sociales ARCIS	Arte y Cultura Visual	Arte y Arquitectura	Universidades Privadas	12.3	s/i	2997791
+Universidad de Arte y Ciencias Sociales ARCIS	Cine	Arte y Arquitectura	Universidades Privadas	s/i	s/i	3445000
+Universidad de Arte y Ciencias Sociales ARCIS	Derecho	Derecho	Universidades Privadas	s/i	s/i	2238417
+Universidad de Arte y Ciencias Sociales ARCIS	Educación General Básica	Educación	Universidades Privadas	13.3	De $400 mil a $600 mil	1716833
+Universidad de Arte y Ciencias Sociales ARCIS	Educación Parvularia	Educación	Universidades Privadas	9.8	s/i	1712000
+Universidad de Arte y Ciencias Sociales ARCIS	Licenciatura y Pedagogía en Historia y Ciencias Sociales	Educación	Universidades Privadas	13.9	s/i	1827000
+Universidad de Arte y Ciencias Sociales ARCIS	Psicología	Ciencias Sociales	Universidades Privadas	15.6	De $600 mil a $800 mil	2225087
+Universidad de Arte y Ciencias Sociales ARCIS	Sociología	Ciencias Sociales	Universidades Privadas	18.1	s/i	2153656
+Universidad de Arte y Ciencias Sociales ARCIS	Teatro	Arte y Arquitectura	Universidades Privadas	8.2	s/i	3341000
+Universidad de Arte y Ciencias Sociales ARCIS	Trabajo Social	Ciencias Sociales	Universidades Privadas	16.2	De $600 mil a $800 mil	1817000
+Universidad de Artes, Ciencias y Comunicación UNIACC	Arquitectura	Arte y Arquitectura	Universidades Privadas	s/i	De $800 mil a $1 millón	2849595
+Universidad de Artes, Ciencias y Comunicación UNIACC	Diseño Gráfico y Multimedia	Arte y Arquitectura	Universidades Privadas	s/i	s/i	3100000
+Universidad de Artes, Ciencias y Comunicación UNIACC	Periodismo	Ciencias Sociales	Universidades Privadas	s/i	De $600 mil a $800 mil	2664202
+Universidad de Artes, Ciencias y Comunicación UNIACC	Psicología	Ciencias Sociales	Universidades Privadas	11.2	s/i	2429366
+Universidad de Artes, Ciencias y Comunicación UNIACC	Publicidad	Ciencias Sociales	Universidades Privadas	s/i	De $600 mil a $800 mil	3600000
+Universidad de Artes, Ciencias y Comunicación UNIACC	Relaciones Públicas Corporativas	Ciencias Sociales	Universidades Privadas	s/i	s/i	2800000
+Universidad de Artes, Ciencias y Comunicación UNIACC	Teatro y Comunicación Escénica	Arte y Arquitectura	Universidades Privadas	s/i	De $400 mil a $600 mil	2800000
+Universidad de Atacama	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	18.4	De $1 millón 200 mil a $1 millón 400 mil	2300876
+Universidad de Atacama	Ingeniería Civil Metalúrgica	Tecnología	Universidades CRUCH	19.3	s/i	2305000
+Universidad de Atacama	Ingeniería Civil en Minas	Tecnología	Universidades CRUCH	17.5	s/i	2305000
+Universidad de Atacama	Licenciatura en Educación y Pedagogía en Educación Física	Educación	Universidades CRUCH	12.9	De $400 mil a $600 mil	1922000
+Universidad de Atacama	Licenciatura en Educación y Pedagogía en Educación General Básica con Mención	Educación	Universidades CRUCH	10.1	De $400 mil a $600 mil	1922000
+Universidad de Atacama	Técnico Universitario en Minas y en Procesamiento de Minerales	Tecnología	Universidades CRUCH	9.8	s/i	1073896
+Universidad de Chile	Administración Pública	Ciencias Sociales	Universidades CRUCH	12.6	De $1 millón 200 mil a $1 millón 400 mil	2485300
+Universidad de Chile	Antropología mención Antropología Social, Antropología Físicas o en Arqueología	Ciencias Sociales	Universidades CRUCH	18.8	s/i	2474800
+Universidad de Chile	Arquitectura	Arte y Arquitectura	Universidades CRUCH	16.5	De $800 mil a $1 millón	2946300
+Universidad de Chile	Biología con mención en Medio Ambiente	Ciencias Básicas	Universidades CRUCH	11.3	s/i	2672607
+Universidad de Chile	Bioquímica	Ciencias Básicas	Universidades CRUCH	15.9	s/i	2998800
+Universidad de Chile	Derecho	Derecho	Universidades CRUCH	18.6	De $1 millón 800 mil a $2 millones	3375700
+Universidad de Chile	Diseño, Menciónes Diseño Gráfico y Diseño Industrial	Arte y Arquitectura	Universidades CRUCH	14.5	De $600 mil a $800 mil	2946300
+Universidad de Chile	Enfermería	Salud	Universidades CRUCH	12.8	De $1 millón a $1 millón 200 mil	2931600
+Universidad de Chile	Fonoaudiología	Salud	Universidades CRUCH	11.7	De $800 mil a $1 millón	3024000
+Universidad de Chile	Geografía	Ciencias Sociales	Universidades CRUCH	15.7	De $800 mil a $1 millón	2453800
+Universidad de Chile	Geología	Ciencias Básicas	Universidades CRUCH	s/i	Sobre $2 millones	4122300
+Universidad de Chile	Ingeniería Agronómica	Agropecuaria	Universidades CRUCH	17.8	De $800 mil a $1 millón	3236100
+Universidad de Chile	Ingeniería Civil Electricista	Tecnología	Universidades CRUCH	13.6	De $1 millón 600 mil a $1 millón 800 mil	4122300
+Universidad de Chile	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	15.7	De $1 millón 800 mil a $2 millones	4122300
+Universidad de Chile	Ingeniería Civil Mecánica	Tecnología	Universidades CRUCH	s/i	De $1 millón 800 mil a $2 millones	4122300
+Universidad de Chile	Ingeniería Civil con mención	Tecnología	Universidades CRUCH	12.6	De $1 millón 600 mil a $1 millón 800 mil	4122300
+Universidad de Chile	Ingeniería Civil en Computación	Tecnología	Universidades CRUCH	16.7	De $1 millón 400 mil a $1 millón 600 mil	4122300
+Universidad de Chile	Ingeniería Civil en Minas	Tecnología	Universidades CRUCH	15.1	Sobre $2 millones	4122300
+Universidad de Chile	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	12.8	De $1 millón 600 mil a $1 millón 800 mil	3950100
+Universidad de Chile	Ingeniería Forestal	Agropecuaria	Universidades CRUCH	20.4	De $800 mil a $1 millón	3236100
+Universidad de Chile	Ingeniería en Alimentos	Tecnología	Universidades CRUCH	16.3	De $800 mil a $1 millón	2998800
+Universidad de Chile	Ingeniería en Biotecnología Molecular	Tecnología	Universidades CRUCH	15.9	s/i	2755200
+Universidad de Chile	Ingeniería en Información y Control de Gestión y/o Contador Auditor	Administración y Comercio	Universidades CRUCH	14.3	De $1 millón 200 mil a $1 millón 400 mil	3476500
+Universidad de Chile	Ingeniería en Recursos Naturales Renovables	Tecnología	Universidades CRUCH	17.5	De $800 mil a $1 millón	3236100
+Universidad de Chile	Kinesiología	Salud	Universidades CRUCH	12.7	De $1 millón a $1 millón 200 mil	3013500
+Universidad de Chile	Licenciatura en Artes con mención Artes Plásticas	Arte y Arquitectura	Universidades CRUCH	14.8	De $400 mil a $600 mil	2093700
+Universidad de Chile	Licenciatura en Ciencias mención Química	Ciencias Básicas	Universidades CRUCH	13.7	De $600 mil a $800 mil	2815982
+Universidad de Chile	Licenciatura en Filosofía	Humanidades	Universidades CRUCH	10.9	De $400 mil a $600 mil	2096800
+Universidad de Chile	Licenciatura en Historia	Humanidades	Universidades CRUCH	11.2	De $400 mil a $600 mil	2096800
+Universidad de Chile	Licenciatura en Lengua y Literatura	Humanidades	Universidades CRUCH	10.1	De $400 mil a $600 mil	2096800
+Universidad de Chile	Medicina	Salud	Universidades CRUCH	15.4	De $1 millón 800 mil a $2 millones	4344900
+Universidad de Chile	Medicina Veterinaria	Agropecuaria	Universidades CRUCH	18.5	De $800 mil a $1 millón	3137400
+Universidad de Chile	Nutrición y Dietética	Salud	Universidades CRUCH	13.1	De $800 mil a $1 millón	2931600
+Universidad de Chile	Obstetricia y Puericultura	Salud	Universidades CRUCH	12.7	De $800 mil a $1 millón	2931600
+Universidad de Chile	Odontología	Salud	Universidades CRUCH	14.6	De $1 millón 200 mil a $1 millón 400 mil	4344900
+Universidad de Chile	Periodismo	Ciencias Sociales	Universidades CRUCH	16.0	De $800 mil a $1 millón	2570400
+Universidad de Chile	Psicología	Ciencias Sociales	Universidades CRUCH	15.8	De $800 mil a $1 millón	2474800
+Universidad de Chile	Química Ambiental	Ciencias Básicas	Universidades CRUCH	16.1	s/i	2755200
+Universidad de Chile	Química y Farmacia	Salud	Universidades CRUCH	15.8	De $1 millón a $1 millón 200 mil	2998800
+Universidad de Chile	Sociología	Ciencias Sociales	Universidades CRUCH	17.5	s/i	2474800
+Universidad de Chile	Tecnología Médica con mención	Salud	Universidades CRUCH	12.5	De $1 millón a $1 millón 200 mil	3193000
+Universidad de Chile	Terapia Ocupacional	Salud	Universidades CRUCH	12.3	De $600 mil a $800 mil	2931600
+Universidad de Concepción	Agronomía	Agropecuaria	Universidades CRUCH	18.9	De $800 mil a $1 millón	2512000
+Universidad de Concepción	Arquitectura	Arte y Arquitectura	Universidades CRUCH	19.3	De $800 mil a $1 millón	2583000
+Universidad de Concepción	Artes Visuales	Arte y Arquitectura	Universidades CRUCH	13.4	s/i	2107145
+Universidad de Concepción	Auditoría	Administración y Comercio	Universidades CRUCH	12.1	De $600 mil a $800 mil	1748000
+Universidad de Concepción	Biología	Ciencias Básicas	Universidades CRUCH	13.2	s/i	2114000
+Universidad de Concepción	Biología Marina	Agropecuaria	Universidades CRUCH	13.9	De $600 mil a $800 mil	2313000
+Universidad de Concepción	Bioquímica	Ciencias Básicas	Universidades CRUCH	15.5	s/i	2580000
+Universidad de Concepción	Ciencias Políticas y Administrativas	Ciencias Sociales	Universidades CRUCH	13.0	De $800 mil a $1 millón	1681000
+Universidad de Concepción	Derecho	Derecho	Universidades CRUCH	19.2	De $1 millón 600 mil a $1 millón 800 mil	2825000
+Universidad de Concepción	Educación Diferencial	Educación	Universidades CRUCH	11.9	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Educación General Básica	Educación	Universidades CRUCH	11.6	De $400 mil a $600 mil	1552000
+Universidad de Concepción	Educación Parvularia	Educación	Universidades CRUCH	12.7	De $400 mil a $600 mil	1552000
+Universidad de Concepción	Enfermería	Salud	Universidades CRUCH	11.2	De $1 millón a $1 millón 200 mil	2210000
+Universidad de Concepción	Fonoaudiología	Salud	Universidades CRUCH	11.8	De $1 millón a $1 millón 200 mil	2531000
+Universidad de Concepción	Geología	Ciencias Básicas	Universidades CRUCH	22.1	s/i	2583000
+Universidad de Concepción	Ingeniería Agroindustrial	Tecnología	Universidades CRUCH	12.6	De $400 mil a $600 mil	2439528
+Universidad de Concepción	Ingeniería Civil	Tecnología	Universidades CRUCH	15.8	De $1 millón 400 mil a $1 millón 600 mil	2878000
+Universidad de Concepción	Ingeniería Civil Agrícola	Tecnología	Universidades CRUCH	19.0	s/i	2560000
+Universidad de Concepción	Ingeniería Civil Electrónica	Tecnología	Universidades CRUCH	15.8	De $1 millón 400 mil a $1 millón 600 mil	2878000
+Universidad de Concepción	Ingeniería Civil Eléctrica	Tecnología	Universidades CRUCH	17.9	s/i	2878000
+Universidad de Concepción	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	14.4	De $1 millón 200 mil a $1 millón 400 mil	2878000
+Universidad de Concepción	Ingeniería Civil Informática	Tecnología	Universidades CRUCH	19.1	De $1 millón 200 mil a $1 millón 400 mil	2878000
+Universidad de Concepción	Ingeniería Civil Mecánica	Tecnología	Universidades CRUCH	15.8	De $1 millón 600 mil a $1 millón 800 mil	2878000
+Universidad de Concepción	Ingeniería Civil Metalúrgica	Tecnología	Universidades CRUCH	18.5	Sobre $2 millones	2878000
+Universidad de Concepción	Ingeniería Civil Química	Tecnología	Universidades CRUCH	15.0	De $1 millón 400 mil a $1 millón 600 mil	2878000
+Universidad de Concepción	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	13.1	De $1 millón a $1 millón 200 mil	2878000
+Universidad de Concepción	Ingeniería Forestal	Agropecuaria	Universidades CRUCH	19.7	De $600 mil a $800 mil	2696000
+Universidad de Concepción	Ingeniería en Biotecnología y Bioingeniería	Tecnología	Universidades CRUCH	11.6	s/i	3006259
+Universidad de Concepción	Kinesiología	Salud	Universidades CRUCH	11.6	s/i	3218000
+Universidad de Concepción	Medicina	Salud	Universidades CRUCH	15.1	De $1 millón 800 mil a $2 millones	4439000
+Universidad de Concepción	Medicina Veterinaria	Agropecuaria	Universidades CRUCH	16.1	De $600 mil a $800 mil	3286190
+Universidad de Concepción	Nutrición y Dietética	Salud	Universidades CRUCH	11.9	De $600 mil a $800 mil	1731000
+Universidad de Concepción	Obstetricia y Puericultura	Salud	Universidades CRUCH	11.2	De $600 mil a $800 mil	2171000
+Universidad de Concepción	Odontología	Salud	Universidades CRUCH	13.4	De $1 millón 200 mil a $1 millón 400 mil	4439000
+Universidad de Concepción	Pedagogía en Artes Plásticas y Educación Musical	Educación	Universidades CRUCH	14.0	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Pedagogía en Ciencias Naturales	Educación	Universidades CRUCH	13.2	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Pedagogía en Educación Física	Educación	Universidades CRUCH	12.3	De $400 mil a $600 mil	1498177
+Universidad de Concepción	Pedagogía en Español	Educación	Universidades CRUCH	12.0	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Pedagogía en Filosofía	Educación	Universidades CRUCH	13.1	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Pedagogía en Historia y Geografía	Educación	Universidades CRUCH	12.3	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Pedagogía en Inglés	Educación	Universidades CRUCH	12.5	De $400 mil a $600 mil	1495000
+Universidad de Concepción	Pedagogía en Matemática y Computación y Educación Tecnológica	Educación	Universidades CRUCH	13.7	De $600 mil a $800 mil	1495000
+Universidad de Concepción	Periodismo	Ciencias Sociales	Universidades CRUCH	12.6	De $600 mil a $800 mil	2313000
+Universidad de Concepción	Psicología	Ciencias Sociales	Universidades CRUCH	12.2	De $600 mil a $800 mil	2420000
+Universidad de Concepción	Química y Farmacia	Salud	Universidades CRUCH	16.4	De $1 millón a $1 millón 200 mil	2632000
+Universidad de Concepción	Sociología	Ciencias Sociales	Universidades CRUCH	14.0	De $800 mil a $1 millón	2073000
+Universidad de Concepción	Tecnología Médica	Salud	Universidades CRUCH	11.4	De $800 mil a $1 millón	3218000
+Universidad de Concepción	Trabajo Social	Ciencias Sociales	Universidades CRUCH	12.4	De $600 mil a $800 mil	1696967
+Universidad de Concepción	Traducción/Interpretación en Idiomas Extranjeros	Humanidades	Universidades CRUCH	13.5	De $400 mil a $600 mil	2417450
+Universidad de La Frontera	Agronomía	Agropecuaria	Universidades CRUCH	14.7	De $800 mil a $1 millón	2252000
+Universidad de La Frontera	Contador Público y Contador Auditor	Administración y Comercio	Universidades CRUCH	12.9	De $600 mil a $800 mil	1832000
+Universidad de La Frontera	Enfermería	Salud	Universidades CRUCH	10.7	De $1 millón a $1 millón 200 mil	2322000
+Universidad de La Frontera	Ingeniería Civil Electrónica	Tecnología	Universidades CRUCH	14.4	De $1 millón 200 mil a $1 millón 400 mil	2273000
+Universidad de La Frontera	Ingeniería Civil Industrial Mención	Tecnología	Universidades CRUCH	14.6	De $1 millón 200 mil a $1 millón 400 mil	2273000
+Universidad de La Frontera	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	13.8	De $800 mil a $1 millón	2478000
+Universidad de La Frontera	Ingeniería Eléctrica	Tecnología	Universidades CRUCH	14.0	De $1 millón a $1 millón 200 mil	1902000
+Universidad de La Frontera	Ingeniería Informática	Tecnología	Universidades CRUCH	13.5	De $800 mil a $1 millón	1963000
+Universidad de La Frontera	Ingeniería Mecánica	Tecnología	Universidades CRUCH	15.2	De $800 mil a $1 millón	1963000
+Universidad de La Frontera	Ingeniería en Alimentos	Tecnología	Universidades CRUCH	14.8	De $600 mil a $800 mil	2026000
+Universidad de La Frontera	Ingeniería en Construcción	Tecnología	Universidades CRUCH	14.4	De $800 mil a $1 millón	2026000
+Universidad de La Frontera	Kinesiología	Salud	Universidades CRUCH	11.6	De $800 mil a $1 millón	2322000
+Universidad de La Frontera	Medicina	Salud	Universidades CRUCH	15.6	Sobre $2 millones	3696000
+Universidad de La Frontera	Nutrición y Dietética	Salud	Universidades CRUCH	10.8	De $600 mil a $800 mil	2322000
+Universidad de La Frontera	Obstetricia y Puericultura	Salud	Universidades CRUCH	11.2	De $800 mil a $1 millón	2322000
+Universidad de La Frontera	Odontología	Salud	Universidades CRUCH	14.0	De $1 millón 400 mil a $1 millón 600 mil	3696000
+Universidad de La Frontera	Pedagogía en Castellano y Comunicación	Educación	Universidades CRUCH	11.2	De $400 mil a $600 mil	1452000
+Universidad de La Frontera	Pedagogía en Ciencias mención Biología, Química o Física	Educación	Universidades CRUCH	11.5	s/i	1525000
+Universidad de La Frontera	Pedagogía en Educación Física, Deportes y Recreación	Educación	Universidades CRUCH	11.3	De $400 mil a $600 mil	1452000
+Universidad de La Frontera	Pedagogía en Historia y Geografía y Educación Cívica	Educación	Universidades CRUCH	11.0	De $400 mil a $600 mil	1452000
+Universidad de La Frontera	Pedagogía en Matemáticas	Educación	Universidades CRUCH	10.3	s/i	1452000
+Universidad de La Frontera	Periodismo	Ciencias Sociales	Universidades CRUCH	16.8	De $600 mil a $800 mil	2052000
+Universidad de La Frontera	Psicología	Ciencias Sociales	Universidades CRUCH	11.8	De $600 mil a $800 mil	2178000
+Universidad de La Frontera	Sociología	Ciencias Sociales	Universidades CRUCH	12.6	De $600 mil a $800 mil	2052000
+Universidad de La Frontera	Tecnología Médica	Salud	Universidades CRUCH	13.1	De $600 mil a $800 mil	2322000
+Universidad de La Frontera	Trabajo Social	Ciencias Sociales	Universidades CRUCH	10.9	De $600 mil a $800 mil	1669000
+Universidad de La Serena	Aditoría	Administración y Comercio	Universidades CRUCH	s/i	De $800 mil a $1 millón	1649000
+Universidad de La Serena	Administración Turística	Administración y Comercio	Universidades CRUCH	s/i	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Arquitectura	Arte y Arquitectura	Universidades CRUCH	19.5	s/i	2367000
+Universidad de La Serena	Diseño con Mencion	Arte y Arquitectura	Universidades CRUCH	s/i	s/i	2096000
+Universidad de La Serena	Educación Parvularia	Educación	Universidades CRUCH	10.4	De $400 mil a $600 mil	1554000
+Universidad de La Serena	Enfermería	Salud	Universidades CRUCH	16.1	De $800 mil a $1 millón	2196000
+Universidad de La Serena	Ingeniería Agronómica	Agropecuaria	Universidades CRUCH	20.0	s/i	2317000
+Universidad de La Serena	Ingeniería Civil	Tecnología	Universidades CRUCH	19.4	De $1 millón 200 mil a $1 millón 400 mil	2367000
+Universidad de La Serena	Ingeniería Civil Ambiental	Tecnología	Universidades CRUCH	s/i	s/i	2367000
+Universidad de La Serena	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	17.7	De $1 millón a $1 millón 200 mil	2367000
+Universidad de La Serena	Ingeniería Civil Mecánica	Tecnología	Universidades CRUCH	16.7	s/i	2367000
+Universidad de La Serena	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	17.7	De $800 mil a $1 millón	2367000
+Universidad de La Serena	Ingeniería de Ejecución en Mecánica	Tecnología	Universidades CRUCH	13.4	s/i	2367000
+Universidad de La Serena	Ingeniería de Ejecución en Minas y Metalurgia	Tecnología	Universidades CRUCH	s/i	s/i	2367000
+Universidad de La Serena	Ingeniería en Construcción	Tecnología	Universidades CRUCH	16.2	De $800 mil a $1 millón	2317000
+Universidad de La Serena	Pedagogía en Biología, Química y Ciencias Naturales	Educación	Universidades CRUCH	13.0	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Castellano y Filosofía	Educación	Universidades CRUCH	10.7	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Eduación Musical	Educación	Universidades CRUCH	s/i	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Educación Diferencial	Educación	Universidades CRUCH	10.9	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Educación General Básica	Educación	Universidades CRUCH	9.4	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Historia y Geografía	Educación	Universidades CRUCH	12.2	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Inglés	Educación	Universidades CRUCH	13.5	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Pedagogía en Matemática, Física y Computación	Educación	Universidades CRUCH	13.8	De $400 mil a $600 mil	1549000
+Universidad de La Serena	Periodismo	Ciencias Sociales	Universidades CRUCH	14.5	De $600 mil a $800 mil	2317000
+Universidad de La Serena	Psicología	Ciencias Sociales	Universidades CRUCH	12.7	De $600 mil a $800 mil	2337000
+Universidad de La Serena	Químico Laboratorista	Tecnología	Universidades CRUCH	15.5	s/i	2096000
+Universidad de Las Américas	Agronomía	Agropecuaria	Universidades Privadas	16.7	De $600 mil a $800 mil	2698000
+Universidad de Las Américas	Arquitectura	Arte y Arquitectura	Universidades Privadas	15.6	De $800 mil a $1 millón	2652889
+Universidad de Las Américas	Construcción Civil	Tecnología	Universidades Privadas	s/i	De $800 mil a $1 millón	2545682
+Universidad de Las Américas	Contador Auditor Executive	Administración y Comercio	Universidades Privadas	11.5	De $800 mil a $1 millón	1640918
+Universidad de Las Américas	Derecho	Derecho	Universidades Privadas	15.8	s/i	2635405
+Universidad de Las Américas	Educación Parvularia	Educación	Universidades Privadas	10.3	De $400 mil a $600 mil	1755600
+Universidad de Las Américas	Ingeniería Ambiental	Tecnología	Universidades Privadas	11.8	s/i	2314611
+Universidad de Las Américas	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	16.0	De $1 millón 200 mil a $1 millón 400 mil	2569705
+Universidad de Las Américas	Ingeniería Comercial Executive	Ciencias Sociales	Universidades Privadas	12.2	De $1 millón a $1 millón 200 mil	2462465
+Universidad de Las Américas	Ingeniería de Ejecución Industrial	Tecnología	Universidades Privadas	10.8	De $800 mil a $1 millón	1940059
+Universidad de Las Américas	Ingeniería de Ejecución en Administración de Empresas Executive	Administración y Comercio	Universidades Privadas	12.0	De $800 mil a $1 millón	1896775
+Universidad de Las Américas	Ingeniería de Ejecución en Informática	Tecnología	Universidades Privadas	12.1	De $1 millón a $1 millón 200 mil	1842260
+Universidad de Las Américas	Ingeniería en Sonido	Tecnología	Universidades Privadas	15.6	s/i	2080500
+Universidad de Las Américas	Kinesiología	Salud	Universidades Privadas	12.1	s/i	3055345
+Universidad de Las Américas	Medicina Veterinaria	Agropecuaria	Universidades Privadas	15.2	De $600 mil a $800 mil	2758156
+Universidad de Las Américas	Pedagogía en Educación Básica	Educación	Universidades Privadas	10.1	De $400 mil a $600 mil	1766543
+Universidad de Las Américas	Pedagogía en Educación Física	Educación	Universidades Privadas	11.9	De $400 mil a $600 mil	2367806
+Universidad de Las Américas	Pedagogía en Historia, Geografía y Educación Cívica	Educación	Universidades Privadas	9.9	s/i	2070321
+Universidad de Las Américas	Pedagogía en Inglés	Educación	Universidades Privadas	10.8	s/i	2016527
+Universidad de Las Américas	Pedagogía en Lengua Castellana y Literatura	Educación	Universidades Privadas	10.1	s/i	2221820
+Universidad de Las Américas	Periodismo	Ciencias Sociales	Universidades Privadas	15.0	De $400 mil a $600 mil	2203106
+Universidad de Las Américas	Psicología	Ciencias Sociales	Universidades Privadas	13.6	De $600 mil a $800 mil	2672600
+Universidad de Las Américas	Psicopedagogía	Ciencias Sociales	Universidades Privadas	12.3	s/i	1772309
+Universidad de Las Américas	Publicidad	Ciencias Sociales	Universidades Privadas	12.3	De $400 mil a $600 mil	2106532
+Universidad de Las Américas	Relaciones Públicas	Ciencias Sociales	Universidades Privadas	9.6	De $600 mil a $800 mil	1919296
+Universidad de Las Américas	Traducción e Intérprete en Inglés	Humanidades	Universidades Privadas	10.7	s/i	2255379
+Universidad de Las Américas	Técnico de Nivel Superior en Actividad Física y Deportes	Educación	Universidades Privadas	6.9	s/i	1293536
+Universidad de Las Américas	Técnico de Nivel Superior en Administración de Empresas	Administración y Comercio	Universidades Privadas	6.7	De $600 mil a $800 mil	1217842
+Universidad de Las Américas	Técnico en Computación	Tecnología	Universidades Privadas	7.3	De $400 mil a $600 mil	1259040
+Universidad de Los Andes	Administración de Servicios	Administración y Comercio	Universidades Privadas	10.4	De $800 mil a $1 millón	4002408
+Universidad de Los Andes	Derecho	Derecho	Universidades Privadas	13.2	De $1 millón 400 mil a $1 millón 600 mil	4002408
+Universidad de Los Andes	Educación de Párvulos	Educación	Universidades Privadas	10.1	s/i	3112984
+Universidad de Los Andes	Enfermería	Salud	Universidades Privadas	13.8	De $1 millón a $1 millón 200 mil	3201926
+Universidad de Los Andes	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	17.0	Sobre $2 millones	4002408
+Universidad de Los Andes	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	12.6	De $1 millón 600 mil a $1 millón 800 mil	4224048
+Universidad de Los Andes	Medicina	Salud	Universidades Privadas	14.4	De $1 millón 400 mil a $1 millón 600 mil	5558900
+Universidad de Los Andes	Odontología	Salud	Universidades Privadas	14.9	De $1 millón 200 mil a $1 millón 400 mil	5981376
+Universidad de Los Andes	Pedagogía Básica	Educación	Universidades Privadas	12.5	De $600 mil a $800 mil	3112984
+Universidad de Los Andes	Periodismo	Ciencias Sociales	Universidades Privadas	13.5	De $800 mil a $1 millón	3891230
+Universidad de Los Andes	Psicología	Ciencias Sociales	Universidades Privadas	14.5	De $800 mil a $1 millón	4002408
+Universidad de Los Lagos	Ciencias Políticas y Administrativas	Ciencias Sociales	Universidades CRUCH	14.7	De $800 mil a $1 millón	1817000
+Universidad de Los Lagos	Contabilidad General	Administración y Comercio	Universidades CRUCH	s/i	s/i	914965
+Universidad de Los Lagos	Contador Público Auditor	Administración y Comercio	Universidades CRUCH	16.7	De $600 mil a $800 mil	1387035
+Universidad de Los Lagos	Educación Diferencial con Especialidad en Problemas de Aprendizaje	Educación	Universidades CRUCH	11.2	De $400 mil a $600 mil	1428000
+Universidad de Los Lagos	Educación General Básica mención Inglés	Educación	Universidades CRUCH	11.4	De $400 mil a $600 mil	1507378
+Universidad de Los Lagos	Educación Parvularia	Educación	Universidades CRUCH	9.4	De $400 mil a $600 mil	1428000
+Universidad de Los Lagos	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	18.9	De $800 mil a $1 millón	2051885
+Universidad de Los Lagos	Ingeniería de Ejecución en Administración Mención Administración Pública	Ciencias Sociales	Universidades CRUCH	s/i	s/i	984447
+Universidad de Los Lagos	Ingeniería de Ejecución en Administración de Empresas	Administración y Comercio	Universidades CRUCH	18.4	s/i	1081605
+Universidad de Los Lagos	Ingeniería en Acuicultura	Agropecuaria	Universidades CRUCH	16.3	s/i	2076000
+Universidad de Los Lagos	Ingeniería en Alimentos	Tecnología	Universidades CRUCH	16.1	s/i	1785395
+Universidad de Los Lagos	Nutrición y Alimentación	Salud	Universidades CRUCH	11.7	s/i	1901000
+Universidad de Los Lagos	Pedagogía en Educación Media en Historia y Geografía	Educación	Universidades CRUCH	11.0	De $400 mil a $600 mil	1507000
+Universidad de Los Lagos	Pedagogía en Educación Media en Inglés y Traducción	Educación	Universidades CRUCH	17.9	s/i	1507000
+Universidad de Los Lagos	Pedagogía en Educación Media en Matemática y Computación	Educación	Universidades CRUCH	16.4	s/i	1507000
+Universidad de Los Lagos	Pedagogía en Educación Media mención Educación Física	Educación	Universidades CRUCH	12.1	De $400 mil a $600 mil	1617000
+Universidad de Los Lagos	Pedagogía en Educación en Lengua Castellana y Comunicaciones	Educación	Universidades CRUCH	13.9	s/i	1507000
+Universidad de Los Lagos	Trabajo Social	Ciencias Sociales	Universidades CRUCH	s/i	De $400 mil a $600 mil	1499000
+Universidad de Los Lagos	Técnico Judicial	Derecho	Universidades CRUCH	9.4	s/i	755652
+Universidad de Los Lagos	Técnico en Administración de Empresas	Administración y Comercio	Universidades CRUCH	7.7	s/i	760115
+Universidad de Los Lagos	Técnico en Educación Parvularia	Educación	Universidades CRUCH	7.6	Menor a $400 mil	750803
+Universidad de Los Lagos	Técnico en Informática	Tecnología	Universidades CRUCH	9.4	s/i	847958
+Universidad de Los Lagos	Técnico en Prevención de Riesgos	Tecnología	Universidades CRUCH	8.8	s/i	843262
+Universidad de Magallanes	Enfermería	Salud	Universidades CRUCH	s/i	De $800 mil a $1 millón	2671000
+Universidad de Magallanes	Ingeniería Civil Plan Común	Tecnología	Universidades CRUCH	16.7	De $800 mil a $1 millón	2863403
+Universidad de Magallanes	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	17.7	s/i	3022726
+Universidad de Magallanes	Ingeniería en Construcción	Tecnología	Universidades CRUCH	14.9	s/i	2671000
+Universidad de Magallanes	Kinesiología	Salud	Universidades CRUCH	14.4	s/i	2671000
+Universidad de Magallanes	Pedagogía en Educación Física para Ensenanza Básica y Media	Educación	Universidades CRUCH	s/i	Menor a $400 mil	2097000
+Universidad de Magallanes	Pedagogía en Historia y Ciencia Sociales para Ensenanza Media	Educación	Universidades CRUCH	13.9	s/i	2097000
+Universidad de Magallanes	Pedagogía en Inglés para Ensenanza Básica y Media	Educación	Universidades CRUCH	s/i	s/i	2097000
+Universidad de Magallanes	Trabajo Social	Ciencias Sociales	Universidades CRUCH	s/i	De $400 mil a $600 mil	2133000
+Universidad de Magallanes	Técnico en Construcción mención Obras Civiles	Tecnología	Universidades CRUCH	6.7	s/i	1215000
+Universidad de Playa Ancha de Ciencias de la Educación	Bibliotecología	Humanidades	Universidades CRUCH	s/i	De $600 mil a $800 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Diseñador Gráfico	Arte y Arquitectura	Universidades CRUCH	s/i	s/i	2032800
+Universidad de Playa Ancha de Ciencias de la Educación	Educación Parvularia	Educación	Universidades CRUCH	12.7	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Ingeniería Civil Ambiental	Tecnología	Universidades CRUCH	s/i	De $800 mil a $1 millón	2219700
+Universidad de Playa Ancha de Ciencias de la Educación	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	16.4	De $1 millón 200 mil a $1 millón 400 mil	2219700
+Universidad de Playa Ancha de Ciencias de la Educación	Ingeniería en Informática	Tecnología	Universidades CRUCH	s/i	s/i	2069783
+Universidad de Playa Ancha de Ciencias de la Educación	Kinesiología	Salud	Universidades CRUCH	11.6	De $800 mil a $1 millón	2219700
+Universidad de Playa Ancha de Ciencias de la Educación	Nutrición y Dietética	Salud	Universidades CRUCH	11.4	s/i	2032800
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Artes Plásticas y Educación Musical	Educación	Universidades CRUCH	11.5	De $400 mil a $600 mil	1575619
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Castellano	Educación	Universidades CRUCH	12.6	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Ciencias	Educación	Universidades CRUCH	13.0	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Educación Básica	Educación	Universidades CRUCH	12.0	De $400 mil a $600 mil	1550307
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Educación Diferencial	Educación	Universidades CRUCH	12.0	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Educación Física	Educación	Universidades CRUCH	12.0	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Historia y Geografía	Educación	Universidades CRUCH	12.3	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Inglés	Educación	Universidades CRUCH	13.3	De $400 mil a $600 mil	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Pedagogía en Matemática y Computación	Educación	Universidades CRUCH	14.0	s/i	1560300
+Universidad de Playa Ancha de Ciencias de la Educación	Periodismo	Ciencias Sociales	Universidades CRUCH	s/i	De $600 mil a $800 mil	2152500
+Universidad de Playa Ancha de Ciencias de la Educación	Terapia Ocupacional	Salud	Universidades CRUCH	12.5	De $600 mil a $800 mil	2032800
+Universidad de Playa Ancha de Ciencias de la Educación	Traducción e Interpretación Inglés-Español	Humanidades	Universidades CRUCH	s/i	De $400 mil a $600 mil	1843800
+Universidad de Santiago de Chile	Administración Pública	Ciencias Sociales	Universidades CRUCH	12.4	De $1 millón a $1 millón 200 mil	2377610
+Universidad de Santiago de Chile	Arquitectura	Arte y Arquitectura	Universidades CRUCH	14.0	De $800 mil a $1 millón	2875410
+Universidad de Santiago de Chile	Bioquímica y Licenciatura en Bioquímica	Ciencias Básicas	Universidades CRUCH	14.2	De $400 mil a $600 mil	2419120
+Universidad de Santiago de Chile	Contador Público y Auditor	Administración y Comercio	Universidades CRUCH	13.0	De $1 millón a $1 millón 200 mil	2509790
+Universidad de Santiago de Chile	Enfermería	Salud	Universidades CRUCH	11.6	De $1 millón a $1 millón 200 mil	2420590
+Universidad de Santiago de Chile	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	15.4	De $1 millón 400 mil a $1 millón 600 mil	3274500
+Universidad de Santiago de Chile	Ingeniería Civil Química	Tecnología	Universidades CRUCH	17.9	De $1 millón 200 mil a $1 millón 400 mil	3274500
+Universidad de Santiago de Chile	Ingeniería Civil en Electricidad	Tecnología	Universidades CRUCH	19.0	De $1 millón 600 mil a $1 millón 800 mil	3274500
+Universidad de Santiago de Chile	Ingeniería Civil en Geografía	Tecnología	Universidades CRUCH	19.8	s/i	3274500
+Universidad de Santiago de Chile	Ingeniería Civil en Informática	Tecnología	Universidades CRUCH	18.5	De $1 millón 200 mil a $1 millón 400 mil	3218513
+Universidad de Santiago de Chile	Ingeniería Civil en Mecánica	Tecnología	Universidades CRUCH	17.1	De $1 millón 600 mil a $1 millón 800 mil	3274500
+Universidad de Santiago de Chile	Ingeniería Civil en Minas	Tecnología	Universidades CRUCH	18.4	Sobre $2 millones	3274500
+Universidad de Santiago de Chile	Ingeniería Civil en Obras Civiles	Tecnología	Universidades CRUCH	17.2	De $1 millón 400 mil a $1 millón 600 mil	3274500
+Universidad de Santiago de Chile	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	12.5	De $1 millón 200 mil a $1 millón 400 mil	3294639
+Universidad de Santiago de Chile	Ingeniería Estadística	Tecnología	Universidades CRUCH	13.7	De $1 millón 200 mil a $1 millón 400 mil	2623973
+Universidad de Santiago de Chile	Ingeniería de Alimentos	Tecnología	Universidades CRUCH	12.5	De $600 mil a $800 mil	2928580
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Ambiente	Tecnología	Universidades CRUCH	15.0	De $800 mil a $1 millón	2844950
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Climatización	Tecnología	Universidades CRUCH	16.8	De $800 mil a $1 millón	2464630
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Computación e Informática	Tecnología	Universidades CRUCH	14.3	De $1 millón 200 mil a $1 millón 400 mil	2451167
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Electricidad	Tecnología	Universidades CRUCH	16.0	De $1 millón 200 mil a $1 millón 400 mil	2405009
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Geomensura	Tecnología	Universidades CRUCH	15.0	De $800 mil a $1 millón	2464630
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Industria	Tecnología	Universidades CRUCH	11.7	De $1 millón a $1 millón 200 mil	2464630
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Mecánica	Tecnología	Universidades CRUCH	12.9	De $1 millón 200 mil a $1 millón 400 mil	2464630
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Metalurgia y Minas	Tecnología	Universidades CRUCH	14.1	De $1 millón 400 mil a $1 millón 600 mil	2464630
+Universidad de Santiago de Chile	Ingeniería de Ejecución en Química	Tecnología	Universidades CRUCH	15.4	De $800 mil a $1 millón	2464630
+Universidad de Santiago de Chile	Ingeniería en Agronegocios	Administración y Comercio	Universidades CRUCH	15.7	s/i	2928580
+Universidad de Santiago de Chile	Licenciatura en Ciencias de la Actividad Física	Educación	Universidades CRUCH	13.9	s/i	2377610
+Universidad de Santiago de Chile	Licenciatura en Lingüística Aplicada a la Traducción mención Inglés y Japonés o mención Inglés Portugués	Humanidades	Universidades CRUCH	12.8	De $400 mil a $600 mil	2586290
+Universidad de Santiago de Chile	Medicina	Salud	Universidades CRUCH	14.5	De $1 millón 600 mil a $1 millón 800 mil	3477800
+Universidad de Santiago de Chile	Obstetricia y Puericultura	Salud	Universidades CRUCH	11.5	De $800 mil a $1 millón	2420590
+Universidad de Santiago de Chile	Pedagogía en Castellano	Educación	Universidades CRUCH	12.8	De $400 mil a $600 mil	1800620
+Universidad de Santiago de Chile	Pedagogía en Inglés	Educación	Universidades CRUCH	12.1	De $400 mil a $600 mil	1800620
+Universidad de Santiago de Chile	Pedagogía en Matemática y Computación	Educación	Universidades CRUCH	12.1	s/i	1699824
+Universidad de Santiago de Chile	Pedagogía en Química y Biología, Física y Matemática	Educación	Universidades CRUCH	12.5	s/i	1766120
+Universidad de Santiago de Chile	Periodismo	Ciencias Sociales	Universidades CRUCH	11.7	De $600 mil a $800 mil	2509790
+Universidad de Santiago de Chile	Psicología	Ciencias Sociales	Universidades CRUCH	13.2	De $800 mil a $1 millón	2444110
+Universidad de Santiago de Chile	Publicidad	Ciencias Sociales	Universidades CRUCH	11.1	De $400 mil a $600 mil	2683170
+Universidad de Santiago de Chile	Química y Licenciatura en Química	Ciencias Básicas	Universidades CRUCH	11.9	s/i	2419120
+Universidad de Santiago de Chile	Técnico Universitario en Análisis Químico y Físico	Tecnología	Universidades CRUCH	7.2	De $400 mil a $600 mil	1537620
+Universidad de Santiago de Chile	Técnico Universitario en Control Industrial	Tecnología	Universidades CRUCH	5.4	De $600 mil a $800 mil	1537620
+Universidad de Talca	Agronomía	Agropecuaria	Universidades CRUCH	13.2	De $800 mil a $1 millón	2580900
+Universidad de Talca	Arquitectura	Arte y Arquitectura	Universidades CRUCH	17.5	De $800 mil a $1 millón	3101400
+Universidad de Talca	Contador Público y Auditor	Administración y Comercio	Universidades CRUCH	12.4	De $800 mil a $1 millón	2351295
+Universidad de Talca	Derecho	Derecho	Universidades CRUCH	16.0	De $1 millón 200 mil a $1 millón 400 mil	2671300
+Universidad de Talca	Fonoaudiología	Salud	Universidades CRUCH	11.0	s/i	2557200
+Universidad de Talca	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	15.1	De $1 millón a $1 millón 200 mil	2818500
+Universidad de Talca	Ingeniería Civil en Computación	Tecnología	Universidades CRUCH	16.8	s/i	2818500
+Universidad de Talca	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	12.7	De $1 millón a $1 millón 200 mil	2503985
+Universidad de Talca	Ingeniería Forestal	Agropecuaria	Universidades CRUCH	s/i	De $600 mil a $800 mil	2504500
+Universidad de Talca	Ingeniería de Ejecución Mecánica	Tecnología	Universidades CRUCH	16.3	De $1 millón a $1 millón 200 mil	2348633
+Universidad de Talca	Kinesiología	Salud	Universidades CRUCH	12.0	s/i	2557200
+Universidad de Talca	Odontología	Salud	Universidades CRUCH	16.1	De $1 millón 200 mil a $1 millón 400 mil	4039100
+Universidad de Talca	Psicología	Ciencias Sociales	Universidades CRUCH	13.2	De $800 mil a $1 millón	2818500
+Universidad de Talca	Tecnología Médica	Salud	Universidades CRUCH	14.3	De $800 mil a $1 millón	2556200
+Universidad de Tarapacá	Agronomía	Agropecuaria	Universidades CRUCH	16.3	De $800 mil a $1 millón	2437000
+Universidad de Tarapacá	Contador Auditor-Contador Público	Administración y Comercio	Universidades CRUCH	15.6	De $600 mil a $800 mil	2200522
+Universidad de Tarapacá	Derecho	Derecho	Universidades CRUCH	21.9	s/i	2437000
+Universidad de Tarapacá	Educación Parvularia y Psicopedagogía	Educación	Universidades CRUCH	11.1	De $400 mil a $600 mil	1966746
+Universidad de Tarapacá	Enfermería	Salud	Universidades CRUCH	14.7	De $800 mil a $1 millón	2437000
+Universidad de Tarapacá	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	20.6	s/i	2437000
+Universidad de Tarapacá	Ingeniería Civil Mecánica	Tecnología	Universidades CRUCH	18.6	s/i	2437000
+Universidad de Tarapacá	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	15.9	De $800 mil a $1 millón	2437000
+Universidad de Tarapacá	Kinesiología y Rehabilitación	Salud	Universidades CRUCH	12.7	De $800 mil a $1 millón	2437000
+Universidad de Tarapacá	Obstetricia y Puericultura	Salud	Universidades CRUCH	15.5	De $600 mil a $800 mil	2437000
+Universidad de Tarapacá	Pedagogía en Educación Básica con Mención	Educación	Universidades CRUCH	9.9	De $400 mil a $600 mil	1971000
+Universidad de Tarapacá	Pedagogía en Historia y Geografía	Educación	Universidades CRUCH	s/i	De $400 mil a $600 mil	1971000
+Universidad de Tarapacá	Pedagogía en Inglés	Educación	Universidades CRUCH	s/i	De $400 mil a $600 mil	1971000
+Universidad de Tarapacá	Profesor de Educación Física	Educación	Universidades CRUCH	13.2	De $400 mil a $600 mil	1971000
+Universidad de Tarapacá	Psicología	Ciencias Sociales	Universidades CRUCH	13.6	De $600 mil a $800 mil	2437000
+Universidad de Tarapacá	Químico Laboratorista	Tecnología	Universidades CRUCH	s/i	s/i	2116000
+Universidad de Tarapacá	Tecnología Médica /Lab.Clínico, Hemat. y Banco de Sangre	Salud	Universidades CRUCH	12.9	De $1 millón 200 mil a $1 millón 400 mil	2427662
+Universidad de Tarapacá	Trabajo Social	Ciencias Sociales	Universidades CRUCH	11.1	s/i	1971000
+Universidad de Valparaíso	Administración Hotelera y Gastronómica	Administración y Comercio	Universidades CRUCH	12.8	s/i	2242301
+Universidad de Valparaíso	Administración Pública	Ciencias Sociales	Universidades CRUCH	11.9	s/i	1758000
+Universidad de Valparaíso	Administración de Negocios Internacionales	Administración y Comercio	Universidades CRUCH	12.9	De $600 mil a $800 mil	2251000
+Universidad de Valparaíso	Arquitectura	Arte y Arquitectura	Universidades CRUCH	18.7	De $800 mil a $1 millón	2816000
+Universidad de Valparaíso	Auditoría	Administración y Comercio	Universidades CRUCH	15.9	De $800 mil a $1 millón	1902636
+Universidad de Valparaíso	Biología Marina	Agropecuaria	Universidades CRUCH	s/i	s/i	1997000
+Universidad de Valparaíso	Cine	Arte y Arquitectura	Universidades CRUCH	12.3	s/i	2863000
+Universidad de Valparaíso	Derecho	Derecho	Universidades CRUCH	19.1	De $1 millón 400 mil a $1 millón 600 mil	2401000
+Universidad de Valparaíso	Diseño	Arte y Arquitectura	Universidades CRUCH	16.8	De $400 mil a $600 mil	2557000
+Universidad de Valparaíso	Educación Parvularia	Educación	Universidades CRUCH	10.6	s/i	2028000
+Universidad de Valparaíso	Enfermería	Salud	Universidades CRUCH	12.5	De $1 millón a $1 millón 200 mil	2230000
+Universidad de Valparaíso	Fonoaudiología	Salud	Universidades CRUCH	11.9	De $800 mil a $1 millón	2292000
+Universidad de Valparaíso	Ingeniería Ambiental	Tecnología	Universidades CRUCH	18.5	De $800 mil a $1 millón	2126000
+Universidad de Valparaíso	Ingeniería Civil Industrial	Tecnología	Universidades CRUCH	14.1	s/i	2417000
+Universidad de Valparaíso	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	14.2	De $1 millón a $1 millón 200 mil	2229827
+Universidad de Valparaíso	Ingeniería en Construcción	Tecnología	Universidades CRUCH	15.5	De $800 mil a $1 millón	2054000
+Universidad de Valparaíso	Ingeniería en Estadística	Tecnología	Universidades CRUCH	s/i	s/i	1929000
+Universidad de Valparaíso	Kinesiología	Salud	Universidades CRUCH	13.6	s/i	2469000
+Universidad de Valparaíso	Medicina	Salud	Universidades CRUCH	14.4	De $1 millón 600 mil a $1 millón 800 mil	3947000
+Universidad de Valparaíso	Nutrición y Dietética	Salud	Universidades CRUCH	12.1	De $800 mil a $1 millón	2318000
+Universidad de Valparaíso	Obstetricia y Puericultura	Salud	Universidades CRUCH	12.6	De $800 mil a $1 millón	2225000
+Universidad de Valparaíso	Odontología	Salud	Universidades CRUCH	14.6	De $1 millón 200 mil a $1 millón 400 mil	3993000
+Universidad de Valparaíso	Pedagogía en Filosofía	Educación	Universidades CRUCH	16.2	s/i	1499000
+Universidad de Valparaíso	Pedagogía en Historia y Ciencias Sociales	Educación	Universidades CRUCH	16.7	De $400 mil a $600 mil	1478000
+Universidad de Valparaíso	Psicología	Ciencias Sociales	Universidades CRUCH	13.4	De $600 mil a $800 mil	2354000
+Universidad de Valparaíso	Química y Farmacia	Salud	Universidades CRUCH	16.6	De $1 millón a $1 millón 200 mil	2759000
+Universidad de Valparaíso	Tecnología Médica	Salud	Universidades CRUCH	13.2	De $1 millón a $1 millón 200 mil	2505000
+Universidad de Valparaíso	Trabajo Social	Ciencias Sociales	Universidades CRUCH	13.1	De $600 mil a $800 mil	1743620
+Universidad de Viña del Mar	Arquitectura	Arte y Arquitectura	Universidades Privadas	16.2	De $800 mil a $1 millón	2704000
+Universidad de Viña del Mar	Educación Básica	Educación	Universidades Privadas	10.1	s/i	1951600
+Universidad de Viña del Mar	Educación Parvularia	Educación	Universidades Privadas	15.8	s/i	1981000
+Universidad de Viña del Mar	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	17.5	s/i	2715980
+Universidad de Viña del Mar	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	14.1	De $1 millón a $1 millón 200 mil	2758000
+Universidad de Viña del Mar	Ingeniería en Construcción	Tecnología	Universidades Privadas	20.5	s/i	2352000
+Universidad de Viña del Mar	Ingeniería en Medio Ambiente y Recursos Naturales	Tecnología	Universidades Privadas	15.6	De $800 mil a $1 millón	2352000
+Universidad de Viña del Mar	Medicina Veterinaria	Agropecuaria	Universidades Privadas	16.8	s/i	2948000
+Universidad de Viña del Mar	Pedagogía en Educación Física	Educación	Universidades Privadas	11.2	s/i	2131371
+Universidad de Viña del Mar	Periodismo	Ciencias Sociales	Universidades Privadas	12.5	De $600 mil a $800 mil	2649000
+Universidad de Viña del Mar	Psicología	Ciencias Sociales	Universidades Privadas	12.0	De $600 mil a $800 mil	2812000
+Universidad de Viña del Mar	Relaciones Públicas	Ciencias Sociales	Universidades Privadas	11.0	De $600 mil a $800 mil	1926000
+Universidad de Viña del Mar	Tecnología en Prevención de Riesgos y Medio Ambiente	Tecnología	Universidades Privadas	7.3	De $400 mil a $600 mil	1409699
+Universidad de Viña del Mar	Técnico en Informática Mención Desarrollo de Sistemas	Tecnología	Universidades Privadas	9.0	s/i	1470500
+Universidad del Bío-Bío	Arquitectura	Arte y Arquitectura	Universidades CRUCH	16.4	De $800 mil a $1 millón	2490000
+Universidad del Bío-Bío	Contador Público y Auditor	Administración y Comercio	Universidades CRUCH	14.1	De $600 mil a $800 mil	1838000
+Universidad del Bío-Bío	Diseño Gráfico	Arte y Arquitectura	Universidades CRUCH	12.7	De $400 mil a $600 mil	2150000
+Universidad del Bío-Bío	Diseño Industrial	Tecnología	Universidades CRUCH	13.4	s/i	2294000
+Universidad del Bío-Bío	Enfermería	Salud	Universidades CRUCH	11.7	De $1 millón a $1 millón 200 mil	2294000
+Universidad del Bío-Bío	Ingeniería Civil	Tecnología	Universidades CRUCH	15.3	De $1 millón 400 mil a $1 millón 600 mil	2294000
+Universidad del Bío-Bío	Ingeniería Civil en Industrias de la Madera	Tecnología	Universidades CRUCH	17.0	De $1 millón 200 mil a $1 millón 400 mil	2294000
+Universidad del Bío-Bío	Ingeniería Civil en Informática	Tecnología	Universidades CRUCH	11.7	De $1 millón 200 mil a $1 millón 400 mil	2294000
+Universidad del Bío-Bío	Ingeniería Comercial	Ciencias Sociales	Universidades CRUCH	14.2	De $800 mil a $1 millón	2236294
+Universidad del Bío-Bío	Ingeniería Estadística	Tecnología	Universidades CRUCH	s/i	s/i	2220000
+Universidad del Bío-Bío	Ingeniería de Ejecución en Computación e Informática	Tecnología	Universidades CRUCH	13.1	De $800 mil a $1 millón	1931000
+Universidad del Bío-Bío	Ingeniería de Ejecución en Electricidad	Tecnología	Universidades CRUCH	14.6	De $1 millón 200 mil a $1 millón 400 mil	1854289
+Universidad del Bío-Bío	Ingeniería de Ejecución en Electrónica	Tecnología	Universidades CRUCH	15.3	De $1 millón a $1 millón 200 mil	1931000
+Universidad del Bío-Bío	Ingeniería de Ejecución en Mecánica	Tecnología	Universidades CRUCH	14.1	De $1 millón a $1 millón 200 mil	1893493
+Universidad del Bío-Bío	Ingeniería en Alimentos	Tecnología	Universidades CRUCH	14.2	De $600 mil a $800 mil	2294000
+Universidad del Bío-Bío	Ingeniería en Construcción	Tecnología	Universidades CRUCH	16.1	De $1 millón a $1 millón 200 mil	2220000
+Universidad del Bío-Bío	Nutrición y Dietética	Salud	Universidades CRUCH	13.5	De $600 mil a $800 mil	1948000
+Universidad del Bío-Bío	Pedagogía en Castellano y Comunicación	Educación	Universidades CRUCH	10.9	De $400 mil a $600 mil	1690000
+Universidad del Bío-Bío	Pedagogía en Ciencias Naturales mención Biología o Física o Química	Educación	Universidades CRUCH	12.0	s/i	1690000
+Universidad del Bío-Bío	Pedagogía en Educación Física	Educación	Universidades CRUCH	10.2	s/i	1690000
+Universidad del Bío-Bío	Pedagogía en Educación General Básica	Educación	Universidades CRUCH	8.5	De $400 mil a $600 mil	1690000
+Universidad del Bío-Bío	Pedagogía en Educación Matemática	Educación	Universidades CRUCH	11.9	s/i	1690000
+Universidad del Bío-Bío	Pedagogía en Educación Parvularia	Educación	Universidades CRUCH	8.3	De $400 mil a $600 mil	1690000
+Universidad del Bío-Bío	Pedagogía en Historia y Geografía	Educación	Universidades CRUCH	11.7	De $400 mil a $600 mil	1690000
+Universidad del Bío-Bío	Pedagogía en Inglés	Educación	Universidades CRUCH	12.0	De $400 mil a $600 mil	1690000
+Universidad del Bío-Bío	Trabajo Social	Ciencias Sociales	Universidades CRUCH	10.4	De $600 mil a $800 mil	1829000
+Universidad del Desarrollo	Arquitectura	Arte y Arquitectura	Universidades Privadas	15.0	De $800 mil a $1 millón	4267000
+Universidad del Desarrollo	Ciencia Política y Políticas Públicas	Ciencias Sociales	Universidades Privadas	11.8	s/i	3523263
+Universidad del Desarrollo	Derecho	Derecho	Universidades Privadas	18.3	De $1 millón a $1 millón 200 mil	3939708
+Universidad del Desarrollo	Diseño	Arte y Arquitectura	Universidades Privadas	12.2	s/i	4166510
+Universidad del Desarrollo	Enfermería	Salud	Universidades Privadas	11.7	s/i	3384854
+Universidad del Desarrollo	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	14.3	De $1 millón 400 mil a $1 millón 600 mil	3941019
+Universidad del Desarrollo	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	12.0	De $1 millón 400 mil a $1 millón 600 mil	4208638
+Universidad del Desarrollo	Ingeniería en Ejecución en Administración mención Marketing y Finanzas Aplicadas	Administración y Comercio	Universidades Privadas	9.8	s/i	1993000
+Universidad del Desarrollo	Kinesiología	Salud	Universidades Privadas	11.5	s/i	3963155
+Universidad del Desarrollo	Medicina	Salud	Universidades Privadas	15.0	s/i	5876000
+Universidad del Desarrollo	Odontología	Salud	Universidades Privadas	13.9	s/i	6368541
+Universidad del Desarrollo	Periodismo	Ciencias Sociales	Universidades Privadas	11.9	De $600 mil a $800 mil	3730231
+Universidad del Desarrollo	Programas de Formación Pedagógica	Educación	Universidades Privadas	s/i	s/i	2394706
+Universidad del Desarrollo	Psicología	Ciencias Sociales	Universidades Privadas	13.3	De $800 mil a $1 millón	3976275
+Universidad del Desarrollo	Publicidad	Ciencias Sociales	Universidades Privadas	11.1	De $1 millón a $1 millón 200 mil	4350000
+Universidad del Desarrollo	Teatro	Arte y Arquitectura	Universidades Privadas	10.1	De $400 mil a $600 mil	s/i
+Universidad del Mar	Agronomía	Agropecuaria	Universidades Privadas	16.9	De $800 mil a $1 millón	2167394
+Universidad del Mar	Contador Auditor	Administración y Comercio	Universidades Privadas	11.5	De $600 mil a $800 mil	2065500
+Universidad del Mar	Derecho	Derecho	Universidades Privadas	15.5	s/i	2182327
+Universidad del Mar	Enfermería	Salud	Universidades Privadas	12.7	s/i	2596428
+Universidad del Mar	Fonoaudiología	Salud	Universidades Privadas	12.1	s/i	2391756
+Universidad del Mar	Ingeniería Civil Industrial	Tecnología	Universidades Privadas	13.1	s/i	2675789
+Universidad del Mar	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	14.0	De $800 mil a $1 millón	2268938
+Universidad del Mar	Ingeniería de Ejecución Informática	Tecnología	Universidades Privadas	14.5	s/i	2329750
+Universidad del Mar	Ingeniería en Administración de Empresas	Administración y Comercio	Universidades Privadas	s/i	s/i	1938309
+Universidad del Mar	Ingeniería en Prevención de Riesgos y Medio Ambiente	Tecnología	Universidades Privadas	11.0	s/i	1832653
+Universidad del Mar	Ingeniería en Transporte Marítimo y Puertos	Tecnología	Universidades Privadas	13.6	De $600 mil a $800 mil	2225526
+Universidad del Mar	Kinesiología	Salud	Universidades Privadas	14.0	s/i	2352126
+Universidad del Mar	Medicina	Salud	Universidades Privadas	15.0	s/i	5647228
+Universidad del Mar	Nutrición y Dietética	Salud	Universidades Privadas	11.9	s/i	2270874
+Universidad del Mar	Pedagogía en Educación Diferencial	Educación	Universidades Privadas	9.8	De $400 mil a $600 mil	1505579
+Universidad del Mar	Pedagogía en Educación Física	Educación	Universidades Privadas	10.8	De $400 mil a $600 mil	1776845
+Universidad del Mar	Pedagogía en Educación General Básica	Educación	Universidades Privadas	9.9	De $400 mil a $600 mil	1669697
+Universidad del Mar	Pedagogía en Educación Musical	Educación	Universidades Privadas	10.9	s/i	1806086
+Universidad del Mar	Pedagogía en Educación Parvularia	Educación	Universidades Privadas	9.3	De $400 mil a $600 mil	1684591
+Universidad del Mar	Pedagogía en Historia y Ciencias Sociales	Educación	Universidades Privadas	11.8	s/i	1693411
+Universidad del Mar	Pedagogía en Inglés	Educación	Universidades Privadas	11.5	s/i	1657081
+Universidad del Mar	Pedagogía en Lengua Castellana y Comunicación	Educación	Universidades Privadas	11.3	s/i	1511407
+Universidad del Mar	Periodismo	Ciencias Sociales	Universidades Privadas	11.6	s/i	2341405
+Universidad del Mar	Psicología	Ciencias Sociales	Universidades Privadas	14.2	De $600 mil a $800 mil	2194435
+Universidad del Mar	Trabajo Social	Ciencias Sociales	Universidades Privadas	11.8	De $600 mil a $800 mil	1891789
+Universidad del Mar	Técnico Universitario en Administración de Empresas	Administración y Comercio	Universidades Privadas	7.5	De $400 mil a $600 mil	1259035
+Universidad del Mar	Técnico Universitario en Enfermería	Salud	Universidades Privadas	7.2	s/i	1236102
+Universidad del Mar	Técnico Universitario en Transporte Marítimo y Puertos	Tecnología	Universidades Privadas	11.7	s/i	1848000
+Universidad del Mar	Técnico de Nivel Superior Intérprete en Negocios Inglés-Español	Humanidades	Universidades Privadas	7.4	s/i	1263036
+Universidad del Mar	Técnico de Nivel Superior en Turismo y Hotelería	Administración y Comercio	Universidades Privadas	7.9	s/i	1344000
+Universidad del Pacífico	Comunicación Digital y Audiovisual	Arte y Arquitectura	Universidades Privadas	13.3	De $600 mil a $800 mil	2953651
+Universidad del Pacífico	Contador Público y Auditor	Administración y Comercio	Universidades Privadas	10.1	s/i	1751576
+Universidad del Pacífico	Dirección y Producción de Eventos	Arte y Arquitectura	Universidades Privadas	6.2	De $600 mil a $800 mil	2662000
+Universidad del Pacífico	Diseño Gráfico	Arte y Arquitectura	Universidades Privadas	12.7	De $600 mil a $800 mil	3543000
+Universidad del Pacífico	Diseño de Interiores	Arte y Arquitectura	Universidades Privadas	s/i	s/i	3689444
+Universidad del Pacífico	Diseño de Vestuario y Textil	Arte y Arquitectura	Universidades Privadas	10.3	De $600 mil a $800 mil	3685000
+Universidad del Pacífico	Fotografía	Arte y Arquitectura	Universidades Privadas	5.9	s/i	2488000
+Universidad del Pacífico	Ingeniería Comercial	Ciencias Sociales	Universidades Privadas	10.3	De $1 millón 400 mil a $1 millón 600 mil	2599254
+Universidad del Pacífico	Pedagogía en Educación General Básica	Educación	Universidades Privadas	8.8	De $400 mil a $600 mil	1819314
+Universidad del Pacífico	Periodismo	Ciencias Sociales	Universidades Privadas	10.2	De $600 mil a $800 mil	3543000
+Universidad del Pacífico	Psicología	Ciencias Sociales	Universidades Privadas	12.3	s/i	3685000
+Universidad del Pacífico	Publicidad	Ciencias Sociales	Universidades Privadas	10.5	De $800 mil a $1 millón	3685000
+Universidad del Pacífico	Relaciones Públicas	Ciencias Sociales	Universidades Privadas	9.3	De $600 mil a $800 mil	3685000
+Universidad del Pacífico	Trabajo Social	Ciencias Sociales	Universidades Privadas	10.1	De $400 mil a $600 mil	1859304

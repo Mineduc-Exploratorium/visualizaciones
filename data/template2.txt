@@ -1,0 +1,7 @@
+id	nombre	cargo	area	ingreso	sexo	edad	
+1	ricard	ingdesarr	conte	2010	h	20
+2	carlos	ingdesarr	movil 	2011	h	20
+3	alejan	ingdesarr	trans	2012	m	30 	
+4	Nathal	Encargada	calid	2009	m	15
+5	Nathal	ingsenior	calid	2009	m	20
+6	Alvaro	jefeproye	geren	2005	h	45
