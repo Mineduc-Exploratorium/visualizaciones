@@ -20,8 +20,11 @@ var VistaToolTip = Backbone.View.extend({
 		$tooltipcontent = $tooltip.find(".tooltipcontent")
 
 		$tooltipcontent.html(this.message(data));
+
+		// Obtiene posción relativa de body (producto de auto-margin)
+		bodyLeft = document.body.getBoundingClientRect().left;
 		
-		var pos = {x:d3.event.pageX-$("body").offset().left, y:d3.event.pageY}
+		var pos = {x:d3.event.pageX-bodyLeft, y:d3.event.pageY}
 
 
 		// Chequea si tooltip queda fuera del área visible
